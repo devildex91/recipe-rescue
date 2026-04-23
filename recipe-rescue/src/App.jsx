@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import {useState} from 'react'
+
 
 import './App.css'
 import Navbar from  "./components/Navbar"
@@ -7,18 +8,20 @@ import List from "./components/List"
 import Recipe from "./components/Recipe"
 import Footer from "./components/Footer"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+ 
+
+  const [recipe, setRecipe]=useState(" ")
 
   return (
     <>
     <Navbar />
     <Header />
-    <List />
+    <List/>
     <Recipe />
     <Footer />
     </>
   )
 }
 
-export default App
+
