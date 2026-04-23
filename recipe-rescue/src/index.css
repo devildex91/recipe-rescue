@@ -1,7 +1,13 @@
+ body {
+   background-color:
+  #8A8635;
+  margin: 0;
+ }
 
-
-* {
+#root {
   background-color:
-  #F3CF7A;
+  #8A8635;
+  margin: 0;
+  width:100vw;
 }
 

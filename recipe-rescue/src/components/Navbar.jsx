@@ -6,7 +6,7 @@ return (
 <nav>
     
     
-    <h1><img id="logo" src={logo}/></h1>
+    <h1 id="titlelogo"><img id="logo" src={logo}/></h1>
     
 </nav>
 

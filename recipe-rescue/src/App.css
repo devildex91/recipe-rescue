@@ -12,25 +12,47 @@
  background-size:cover;
  background-repeat: no-repeat;
  background-position: center;
-
 justify-content: center;
- 
- 
- 
-}
-nav h1{
+border-radius: 0 0 25px 25px;
+
+ }
+#titlelogo{
   background-color:transparent;
   text-align: center;
-  width:100%;
   color:#F3CF7A;
-  
- 
-}
+  }
 
 #logo{
   width:150px;
   height:150px;
+  margin-top: 20px;
  background-color:transparent;
-  
-  
+ border-radius:25px;
+  }
+
+  /*Header styles*/
+#opening{
+  background-color:#F3CF7A;
+  color:#AA2B1D;
+  margin:10px;
+  border-radius: 25px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
 }
+
+
+  /*List styles*/
+#listSection {
+  background-color: #CC561E;
+  color:#F3CF7A;
+margin:10px;
+border-radius: 25px;
+}
+
+
+
+  /*Recipe styles*/
+
+  /*footer styles*/
