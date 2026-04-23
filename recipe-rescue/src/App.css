@@ -1,0 +1,36 @@
+
+
+
+
+
+/*navbar styles */
+ nav{
+  display:flex;
+  width:100vw;
+  height:200px;
+  background-image:url("./assets/images/title-img.jpg");
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+
+justify-content: center;
+ 
+ 
+ 
+}
+nav h1{
+  background-color:transparent;
+  text-align: center;
+  width:100%;
+  color:#F3CF7A;
+  
+ 
+}
+
+#logo{
+  width:150px;
+  height:150px;
+ background-color:transparent;
+  
+  
+}
