@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import SpoonRecipe from "../SpoonRecipe"
 export default function Recipe(props) {
- 
+
 //array in state for ingredients
   const [ingredients, setIngredients] = useState([]);
 
