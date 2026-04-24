@@ -13,8 +13,9 @@ const [render, setRender ]=useState(false)
 function handleSubmit(formData){
     
    const newIngredient = formData.get("ingredient")
-   setIngredients(prevIngredients => [...prevIngredients,newIngredient])
-  }
+   if(!ingredients.includes(newIngredient)){
+   setIngredients(prevIngredients =>  [...prevIngredients,newIngredient])
+  } else{return ingredients}}
   //Function to handle removing items from list
 function removeIngredient(){
     setIngredients((prevIngredients) => (prevIngredients.slice(0,-1)))
@@ -24,6 +25,7 @@ function removeIngredient(){
     setIngredients([]);
 }
 //variable to map items onto page 
+const buttonRender= ingredients.length>=5? <button id="getRecipe">Get recipe</button>: null;
 const ingredientItem = ingredients.map((ingredient, index)=> <li key={index}>{ingredient}</li> ) 
  //variable to conditionally render button to page if list has items within it
 const listRender = (<section id = "listSection">
