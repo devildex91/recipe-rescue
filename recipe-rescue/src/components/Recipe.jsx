@@ -1,8 +1,8 @@
 import { useState } from "react";
-import {getRecipeFromMistral} from"../ai"
-import SpoonRecipe from "../spoonRecipe"
+
+import SpoonRecipe from "../SpoonRecipe"
 export default function Recipe(props) {
-  
+ 
 //array in state for ingredients
   const [ingredients, setIngredients] = useState([]);
 
@@ -31,6 +31,10 @@ export default function Recipe(props) {
   //variable to map items onto page
   const buttonRender =
     ingredients.length >= 5 ? <button id="getRecipe" onClick={getRecipe}>Get recipe</button> : null;
+
+    function getRecipe(){
+        setRender(true)
+    }
 
   const ingredientItem = ingredients.map((ingredient, index) => (
     <li key={index}>{ingredient}</li>
@@ -64,8 +68,11 @@ export default function Recipe(props) {
   const recipeRender = (
     <section id="recipeSection">
       <h2>Our recomendations are:</h2>
-         <spoonRecipe
+         <SpoonRecipe 
          ingredients={ingredients}
+         getRecipe= {getRecipe}
+         render={render}
+         
          />
     </section>
   );
