@@ -8,9 +8,6 @@ import Recipe from "./components/Recipe"
 import Footer from "./components/Footer"
 
 export default function App() {
- 
-
-  const [recipe, setRecipe]=useState(" ")
 
   return (
     <>
