@@ -1,26 +1,26 @@
 import { useState } from "react";
-
-import SpoonRecipe from "../SpoonRecipe"
+import SpoonRecipe from "../SpoonRecipe";
 export default function Recipe(props) {
-
-//array in state for ingredients
+  //array in state for ingredients
   const [ingredients, setIngredients] = useState([]);
 
   // boolean in state to control conditional rendering below
   const [render, setRender] = useState(false);
 
-  
   //function to take input and push to state array
-  
   function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
-    if(newIngredient.length>0){
-    if (!ingredients.includes(newIngredient)) {
-      setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
-    } else{
-      return ingredients;
+    if (newIngredient.length > 0) {
+      if (!ingredients.includes(newIngredient)) {
+        setIngredients((prevIngredients) => [
+          ...prevIngredients,
+          newIngredient,
+        ]);
+      } else {
+        return ingredients;
+      }
     }
-  }}
+  }
   //Function to handle removing items from list
   function removeIngredient() {
     setIngredients((prevIngredients) => prevIngredients.slice(0, -1));
@@ -29,13 +29,18 @@ export default function Recipe(props) {
   function clearIngredient() {
     setIngredients([]);
   }
-  //variable to map items onto page
+  //Variable to render get recipe button onto page after 5 ingredients added to list 
   const buttonRender =
-    ingredients.length >= 5 ? <button id="getRecipe" onClick={getRecipe}>Get recipe</button> : null;
-
-    function getRecipe(){
-        setRender(true)
-    }
+    ingredients.length >= 5 ? (
+      //button calls getRecipe to change state and render recipe to page
+      <button id="getRecipe" onClick={getRecipe}>
+        Get recipe
+      </button>
+    ) : null;
+//function changes state to true 
+  function getRecipe() {
+    setRender(true);
+  }
 
   const ingredientItem = ingredients.map((ingredient, index) => (
     <li key={index}>{ingredient}</li>
@@ -69,14 +74,14 @@ export default function Recipe(props) {
   const recipeRender = (
     <section id="recipeSection">
       <h2>Our recomendations are:</h2>
-         <SpoonRecipe 
-         ingredients={ingredients}
-         getRecipe= {getRecipe}
-         render={render}
-         
-         />
+      <SpoonRecipe
+        ingredients={ingredients}
+        getRecipe={getRecipe}
+        render={render}
+      />
     </section>
   );
+  //ternary to control which component to render to the page
   const renderControl = render ? recipeRender : listRender;
 
   return renderControl;
