@@ -14,12 +14,13 @@ export default function Recipe(props) {
   
   function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
+    if(newIngredient.length>0){
     if (!ingredients.includes(newIngredient)) {
       setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
-    } else {
+    } else{
       return ingredients;
     }
-  }
+  }}
   //Function to handle removing items from list
   function removeIngredient() {
     setIngredients((prevIngredients) => prevIngredients.slice(0, -1));
