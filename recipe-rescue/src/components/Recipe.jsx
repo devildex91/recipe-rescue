@@ -73,7 +73,7 @@ export default function Recipe(props) {
 
   const recipeRender = (
     <section id="recipeSection">
-      <h2>Our recomendations are:</h2>
+      <h2>We reccomend:</h2>
       <SpoonRecipe
         ingredients={ingredients}
         getRecipe={getRecipe}

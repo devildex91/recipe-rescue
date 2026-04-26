@@ -10,12 +10,12 @@ import Footer from "./components/Footer"
 export default function App() {
 
   return (
-    <>
+    <div id="body">
     <Navbar />
     <Header />
     <Recipe />
     <Footer />
-    </>
+    </div>
   )
 }
 

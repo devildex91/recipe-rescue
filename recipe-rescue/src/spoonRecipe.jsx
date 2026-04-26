@@ -11,7 +11,7 @@ export default function SpoonRecipe(props) {
     if (props.ingredients.length === 0) return;
 
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=2&apiKey=${API}`,
+      `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=4&apiKey=${API}`,
     )
       .then((response) => response.json())
       .then((result) => {
@@ -21,10 +21,10 @@ export default function SpoonRecipe(props) {
   }, [ingredientList, API]);
 
   const recommendedRecipes = recipes.map((recipe) => (
-    <div id="recipeCard" key={recipe.id}>
+    <div className="recipeCard" key={recipe.id}>
       <h3>{recipe.title}</h3>
       <img src={recipe.image} alt={recipe.title} />
-      <div id="ingredientsCard">
+      <div className="ingredientsCard">
         <div className="ingredients missing">
           <h4>missing ingredients</h4>
           <ul>
@@ -45,8 +45,8 @@ export default function SpoonRecipe(props) {
     </div>
   ));
   return (
+    
     <section id="recipeResult">
-      <h2>We reccomend:</h2>
       {recommendedRecipes}
     </section>
   );
