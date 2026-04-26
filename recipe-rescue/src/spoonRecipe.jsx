@@ -11,7 +11,7 @@ export default function SpoonRecipe(props) {
     if (props.ingredients.length === 0) return;
 
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=4&apiKey=${API}`,
+      `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=6&apiKey=${API}`,
     )
       .then((response) => response.json())
       .then((result) => {
@@ -45,7 +45,7 @@ export default function SpoonRecipe(props) {
     </div>
   ));
   return (
-    
+
     <section id="recipeResult">
       {recommendedRecipes}
     </section>
