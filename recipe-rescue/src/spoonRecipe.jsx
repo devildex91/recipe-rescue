@@ -21,10 +21,10 @@ export default function SpoonRecipe(props) {
   }, [ingredientList, API]);
 
   const recommendedRecipes = recipes.map((recipe) => (
-    <div className="recipeCard" key={recipe.id}>
-      <h3>{recipe.title}</h3>
-      <img src={recipe.image} alt={recipe.title} />
-      <div className="ingredientsCard">
+    <button className="unbutton" onClick={recipeDetail}>
+      <div className="recipeCard shadow" key={recipe.id}>
+        <h3>{recipe.title}</h3>
+        <img src={recipe.image} alt={recipe.title} />
         <div className="ingredients missing">
           <h4>missing ingredients</h4>
           <ul>
@@ -33,21 +33,8 @@ export default function SpoonRecipe(props) {
             ))}
           </ul>
         </div>
-        <div className="ingredients used">
-          <h4>used ingredients</h4>
-          <ul>
-            {recipe.usedIngredients.map((ingredients) => (
-              <li key={ingredients.id}>{ingredients.name}</li>
-            ))}
-          </ul>
-        </div>
       </div>
-    </div>
+    </button>
   ));
-  return (
-
-    <section id="recipeResult">
-      {recommendedRecipes}
-    </section>
-  );
+  return <section id="recipeResult">{recommendedRecipes}</section>;
 }

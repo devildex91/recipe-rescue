@@ -29,7 +29,7 @@ export default function Recipe(props) {
   function clearIngredient() {
     setIngredients([]);
   }
-  //Variable to render get recipe button onto page after 5 ingredients added to list 
+  //Variable to render get recipe button onto page after 5 ingredients added to list
   const buttonRender =
     ingredients.length >= 5 ? (
       //button calls getRecipe to change state and render recipe to page
@@ -37,7 +37,7 @@ export default function Recipe(props) {
         Get recipe
       </button>
     ) : null;
-//function changes state to true 
+  //function changes state to true
   function getRecipe() {
     setRender(true);
   }
@@ -47,7 +47,7 @@ export default function Recipe(props) {
   ));
   //variable to conditionally render button to page if list has items within it
   const listRender = (
-    <section id="listSection">
+    <section id="listSection" className="shadow">
       <form action={handleSubmit} className="ingredientsForm">
         <label htmlFor="ingredient">Enter your ingredients here:</label>
         <input
