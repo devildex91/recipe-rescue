@@ -1,7 +1,7 @@
 /*grid styles for all screen sizes*/
 div#body {
   display: grid;
-  
+  height:100vh;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: 0 auto;
@@ -158,6 +158,8 @@ footer {
   margin-top:40px;
   width: calc(100% + 20px);
   box-sizing: border-box;
+  margin-left:-10px;
+  margin-right:-10px;
 }
 .footerLogo {
   height: 20px;
@@ -174,7 +176,7 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 792px) {
+@media screen and (min-width: 768px) {
   #body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -210,6 +212,8 @@ footer p {
   footer {
     grid-column: span 2;
     grid-row-start: 5;
+     margin-left: -10px;
+  
     margin: 10px -20px 0 -20px;
     width: calc(100% + 40px);
     max-width: calc(100% + 40px);

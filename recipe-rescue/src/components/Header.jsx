@@ -1,4 +1,8 @@
+import titlePic1 from "../assets/images/landing-page-1.jpg"
+
 export default function Header() {
+const screenWidth = window.innerWidth > 768;
+
   return (
     <header id="opening" className="shadow">
       <h2>Welcome to Recipe Rescue</h2>
@@ -8,6 +12,9 @@ export default function Header() {
         It really is that simple so if your ready to go lets stop the waste and
         lets start the taste.
       </p>
+      <div id="headerImg">
+      { screenWidth ? <img className = "hidden" src={titlePic1}/>: null}
+      </div>
     </header>
   );
 }
