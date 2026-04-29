@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function SpoonRecipe({setRender,render,getRecipe,ingredients,re}) {
+export default function RecipeCard({setRender,render,getRecipe,ingredients,}) {
   const API = import.meta.env.VITE_SPOONACULAR_API;
 
   //state for recipe storage from first api call
@@ -49,14 +49,14 @@ function recipeDetail(recipeId){
 
 
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=6&apiKey=${API}`,
+      `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${API}`,
     )
       .then((response) => response.json())
       .then((result) => {
-        setRecipes(result);
+        window.location.href = result.sourceUrl
       })
       .catch((err) => console.error("Fetch error:", err));
-  }, [ingredientList, API]);
+  }, []);
  }
 
 

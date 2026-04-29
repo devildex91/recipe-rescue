@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SpoonRecipe from "./SpoonRecipe";
+import RecipeCard from "./RecipeCard";
 import IngredientsList from "./IngredientsList"
 
 export default function Recipe() {
@@ -15,7 +15,7 @@ export default function Recipe() {
   }
 
   return (render ? 
-    <SpoonRecipe
+    <RecipeCard
         ingredients={ingredients}
         getRecipe={getRecipe}
         render={render}
