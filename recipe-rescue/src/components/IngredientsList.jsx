@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import ingredientPic from "../assets/images/landing-page-2.png"
 
 export default function IngredientsList({ingredients, setIngredients, getRecipe}){
 
@@ -40,6 +40,10 @@ export default function IngredientsList({ingredients, setIngredients, getRecipe}
   //variable to conditionally render button to page if list has items within it
   const listRender = (
     <section id="listSection" className="shadow">
+       <div id="listPic">
+       <img className = "hidden ingredientPic" src={ingredientPic} alt = "someone frying some ingredients"/> 
+       </div>
+       <div id="formDiv">
       <form action={handleSubmit} className="ingredientsForm">
         <label htmlFor="ingredient">Enter your ingredients here:</label>
         <input
@@ -55,7 +59,7 @@ export default function IngredientsList({ingredients, setIngredients, getRecipe}
         <button type="button" onClick={clearIngredient}>
           Clear ingredient
         </button>
-      </form>
+      </form></div>
       <ul id="ingredientsList">
         {ingredientItem}
         {buttonRender}

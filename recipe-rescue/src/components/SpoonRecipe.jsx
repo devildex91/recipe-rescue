@@ -63,11 +63,12 @@ function recipeDetail(recipeId){
   return (
      <section id="recipeSection">
       <h2>We reccomend:</h2>
+     
     <section id="recipeResult">
       {recommendedRecipes}
        
     </section>
-    <button onClick={goBack}>Back to ingredients</button>
+    
     </section>
   );
 }

@@ -19,3 +19,6 @@ If you are developing a production application, we recommend using TypeScript wi
 fixes 
 
 List and recipe component changed into one component to more easily control state managment for these components
+originally everything was flexbox but changed to grid for morecontrol 
+css variables added to make updates easier 
+had to get rid of gap and set margins on each section so that navbar and footer spanned whole screen without issue

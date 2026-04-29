@@ -15,7 +15,7 @@ const screenWidth = window.innerWidth > 768;
       </p>
       </div>
       <div id="headerImg">
-       <img className = "hidden" src={titlePic1}/>
+       <img className = "hidden headerPic" src={titlePic1} alt = "brocoli in a frying pan"/>
       </div>
     </div>
   );
