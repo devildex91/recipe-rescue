@@ -4,7 +4,8 @@ export default function Header() {
 const screenWidth = window.innerWidth > 768;
 
   return (
-    <header id="opening" className="shadow">
+    <div id="opening" className="shadow">
+      <div id="textDiv">
       <h2>Welcome to Recipe Rescue</h2>
       <p>
         Our aim is to stop food waste one ingredient it a time, How? you might
@@ -12,9 +13,10 @@ const screenWidth = window.innerWidth > 768;
         It really is that simple so if your ready to go lets stop the waste and
         lets start the taste.
       </p>
-      <div id="headerImg">
-      { screenWidth ? <img className = "hidden" src={titlePic1}/>: null}
       </div>
-    </header>
+      <div id="headerImg">
+       <img className = "hidden" src={titlePic1}/>
+      </div>
+    </div>
   );
 }

@@ -5,22 +5,25 @@ div#body {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: 0 auto;
-  max-width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
+ max-width: 100%;
+ box-sizing: border-box;
 }
 
 /*navbar styles */
 
 nav {
   display: flex;
-  width: calc(100% + 20px);
+  width:100%;
   height: 200px;
   background: url("./assets/images/title-img.jpg") no-repeat center/cover;
   justify-content: center;
+ 
+  
+  
+  
+  
+  
 
-  margin-left: -10px;
-  margin-right: -10px;
 }
 #titlelogo {
   background-color: transparent;
@@ -40,9 +43,9 @@ nav {
 #opening {
   background-color: #b2cd9c;
   color: #4b352a;
-  margin: 10px 0;
+  margin: 20px 0;
   border-radius: 4px;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -50,28 +53,39 @@ nav {
   min-height: 270px;
   text-align: center;
   min-width: 0;
-  width: 100%;
-  max-width: 100%;
+  margin-left:20px;
+  margin-right:20px;
   box-sizing: border-box;
+}
+.hidden{
+  display:none;
+}
+#textdiv{
+  display:flex;
+  flex-direction: column;
 }
 #opening p {
   padding: 10px;
+}
+#headerImg img{
+  width:auto;
+  height:auto;
+  object-fit:contain;
 }
 
 /*List styles*/
 #listSection {
   background-color: #b2cd9c;
   color: #4b352a;
-  margin: 10px 0;
-  border-radius: 4px;
+   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 270px;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+ box-sizing: border-box;
+ margin-left:20px;
+ margin-right:20px;
 }
 #listSection form {
   display: flex;
@@ -156,10 +170,9 @@ footer {
   grid-row-start: 5;
   background-color: #b2cd9c;
   margin-top:40px;
-  width: calc(100% + 20px);
+  width: auto;
   box-sizing: border-box;
-  margin-left:-10px;
-  margin-right:-10px;
+ 
 }
 .footerLogo {
   height: 20px;
@@ -181,17 +194,39 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto 1fr auto;
-    gap: 20px;
-    padding: 0 20px;
+    
+  
   }
   nav {
     grid-column: span 2;
   }
   #opening {
-    grid-column: span 2;
+    
+    display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   margin: auto;
+  height:auto;
+  margin:20px;
+  }
+     
+  #textDiv{
+    flex-direction: column;
+    justify-content: center;
+    }
+    #headerImg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .hidden{
+    display:inline;
+    margin:20px;
+  object-fit:contain;
+  
   }
   #listSection {
-    grid-column: span 2;
+    grid-column: 1;
     height: fit-content;
   }
   #recipeSection {
