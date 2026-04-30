@@ -15,7 +15,7 @@ const screenWidth = window.innerWidth > 768;
       </p>
       </div>
       <div id="headerImg">
-       <img className = "hidden headerPic" src={titlePic1} fetchPriority="high" alt = "brocoli in a frying pan"/>
+       <img className = "hidden headerPic" src={titlePic1} fetchPriority="high" alt = "person stood frying"/>
       </div>
     </div>
   );

@@ -337,7 +337,56 @@ footer p {
     font-size: 25px;
   }
 }
+@media screen and (min-width: 1900px){
+#logo {
+  width:300px;
+  height:auto;
+  
+  border-radius: 4px;
+}
+#opening p{
+  font-size:35px;
+}
 
+#listPic img{
+  height:350px;
+  width:auto;
+}
+
+
+
+#headerImg img.headerPic { 
+    height: 350px;
+    max-height: none;
+    width: auto;
+    object-fit: fill;
+
+
+}
+
+#listSection form {
+  display: flex;
+  max-width: 450px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+#listSection li {
+  font-size:30px;
+ 
+}
+button {
+  font-size:30px;
+ 
+}
+form input {
+  height: 40px;
+}
+form label{
+  font-size:30px;
+}
+}
 /*box shadow properties*/
 .shadow {
   box-shadow:

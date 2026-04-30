@@ -26,4 +26,4 @@ had to get rid of gap and set margins on each section so that navbar and footer 
 
 all images resized and compressed f or better load times 
  found a bug as screen sizes increased so did gaps and discovered footer was adding an extra grid row because was set to start at grid 5 which was adding an unnneeded row and causing layout issues
- 
+ all content was shrinking too far to still be easily readable an extra large screens so added a safety measure at 1800 px and 1200 pixels to ensure that all fonts and images scale properly as s creen size grows 
