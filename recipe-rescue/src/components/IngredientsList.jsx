@@ -41,7 +41,7 @@ export default function IngredientsList({ingredients, setIngredients, getRecipe}
   const listRender = (
     <section id="listSection" className="shadow">
        <div id="listPic">
-       <img className = "hidden ingredientPic" src={ingredientPic} alt = "someone frying some ingredients"/> 
+       <img className = "hidden ingredientPic" fetchPriority="high" src={ingredientPic} alt = "someone frying some ingredients"/> 
        </div>
        <div id="formDiv">
       <form action={handleSubmit} className="ingredientsForm">

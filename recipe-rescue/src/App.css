@@ -12,7 +12,7 @@ div#body {
   display: grid;
   height:100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows:auto;
   margin: 0 auto;
  max-width: 100%;
  box-sizing: border-box;
@@ -33,9 +33,10 @@ p, button, form, li{
 nav {
   display: flex;
   width:100%;
-  height: 200px;
-  background: url("./assets/images/title-img.jpg") no-repeat center/cover;
+  
+  background: url("./assets/images/title-img.webp") no-repeat center/cover;
   justify-content: center;
+  align-items: center;
  
   
   
@@ -110,6 +111,7 @@ nav {
  box-sizing: border-box;
  margin-left:20px;
  margin-right:20px;
+ margin-bottom: 20px;
 }
 #listSection form {
   display: flex;
@@ -210,11 +212,12 @@ form input {
 footer {
   display: flex;
   justify-content: center;
-  grid-row-start: 5;
+  
   background-color:var(--primary-color);
   color:var(--secondary-color);
-  margin-top:40px;
+  
   width: auto;
+  height:100%;
   
  
 }
