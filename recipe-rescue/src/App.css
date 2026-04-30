@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap");
 
 :root {
   --primary-color: #4b352a; /*brown*/
@@ -10,40 +10,37 @@
 /*grid styles for all screen sizes*/
 div#body {
   display: grid;
-  height:100vh;
+  height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows:auto;
+  grid-template-rows: auto;
   margin: 0 auto;
- max-width: 100%;
- box-sizing: border-box;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /*navbar styles */
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: var(--header-font);
-  color:var(--primary-color)
+  color: var(--primary-color);
 }
 
-p, button, form, li{
+p,
+button,
+form,
+li {
   font-family: var(--secondary-font);
 }
 
-
 nav {
   display: flex;
-  width:100%;
-  
+  width: 100%;
+
   background: url("./assets/images/title-img.webp") no-repeat center/cover;
   justify-content: center;
   align-items: center;
- 
-  
-  
-  
-  
-  
-
 }
 #titlelogo {
   background-color: transparent;
@@ -54,18 +51,17 @@ nav {
 #logo {
   width: 150px;
   height: 150px;
-  margin-top: 20px;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 4px;
 }
 
 /*Header styles*/
 #opening {
-  background-color:var(--secondary-color);
-  color:var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 20px 0;
   border-radius: 4px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,45 +69,44 @@ nav {
   min-height: 270px;
   text-align: center;
   min-width: 0;
-  margin-left:20px;
-  margin-right:20px;
+  margin-left: 20px;
+  margin-right: 20px;
   box-sizing: border-box;
-  font-size:16px;
+  font-size: 16px;
 }
-#opening h2{
+#opening h2 {
   font-size: 30px;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
-
-.hidden{
-  display:none;
+.hidden {
+  display: none;
 }
-#textdiv{
-  display:flex;
+#textdiv {
+  display: flex;
   flex-direction: column;
 }
 
-#headerImg img{
-  width:auto;
-  height:auto;
-  object-fit:contain;
+#headerImg img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /*List styles*/
 #listSection {
-  background-color:var(--secondary-color);
-  color:var(--primary-color);
-   border-radius: 4px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 270px;
- box-sizing: border-box;
- margin-left:20px;
- margin-right:20px;
- margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 #listSection form {
   display: flex;
@@ -119,28 +114,26 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top:10px;
- 
+  padding-top: 10px;
 }
-#listSection li{
-  list-style:none;
-  padding:0;
-  
-} 
-button{
-  background-color:var(--primary-color);
-  color:var(--secondary-color);
-  margin:5px;
-  padding:10px;
+#listSection li {
+  list-style: none;
+  padding: 0;
+}
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 5px;
+  padding: 10px;
   border-radius: 4px;
 }
 form input {
-  height:20px;
+  height: 20px;
 }
 
 /*Recipe card styles*/
-#recipeSection{
-  margin-bottom:30px;
+#recipeSection {
+  margin-bottom: 30px;
 }
 #recipeResult {
   display: grid;
@@ -149,7 +142,7 @@ form input {
   gap: 20px;
   padding: 20px;
   margin: 10px 0;
-  height:100%;
+  height: 100%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -162,7 +155,7 @@ form input {
 }
 .recipeCard {
   box-sizing: border-box;
-  background-color:var(--secondary-color);
+  background-color: var(--secondary-color);
   border-radius: 4px;
   color: var(--primary-color);
   display: flex;
@@ -171,16 +164,15 @@ form input {
   text-align: center;
   margin: auto;
   padding: 40px 40px 60px;
-  height:100%;
+  height: 100%;
   width: 100%;
   max-width: 100%;
 }
 .recipeCard img {
-  max-width:100%;
+  max-width: 100%;
   height: auto;
   display: block;
-  object-fit:contain;
-  
+  object-fit: contain;
 }
 .recipeCard ul {
   align-self: flex-start;
@@ -189,8 +181,8 @@ form input {
   padding: 10px;
   font-size: 20px;
 }
-  .recipeCard h4 {
-  font-size:16px;
+.recipeCard h4 {
+  font-size: 16px;
 }
 
 .ingredients {
@@ -212,14 +204,12 @@ form input {
 footer {
   display: flex;
   justify-content: center;
-  
-  background-color:var(--primary-color);
-  color:var(--secondary-color);
-  
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
   width: auto;
-  height:100%;
-  
- 
+  height: 100%;
 }
 .footerLogo {
   height: 20px;
@@ -241,69 +231,65 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto auto auto;
-    
-  
   }
   nav {
     grid-column: span 2;
   }
   #opening {
-    
-    display:grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows:auto;
-   margin: auto;
-  height:auto;
-  margin-left:20px;
-  margin-right:20px;
-  margin-bottom:20px;
-  margin-top:20px;
-  padding-bottom:50px;
-  font-size:18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    font-size: 18px;
   }
-  #opening h2{
-    font-size:30px;
+  #opening h2 {
+    font-size: 30px;
   }
-     
-  #textDiv{
+
+  #textDiv {
     flex-direction: column;
     justify-content: center;
-    }
-    #headerImg{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      }
-    #headerImg img {
-  width: 100%;
-  max-height: 225px;  
-  margin:20px;
-}
- /*makes images visable for larger screens*/
-  .hidden{
-    display:block;
+  }
+  #headerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerImg img {
+    width: 100%;
+    max-height: 225px;
+    margin: 20px;
+  }
+  /*makes images visable for larger screens*/
+  .hidden {
+    display: block;
   }
   /*nested grid to control flow of picture for tablets and larger*/
   #listSection {
-    grid-column:span 2;
-    display:flex;
+    grid-column: span 2;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
-  
-  #listPic{
-    margin:20px;
+
+  #listPic {
+    margin: 20px;
   }
   #recipeSection {
     grid-column: span 2;
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
   #recipeResult {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
-    
   }
   .recipeCard {
     width: 90%;
@@ -313,45 +299,43 @@ footer p {
 }
 
 @media screen and (min-width: 900px) {
-#opening{
-  font-size:20px;
- }
-#recipeResult {
+  #opening {
+    font-size: 20px;
+  }
+  #recipeResult {
     align-items: center;
-  
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: auto auto; 
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     margin: auto;
     align-items: stretch;
   }
-  .recipeCard img{
-    padding:20px;
+  .recipeCard img {
+    padding: 20px;
   }
 }
 /*extra control for xlarge screens */
-@media screen and (min-width: 1200px){
-#opening h2{
-  font-size:40px;
-}
-#opening p {
-  font-size:25px;
-}
-
-
-  .recipeCard img{
-    padding:20px;
-
-}
-.recipeCard h3{
-  font-size:35px;
+@media screen and (min-width: 1200px) {
+  #opening h2 {
+    font-size: 40px;
+  }
+  #opening p {
+    font-size: 25px;
   }
 
-.recipeCard h4{
-  font-size:30px;
-}
-.recipeCard li{
-  font-size:25px;
-}
+  .recipeCard img {
+    padding: 20px;
+  }
+  .recipeCard h3 {
+    font-size: 35px;
+  }
+
+  .recipeCard h4 {
+    font-size: 30px;
+  }
+  .recipeCard li {
+    font-size: 25px;
+  }
 }
 
 /*box shadow properties*/

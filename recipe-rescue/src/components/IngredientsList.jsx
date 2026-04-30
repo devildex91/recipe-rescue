@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
-import ingredientPic from "../assets/images/landing-page-2.png"
+import ingredientPic from "../assets/images/landing-page-2.png";
 
-export default function IngredientsList({ingredients, setIngredients, getRecipe}){
-
-    function handleSubmit(formData) {
+export default function IngredientsList({
+  ingredients,
+  setIngredients,
+  getRecipe,
+}) {
+  function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
     if (newIngredient.length > 0) {
       if (!ingredients.includes(newIngredient)) {
@@ -33,42 +36,44 @@ export default function IngredientsList({ingredients, setIngredients, getRecipe}
       </button>
     ) : null;
   //function changes state to true
-  
+
   const ingredientItem = ingredients.map((ingredient, index) => (
     <li key={index}>{ingredient}</li>
   ));
   //variable to conditionally render button to page if list has items within it
   const listRender = (
     <section id="listSection" className="shadow">
-       <div id="listPic">
-       <img className = "hidden ingredientPic" fetchPriority="high" src={ingredientPic} alt = "someone frying some ingredients"/> 
-       </div>
-       <div id="formDiv">
-      <form action={handleSubmit} className="ingredientsForm">
-        <label htmlFor="ingredient">Enter your ingredients here:</label>
-        <input
-          type="text"
-          id="ingredient"
-          name="ingredient"
-          aria-label="Add ingredient"
-        ></input>
-        <button type="submit">Add ingredient</button>
-        <button type="button" onClick={removeIngredient}>
-          Remove ingredient
-        </button>
-        <button type="button" onClick={clearIngredient}>
-          Clear ingredient
-        </button>
-      </form></div>
+      <div id="listPic">
+        <img
+          className="hidden ingredientPic"
+          fetchPriority="high"
+          src={ingredientPic}
+          alt="someone frying some ingredients"
+        />
+      </div>
+      <div id="formDiv">
+        <form action={handleSubmit} className="ingredientsForm">
+          <label htmlFor="ingredient">Enter your ingredients here:</label>
+          <input
+            type="text"
+            id="ingredient"
+            name="ingredient"
+            aria-label="Add ingredient"
+          ></input>
+          <button type="submit">Add ingredient</button>
+          <button type="button" onClick={removeIngredient}>
+            Remove ingredient
+          </button>
+          <button type="button" onClick={clearIngredient}>
+            Clear ingredient
+          </button>
+        </form>
+      </div>
       <ul id="ingredientsList">
         {ingredientItem}
         {buttonRender}
       </ul>
     </section>
   );
-    return (
-        <>
-        {listRender}
-        </>
-    )
+  return <>{listRender}</>;
 }

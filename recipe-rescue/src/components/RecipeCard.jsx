@@ -7,7 +7,7 @@ export default function RecipeCard({setRender,render,getRecipe,ingredients,}) {
   const [recipes, setRecipes] = useState([]);
   const ingredientList = ingredients.join(",");
   //state for storing full recipe upon second api request
-const [fullRecipe, setFullRecipe] = useState([])
+const [recipeLink, setRecipeLink] = useState([])
 //function to fetch new api request to get full recipe details
  
   useEffect(() => {
@@ -22,7 +22,20 @@ const [fullRecipe, setFullRecipe] = useState([])
       })
       .catch((err) => console.error("Fetch error:", err));
   }, [ingredientList, API]);
+   //function that awaits the button click before getting sourceURL
+ async function recipeDetail(recipeId){
+    try{
+      const response = await fetch(
+         `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${API}`,
+      );
+      const recipeUrl = await response.json();
+       if(recipeUrl.sourceUrl) {
+           window.open(recipeUrl.sourceUrl, "_blank", "noopener,noreferrer");
+       }
 
+    } catch (err) {
+      console.error("Error fetching recipe details:", err);
+ }}
   const recommendedRecipes = recipes.map((recipe) => (
     <button className="unbutton"key={recipe.id} onClick={() => recipeDetail(recipe.id)}>
     <div className="recipeCard shadow" key={recipe.id}>
@@ -43,21 +56,6 @@ const [fullRecipe, setFullRecipe] = useState([])
   function goBack(){
     setRender(false)
   }
-// second api call to fetch full recipe details
-function recipeDetail(recipeId){
-   useEffect(() => {
-
-
-    fetch(
-      `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${API}`,
-    )
-      .then((response) => response.json())
-      .then((result) => {
-        window.location.href = result.sourceUrl
-      })
-      .catch((err) => console.error("Fetch error:", err));
-  }, []);
- }
 
 
   return (

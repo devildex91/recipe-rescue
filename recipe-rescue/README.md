@@ -22,3 +22,8 @@ List and recipe component changed into one component to more easily control stat
 originally everything was flexbox but changed to grid for morecontrol 
 css variables added to make updates easier 
 had to get rid of gap and set margins on each section so that navbar and footer spanned whole screen without issue
+
+
+all images resized and compressed f or better load times 
+ found a bug as screen sizes increased so did gaps and discovered footer was adding an extra grid row because was set to start at grid 5 which was adding an unnneeded row and causing layout issues
+ 
