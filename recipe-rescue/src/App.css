@@ -339,7 +339,7 @@ footer p {
 }
 @media screen and (min-width: 1900px){
 #logo {
-  width:300px;
+  max-width:300px;
   height:auto;
   
   border-radius: 4px;
@@ -356,9 +356,8 @@ footer p {
 
 
 #headerImg img.headerPic { 
-    height: 350px;
-    max-height: none;
-    width: auto;
+    max-height: 350px;
+     width: auto;
     object-fit: fill;
 
 
