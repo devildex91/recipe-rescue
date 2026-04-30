@@ -6,23 +6,35 @@ export default function RecipeCard({setRender,render,getRecipe,ingredients,}) {
   //state for recipe storage from first api call
   const [recipes, setRecipes] = useState([]);
   const ingredientList = ingredients.join(",");
-  //state for storing full recipe upon second api request
+  //state for storing link to source page for full recipe 
 const [recipeLink, setRecipeLink] = useState([])
-//function to fetch new api request to get full recipe details
- 
-  useEffect(() => {
-    if (ingredients.length === 0) return;
 
-    fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=6&apiKey=${API}`,
-    )
-      .then((response) => response.json())
-      .then((result) => {
-        setRecipes(result);
-      })
-      .catch((err) => console.error("Fetch error:", err));
-  }, [ingredientList, API]);
-   //function that awaits the button click before getting sourceURL
+ /*use effect for api calls
+ 1.Gets recipes from list of ingredients and returns a list of recipes
+ 2. Uses the Id of those recipes to take you to source when recipeCard is clicked on*/
+  useEffect(() => {
+  if (ingredients.length === 0) return;
+
+  const fetchRecipes = async () => {
+    try {
+      const response = await fetch(
+        `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=6&apiKey=${API}`
+      );
+      
+      if (!response.ok) throw new Error("Network response was not ok");
+
+      const result = await response.json();
+      setRecipes(result);
+    } catch (err) {
+      console.error("Fetch error:", err);
+      // Set error state here if needed
+    }
+  };
+
+  fetchRecipes();
+}, [ingredients, ingredientList, API]);
+
+   //function that awaits the button click before getting sourceURL from the Id from recipes
  async function recipeDetail(recipeId){
     try{
       const response = await fetch(

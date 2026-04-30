@@ -14,7 +14,9 @@ export default function Recipe() {
     setRender(true);
   }
 
-  return (render ? 
+  return (
+    <main>
+    {render ? 
     <RecipeCard
         ingredients={ingredients}
         getRecipe={getRecipe}
@@ -27,6 +29,7 @@ export default function Recipe() {
         setIngredients={setIngredients}
         render ={render}
         setRender={setRender}
-      />
+      />}
+      </main>
     );
 }
