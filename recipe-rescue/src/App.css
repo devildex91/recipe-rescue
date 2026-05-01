@@ -107,6 +107,7 @@ nav {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+  height:calc(100% - 20px);
 }
 #listSection form {
   display: flex;
@@ -114,7 +115,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px;
 }
 #listSection li {
   list-style: none;
@@ -127,6 +128,8 @@ button {
   padding: 10px;
   border-radius: 4px;
 }
+
+
 form input {
   height: 20px;
 }
@@ -213,7 +216,7 @@ footer {
 
   width: auto;
   height: 100%;
-  margin-top: 30px;
+  
 }
 .footerLogo {
   height: 20px;
@@ -327,9 +330,11 @@ footer p {
 @media screen and (min-width: 1200px) {
   #opening h2 {
     font-size: 40px;
+    margin:0 0 10px 0;
   }
   #opening p {
     font-size: 25px;
+    margin:0;
   }
 
   .recipeCard img {
@@ -350,6 +355,7 @@ footer p {
 #logo {
   max-width:300px;
   height:auto;
+  margin:10px;
   
   border-radius: 4px;
 }
@@ -358,7 +364,7 @@ footer p {
 }
 
 #listPic img{
-  height:350px;
+  max-height:350px;
   width:auto;
 }
 
