@@ -17,7 +17,7 @@ all images resized and compressed f or better load times
  extra margin added to top of footer to create gap when recipe cards appear 
  had to change grid as pictures from API were pixelating at certain sizes
 
- # ironclad-fitness
+ # recipe-rescue
  [To view site](https://devildex91.github.io/recipe-rescue/)
  ## Table of Contents
  
