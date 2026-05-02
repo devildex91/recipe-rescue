@@ -18,6 +18,7 @@ all images resized and compressed f or better load times
  had to change grid as pictures from API were pixelating at certain sizes
  All files were in subfolder so haver had to move all files into root as was becoming dificult to deploy properly 
  On first attemp site went live but was not updating on pushing to repository so deleted file paths moved whole project into root from sub directory and followed vite instructions as well as github instructions to get it working as intended
+ After googling to find solution discovered API has to be put in secrets in actions to make it work on github pages
  # recipe-rescue
  [To view site](https://devildex91.github.io/recipe-rescue/)
  ## Table of Contents

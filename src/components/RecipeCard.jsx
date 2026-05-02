@@ -52,7 +52,9 @@ const [recipeLink, setRecipeLink] = useState([])
     <button className="unbutton"key={recipe.id} onClick={() => recipeDetail(recipe.id)}>
     <div className="recipeCard shadow" key={recipe.id}>
       <img src={recipe.image} alt={recipe.title} />
+      <span>(Click on me for full recipe)</span>
       <h3>{recipe.title}</h3>
+      
       <div className="ingredients missing">
           <h4>missing ingredients</h4>
           <ul>
@@ -72,7 +74,7 @@ const [recipeLink, setRecipeLink] = useState([])
 
   return (
      <section id="recipeSection">
-      <h2>We reccomend:</h2>
+      <h2>We recommend:</h2><button id="backButton" onClick={goBack}>Back to ingredients</button>
      
     <section id="recipeResult">
       {recommendedRecipes}

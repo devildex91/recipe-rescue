@@ -121,17 +121,27 @@ nav {
   list-style: none;
   padding: 0;
 }
-button {
+#listSection button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   margin: 5px;
   padding: 10px;
   border-radius: 4px;
 }
+#listSection button:hover{
+   background-color: var(--highlight-color);
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
 
 
 form input {
   height: 20px;
+  border-radius: 5px;
+  background-color:var(--primary-color);
+}
+form input:hover{
+  background-color: var(--highlight-color);
 }
 
 /*Recipe card styles*/
@@ -153,6 +163,19 @@ form input {
   max-width: 100%;
   box-sizing: border-box;
 }
+#backButton{
+   background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+#backButton:hover{
+   background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+/*Keeps recipe cards looking normal but with button functionality*/
 .unbutton {
   background-color: transparent;
   border: none;
@@ -173,6 +196,11 @@ form input {
   height: 100%;
   width: 100%;
   max-width: 100%;
+  filter:blur(4px);
+}
+.recipeCard:hover{
+  filter:blur(0);
+  border: 10px solid var(--primary-color);
 }
 .recipeCard img {
   max-width: 100%;
