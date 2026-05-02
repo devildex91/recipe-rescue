@@ -16,6 +16,7 @@ all images resized and compressed f or better load times
  upon testing ingredients and Recipe sections needed wrapping in a <main> section for accesibility and subsequently css needed adjusting to keep layout the same.
  extra margin added to top of footer to create gap when recipe cards appear 
  had to change grid as pictures from API were pixelating at certain sizes
+ All files were in subfolder so haver had to move all files into root as was becoming dificult to deploy properly 
 
  # recipe-rescue
  [To view site](https://devildex91.github.io/recipe-rescue/)
