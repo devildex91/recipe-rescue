@@ -75,7 +75,7 @@ const [recipeLink, setRecipeLink] = useState([])
   return (
      <section id="recipeSection">
      <div id="sectionHead">
-      <h2>We recommend:</h2><button id="backButton" onClick={goBack}>Back to ingredients</button>
+      <h2>Hungry yet?</h2><button id="backButton" onClick={goBack}>Back to ingredients</button>
      </div>
     <section id="recipeResult">
       {recommendedRecipes}
