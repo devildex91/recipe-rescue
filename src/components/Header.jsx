@@ -1,4 +1,4 @@
-import titlePic1 from "../assets/images/landing-page-1.jpg";
+import titlePic1 from "../assets/images/landing-page-1.webp";
 
 export default function Header() {
   const screenWidth = window.innerWidth > 768;
