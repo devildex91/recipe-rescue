@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { MdOutlineFoodBank } from "react-icons/md";
 export default function RecipeCard({setRender,render,getRecipe,ingredients,}) {
   const API = import.meta.env.VITE_SPOONACULAR_API;
 
@@ -53,7 +53,7 @@ const [recipeLink, setRecipeLink] = useState([])
     <div className="recipeCard shadow" key={recipe.id}>
       <img src={recipe.image} alt={recipe.title} />
       <span>(Click on me for full recipe)</span>
-      <h3>{recipe.title}</h3>
+      <h3><MdOutlineFoodBank /> {recipe.title}</h3>
       
       <div className="ingredients missing">
           <h4>missing ingredients</h4>
