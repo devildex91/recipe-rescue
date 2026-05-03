@@ -39,7 +39,9 @@ export default function IngredientsList({
   //function changes state to true
 
   const ingredientItem = ingredients.map((ingredient, index) => (
-    <li key={index}><MdFoodBank /> {ingredient}</li>
+    <li key={index}>
+      <MdFoodBank /> {ingredient}
+    </li>
   ));
   //variable to conditionally render button to page if list has items within it
   const listRender = (

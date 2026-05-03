@@ -1,22 +1,18 @@
-import {useState} from 'react'
+import { useState } from "react";
 
-
-import './App.css'
-import Navbar from  "./components/Navbar"
-import Header from "./components/Header"
- import Recipe from "./components/Recipe"
-import Footer from "./components/Footer"
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Recipe from "./components/Recipe";
+import Footer from "./components/Footer";
 
 export default function App() {
-
   return (
     <div id="body">
-    <Navbar />
-    <Header />
-    <Recipe />
-    <Footer />
+      <Navbar />
+      <Header />
+      <Recipe />
+      <Footer />
     </div>
-  )
+  );
 }
-
-
