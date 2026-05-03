@@ -9,7 +9,7 @@ const screenWidth = window.innerWidth > 768;
       <h2>Welcome to Recipe Rescue</h2>
       <p>
         Our aim is to stop food waste one ingredient it a time, How? you might
-        ask. Well you provide us with the ingredients and we provide the recipe.
+        ask. Well you provide us with the ingredients (at least 5 please. We are good but we cant work miracles) and we provide the recipe.
         It really is that simple so if your ready to go lets stop the waste and
         lets start the taste.
       </p>

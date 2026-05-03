@@ -132,6 +132,7 @@ nav {
    background-color: var(--highlight-color);
   color: var(--primary-color);
   border: 3px solid var(--primary-color);
+  cursor: pointer;
 }
 
 
@@ -150,6 +151,12 @@ form input:hover{
 }
 #recipeSection h2{
   margin-left: 20px;
+}
+#sectionHead{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:fit-content;
 }
 #recipeResult {
   display: grid;
@@ -174,6 +181,7 @@ form input:hover{
    background-color: var(--secondary-color);
   color: var(--primary-color);
   border: 3px solid var(--primary-color);
+  cursor: pointer;
 }
 /*Keeps recipe cards looking normal but with button functionality*/
 .unbutton {
@@ -196,17 +204,16 @@ form input:hover{
   height: 100%;
   width: 100%;
   max-width: 100%;
-  filter:blur(4px);
 }
 .recipeCard:hover{
-  filter:blur(0);
   border: 10px solid var(--primary-color);
+  cursor: pointer;
 }
 .recipeCard img {
   max-width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
+  object-fit:cover;
 }
 .recipeCard ul {
   align-self: flex-start;
