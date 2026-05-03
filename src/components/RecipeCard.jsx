@@ -55,7 +55,7 @@ const [recipeLink, setRecipeLink] = useState([])
       <span>(Click on me for full recipe)</span>
       <h3><MdOutlineFoodBank /> {recipe.title}</h3>
       
-      <div className="ingredients missing">
+      <div className="missingIngredients">
           <h4>missing ingredients</h4>
           <ul>
             {recipe.missedIngredients.map((ingredients) => (

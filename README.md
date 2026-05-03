@@ -20,6 +20,8 @@ all images resized and compressed f or better load times
  On first attemp site went live but was not updating on pushing to repository so deleted file paths moved whole project into root from sub directory and followed vite instructions as well as github instructions to get it working as intended
  After googling to find solution discovered API has to be put in secrets in actions to make it work on github pages
  react icons used for favicons 
+ original recipe cards contained included and missing ingredients but was looking too clutered so were removed with link to full recipe provided instead. 
+ <main> added in to help with accesibility for screen readers 
  # recipe-rescue
  [To view site](https://devildex91.github.io/recipe-rescue/)
  ## Table of Contents

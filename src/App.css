@@ -1,5 +1,6 @@
+/*google font import*/
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap");
-
+/*color and fonts for updatability*/
 :root {
   --primary-color: #4b352a; /*brown*/
   --secondary-color: #b2cd9c; /*green*/
@@ -17,45 +18,33 @@ div#body {
   max-width: 100%;
   box-sizing: border-box;
 }
-
-/*navbar styles */
-
+/*font styles for all sections*/
 h1,
 h2,
 h3 {
   font-family: var(--header-font);
   color: var(--primary-color);
 }
-
 p,
 button,
 form,
 li {
   font-family: var(--secondary-font);
 }
-
+/*navbar styles */
 nav {
   display: flex;
   width: 100%;
-
   background: url("./assets/images/title-img.webp") no-repeat center/cover;
   justify-content: center;
   align-items: center;
 }
-#titlelogo {
-  background-color: transparent;
-  text-align: center;
-  color: #f3cf7a;
-  margin: 10px;
-}
-
 #logo {
   width: 150px;
   height: 150px;
   background-color: transparent;
   border-radius: 4px;
 }
-
 /*Header styles*/
 #opening {
   background-color: var(--secondary-color);
@@ -79,19 +68,20 @@ nav {
   font-size: 25px;
   margin-bottom: 0;
 }
-#opening p{
-  margin-top:5px;
+#opening p {
+  margin-top: 5px;
   font-size: 15px;
 }
-
+/*class to keep images hidden on smaller screens*/
 .hidden {
   display: none;
 }
+/*div to contain title and paragraph in header and for grid styling */
 #textdiv {
   display: flex;
   flex-direction: column;
 }
-
+/*styles for image in header*/
 #headerImg img {
   width: auto;
   height: auto;
@@ -112,8 +102,9 @@ nav {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  height:calc(100% - 20px);
+  height: calc(100% - 20px);
 }
+/*list section form styling*/
 #listSection form {
   display: flex;
   max-width: 450px;
@@ -122,10 +113,21 @@ nav {
   text-align: center;
   padding: 10px;
 }
+/*styling for input of form*/
+form input {
+  height: 20px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+form input:hover {
+  background-color: var(--highlight-color);
+}
+/*list of ingredients  */
 #listSection li {
   list-style: none;
   padding: 0;
 }
+/*list section button styles*/
 #listSection button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -133,39 +135,39 @@ nav {
   padding: 10px;
   border-radius: 4px;
 }
-#listSection button:hover{
-   background-color: var(--highlight-color);
+#listSection button:hover {
+  background-color: var(--highlight-color);
   color: var(--primary-color);
   border: 3px solid var(--primary-color);
   cursor: pointer;
 }
-
-
-form input {
-  height: 20px;
-  border-radius: 5px;
-  background-color:var(--primary-color);
-}
-form input:hover{
-  background-color: var(--highlight-color);
-}
-
-/*Recipe card styles*/
-#recipeSection {
-  margin-bottom: 30px;
-}
-#recipeSection h2{
-  margin-left: 20px;
-}
+/*Recipe section styles*/
 /*styles for We reccomend title and button above recipe cards*/
-#sectionHead{
+#sectionHead {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height:fit-content;
-  margin:0 20px 0 20px;
-  }
- 
+  height: fit-content;
+  margin: 0 20px 0 20px;
+}
+#backButton {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+#backButton:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+}
+/*outer div of recipe section*/
+#recipeSection {
+  margin-bottom: 30px;
+}
+/*div to contain recipe cards on render*/
 #recipeResult {
   display: grid;
   grid-template-columns: 1fr;
@@ -178,19 +180,6 @@ form input:hover{
   max-width: 100%;
   box-sizing: border-box;
 }
-#backButton{
-   background-color: var(--primary-color);
-  color: var(--secondary-color);
-  margin: 5px;
-  padding: 10px;
-  border-radius: 4px;
-}
-#backButton:hover{
-   background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: 3px solid var(--primary-color);
-  cursor: pointer;
-}
 /*Keeps recipe cards looking normal but with button functionality*/
 .unbutton {
   background-color: transparent;
@@ -198,6 +187,7 @@ form input:hover{
   padding: 0;
   margin: 0;
 }
+/*cards containing recipe info*/
 .recipeCard {
   box-sizing: border-box;
   background-color: var(--secondary-color);
@@ -213,7 +203,7 @@ form input:hover{
   width: 100%;
   max-width: 100%;
 }
-.recipeCard:hover{
+.recipeCard:hover {
   border: 10px solid var(--primary-color);
   cursor: pointer;
 }
@@ -221,7 +211,7 @@ form input:hover{
   max-width: 100%;
   height: auto;
   display: block;
-  object-fit:cover;
+  object-fit: cover;
 }
 .recipeCard ul {
   align-self: flex-start;
@@ -233,18 +223,18 @@ form input:hover{
 .recipeCard h4 {
   font-size: 16px;
 }
-
-.ingredients {
+/*missing ingredients for recipes*/
+.missingIngredients {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.ingredients ul {
+.missingIngredients ul {
   list-style: none;
   padding: 5px;
   margin: 10px;
 }
-.ingredients h4 {
+.missingIngredients h4 {
   margin-bottom: 0;
   margin-top: 5px;
 }
@@ -259,7 +249,6 @@ footer {
 
   width: auto;
   height: 100%;
-  
 }
 .footerLogo {
   height: 20px;
@@ -276,13 +265,15 @@ footer p {
   justify-content: center;
   align-items: center;
 }
+/*seperate styles as screens get larger*/
 @media screen and (min-width: 768px) {
+  /*grid templates */
   #body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto auto auto;
   }
-  main{
+  main {
     display: grid;
     grid-column: span 2;
     grid-template-rows: subgrid;
@@ -290,6 +281,7 @@ footer p {
   nav {
     grid-column: span 2;
   }
+  /*header styles and subgrid */
   #opening {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -306,11 +298,12 @@ footer p {
   #opening h2 {
     font-size: 30px;
   }
-
+  /*div to contain text in header for grid styles*/
   #textDiv {
     flex-direction: column;
     justify-content: center;
   }
+  /*div to contain image in header for grid styles on larger screens*/
   #headerImg {
     display: flex;
     justify-content: center;
@@ -354,9 +347,11 @@ footer p {
 }
 
 @media screen and (min-width: 900px) {
+  /*header styles*/
   #opening {
     font-size: 20px;
   }
+  /*recipe styles*/
   #recipeResult {
     align-items: center;
 
@@ -371,15 +366,16 @@ footer p {
 }
 /*extra control for xlarge screens */
 @media screen and (min-width: 1200px) {
+  /*header */
   #opening h2 {
     font-size: 40px;
-    margin:0 0 10px 0;
+    margin: 0 0 10px 0;
   }
   #opening p {
     font-size: 25px;
-    margin:0;
+    margin: 0;
   }
-
+  /*recipe section*/
   .recipeCard img {
     padding: 20px;
   }
@@ -394,60 +390,55 @@ footer p {
     font-size: 25px;
   }
 }
-@media screen and (min-width: 1900px){
-#logo {
-  max-width:300px;
-  height:auto;
-  margin:10px;
-  
-  border-radius: 4px;
-}
-#opening{
-  padding-bottom:10px;
-}
-#opening p{
-  font-size:30px;
-}
+@media screen and (min-width: 1900px) {
+  #logo {
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
 
-#listPic img{
-  max-height:350px;
-  width:auto;
-}
+    border-radius: 4px;
+  }
+  /*header section*/
+  #opening {
+    padding-bottom: 10px;
+  }
+  #opening p {
+    font-size: 30px;
+  }
 
-
-
-#headerImg img.headerPic { 
+  #listPic img {
     max-height: 350px;
-     width: auto;
+    width: auto;
+  }
+
+  #headerImg img.headerPic {
+    max-height: 350px;
+    width: auto;
     object-fit: fill;
+  }
 
-
+  #listSection form {
+    display: flex;
+    max-width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #listSection li {
+    font-size: 30px;
+  }
+  button {
+    font-size: 30px;
+  }
+  form input {
+    height: 40px;
+  }
+  form label {
+    font-size: 30px;
+  }
 }
-
-#listSection form {
-  display: flex;
-  max-width: 450px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-top: 10px;
-}
-#listSection li {
-  font-size:30px;
- 
-}
-button {
-  font-size:30px;
- 
-}
-form input {
-  height: 40px;
-}
-form label{
-  font-size:30px;
-}
-}
-/*box shadow properties*/
+/*box shadow properties from  https://getcssscan.com/css-box-shadow-examples*/
 .shadow {
   box-shadow:
     rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
