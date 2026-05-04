@@ -4,7 +4,7 @@
 :root {
   --primary-color: #4b352a; /*brown*/
   --secondary-color: #b2cd9c; /*green*/
-  --highlight-color: #ffffe4; /*pale green*/
+  --highlight-color: #f0f2bd; /*pale green*/
   --header-font: "Geologica", sans-serif;
   --secondary-font: "Geologica", sans-serif;
 }

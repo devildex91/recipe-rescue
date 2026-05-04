@@ -86,7 +86,7 @@ all images resized and compressed f or better load times
  #### User Stories
  
  ---
-  For full Acceptance Criteria and tasks please follow [this link]() to the project board for Recipe Rescue.
+  For full Acceptance Criteria and tasks please follow [this link](https://github.com/users/devildex91/projects/6/views/1?layout=board) to the project board for Recipe Rescue.
 
   **User Story** 
 As a first time visitor I would like it to be simple to use and follow to achieve a list of recipes.
@@ -136,19 +136,24 @@ As a busy home cook I would like to input the ingredients I have left so i can f
  [back to top](#recipe-rescue)
  
  #### Design Choices
- 
  ---
- 
- [back to top](#recipe-rescue)
+ The original design for this project was a project called Sparkflow which was an app to take an artist,genre or mood and return a playlist [sparkflow designs](/src//assets/images/mobile-design.png). As the screen got larger ther final page was going to also include a youtube iframe with whichever artist had been clicked on [larger design](/src/assets/images/wireFrames-computer-closerLookpage.png). Although i did start this project, as i got further in I felt that in order to fully achieve everything possible with this app it was better left for a later project once i had the backend sorted as well so I could add login pages and the user review section could be more responsive and updatable. From that original idea came recipe-rescue. That is because it follows a similar structure to sparkflow in taking a parameter and searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow. 
  
  ##### Fonts
- 
- ---
+  ---
+  <details>
+ <summary>logo</summary>
 
- 
+  ![logo](/src/assets/images/recipe-rescue-logo.webp)
+  </details>
+    
+    
+    For the font choices of recipe rescue i designed the logo first which can be seen above. Following this I diddnt want to stray to far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font i chose not too use this within the app as felt certain cutomers may struggle to read this font if used in a high quantity so left it out of the design. 
+
+ <details>
  <summary>Fonts</summary>
  
- 
+   ![geologica](/src/assets/images/geologica.png)
  
  </details>
  
@@ -157,14 +162,26 @@ As a busy home cook I would like to input the ingredients I have left so i can f
  [back to top](#recipe-rescue)
  
  ##### Colours
- 
  ---
+ <details>
+ <summary>colours</summary>
+
+![colours](/src/assets/images/colour-choice.png)
+ </details>
+ I chose the colour choices above because:
+
+#F0f2BD because it acts as a warm neutral background. Its softer than a pure white on the eyes while keeping the app cosy feeling. It also has an assocoiation with grains and sunlight.
+#B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
+#CA7842 although part of the original design as its been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just diddnt feel to fit with the design of the app standing out a little too much and looking out of place.
+#4B352A because of its association with chocolatte,coffee and grilled meat. it also provides a grounding and sophisticated feel to the app replacing many of the parts that #CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as freaming and footers in certain places as well. It also adds a good contrast rate against the green for accessabilty and reabability tests. 
+
  
  [back to top](#recipe-rescue)
  
  ##### Styling
- 
  ---
+
+ 
  
  
  [back to top](#recipe-rescue)
