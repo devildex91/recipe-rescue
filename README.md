@@ -87,6 +87,51 @@ all images resized and compressed f or better load times
  
  ---
   For full Acceptance Criteria and tasks please follow [this link]() to the project board for Recipe Rescue.
+
+  **User Story** 
+As a first time visitor I would like it to be simple to use and follow to achieve a list of recipes.
+
+**Acceptance Criteria**
+
+- Website is responsive to whatever screen size is used to access it.
+- Website clearly tells user what they need to do and makes it obvious.
+ 
+**Tasks**
+
+- Ensure all sections are easy to use and simple to follow.
+- Apply a flexible layout so that it works on all screen sizes.
+
+
+**User Story**
+
+ As a user, I want to see how many ingredients I am missing for a specific recipe, so that I can decide if it's worth a quick trip to the shop or if I should choose a different meal.
+
+**Acceptance Criteria** 
+
+ - Each recipe card displays the missing ingredients.
+
+**Tasks**
+
+- Make sure the recipe card displays all the missing ingredients for each recipe.
+
+
+**User Story**
+
+As a busy home cook I would like to input the ingredients I have left so i can find recipes I can make with minimal extra ingredients.
+
+**Acceptance Criteria**
+
+
+- Users can type and add multiple ingredients to search.
+- The app returns a list of recipes that include as many of the ingredients available as possible.
+- Each recipe must display a title, image and all the ingredients missing.
+
+**Tasks**
+
+
+- Build a input field to add ingredients too.
+- Integrate a related API to handle recipe search.
+- Design a recipe card to display the information from the API.
  
  [back to top](#recipe-rescue)
  
