@@ -1,5 +1,5 @@
 # recipe-rescue
-
+ ---
 
 fixes 
 
@@ -26,65 +26,67 @@ all images resized and compressed f or better load times
  [To view site](https://devildex91.github.io/recipe-rescue/)
  ## Table of Contents
  
- 1. ### UX
+   ## [UX](#ux-1)
  
- - Primary Goals
- - Business Goals
- - User Goals
- - User Stories
- - Design Choices
- - Wireframes
+  [Primary Goals](#primary-goals)<br>
+  [Business Goals](#business-goals)<br>
+  [User Goals](#user-goals)<br>
+  [User Stories](#user-stories)<br>
+  [Design Choices](#design-choices)<br>
+  [Wireframes](#wireframes)<br>
  
- 2. ### Features
+  ## [Features](#features-1)
  
  - Existing Features
  - Features left to implement
  
- 3. ### Technologies used
+  ## Technologies used
  
  4. ### Testing
  
- 5. ### Deployment
+ 5. ## Deployment
  
  - How to run this project
  
- 6. ### Credits
+ 6. ## Credits
  
  - Content
  - Media
  - Code
  - Acknoledgements
  
- <details>
- <summary> 1. UX </summary>
+ 1. ### UX
  
  ---
  
  #### Primary Goals
  
  ---
- 
+ The primary goal of Recipe Rescue is to stop food waste. We aim to do this by providing our users with the opportunity to use what is left in their fridge. Once we have been provided with your ingredients, we will do all the hardwork for you by providing a list of recipes. Not only does that mean you use up your food not bin it and discover a new favourite recipe while you are at it.   
  
  [back to top](#recipe-rescue)
  
  #### Business Goals
  
  ---
- 
+ The business goals of Recipe Rescue are to stop food waste and save the environment. We believe both these goals are interlinked. If we can stop food waste then that not only means more food for everyone, but also less food in landfill. With those two goals in mind we believe that if we can achieve more customers who hate wasting food then we can keep landfills empty for longer.  
+
  [back to top](#recipe-rescue)
  
  #### User Goals
  
  ---
  
+ The goals for new users are to find new ideas for recipes to spice up their dinner times. They also want to discover new wasy to use up what food they have left. Another goal is to save money. 
+
+ For existing customers they wish to not only continue to save money but also to keep discovering what amazing ways they can use up their food that they diddnt believe was possible. 
 
  [back to top](#recipe-rescue)
  
  #### User Stories
  
  ---
- 
-
+  For full Acceptance Criteria and tasks please follow [this link]() to the project board for Recipe Rescue.
  
  [back to top](#recipe-rescue)
  
@@ -98,7 +100,7 @@ all images resized and compressed f or better load times
  
  ---
 
- <details>
+ 
  <summary>Fonts</summary>
  
  
@@ -140,17 +142,18 @@ all images resized and compressed f or better load times
  
  [back to top](#recipe-rescue)
  
- ##### Wireframes
+ ### Wireframes
  
  ---
- 
- 
+ <bold>First view of phone upon entering site with ingredients list<bold>
+ ![Phone ingredients List wireframes](/src/assets/images/Phone-I-list-WF.png)
+ <p>The div will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to  <p>
 
  
  [back to top](#recipe-rescue)
  
- <details>
-  <summary> 2. Features </summary>
+ 
+  2. ### Features
  
  ---
  
@@ -164,12 +167,12 @@ all images resized and compressed f or better load times
  ---
  
  - Full recipe details and steps on how to make will be added to the page at a later date but due to API limits have been added as a link to the Source URL 
- </details>
+ 
  
  [back to top](#recipe-rescue)
  
- <details>
-  <summary>3. Technologies used </summary>
+ 
+  3. Technologies used 
   
    ---
    + Visual Studios used as the primary IDE. 
@@ -181,8 +184,7 @@ all images resized and compressed f or better load times
  
  [back to top](#recipe-rescue)
  
- <details>
-  <summary>4. Testing</summary>
+ 4. Testing
   
   ---
 
