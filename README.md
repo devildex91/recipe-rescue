@@ -23,6 +23,7 @@ all images resized and compressed f or better load times
  original recipe cards contained included and missing ingredients but was looking too clutered so were removed with link to full recipe provided instead. 
  <main> added in to help with accesibility for screen readers 
  # recipe-rescue
+ 
  [To view site](https://devildex91.github.io/recipe-rescue/)
  ## Table of Contents
  
@@ -148,8 +149,8 @@ As a busy home cook I would like to input the ingredients I have left so i can f
   </details>
     
     
-    For the font choices of recipe rescue i designed the logo first which can be seen above. Following this I diddnt want to stray to far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font i chose not too use this within the app as felt certain cutomers may struggle to read this font if used in a high quantity so left it out of the design. 
-
+   <p> For the font choices of recipe rescue i designed the logo first which can be seen above. Following this I diddnt want to stray to far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font i chose not too use this within the app as felt certain cutomers may struggle to read this font if used in a high quantity so left it out of the design. 
+ </p>
  <details>
  <summary>Fonts</summary>
  
@@ -171,9 +172,13 @@ As a busy home cook I would like to input the ingredients I have left so i can f
  I chose the colour choices above because:
 
 #F0f2BD because it acts as a warm neutral background. Its softer than a pure white on the eyes while keeping the app cosy feeling. It also has an assocoiation with grains and sunlight.
+
 #B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
+
 #CA7842 although part of the original design as its been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just diddnt feel to fit with the design of the app standing out a little too much and looking out of place.
-#4B352A because of its association with chocolatte,coffee and grilled meat. it also provides a grounding and sophisticated feel to the app replacing many of the parts that #CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as freaming and footers in certain places as well. It also adds a good contrast rate against the green for accessabilty and reabability tests. 
+
+#4B352A because of its association with chocolatte,coffee and grilled meat. it also provides a grounding and sophisticated feel to the app replacing many of the parts that 
+#CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as freaming and footers in certain places as well. It also adds a good contrast rate against the green for accessabilty and reabability tests. 
 
  
  [back to top](#recipe-rescue)
@@ -181,7 +186,7 @@ As a busy home cook I would like to input the ingredients I have left so i can f
  ##### Styling
  ---
 
- 
+
  
  
  [back to top](#recipe-rescue)
