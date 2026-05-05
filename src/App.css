@@ -30,6 +30,7 @@ button,
 form,
 li {
   font-family: var(--secondary-font);
+  font-weight: bold;
 }
 /*navbar styles */
 nav {
@@ -116,6 +117,7 @@ nav {
 /*styling for input of form*/
 form input {
   height: 20px;
+  font-size: 25px;
   border-radius: 5px;
   background-color: var(--primary-color);
 }
@@ -130,7 +132,7 @@ form input:hover {
 /*list section button styles*/
 #listSection button {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--highlight-color);
   margin: 5px;
   padding: 10px;
   border-radius: 4px;
