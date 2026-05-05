@@ -43,7 +43,7 @@ button,
 form,
 li {
   font-family: var(--secondary-font);
-  font-weight: bold;
+  
 }
 /*navbar styles */
 nav {
