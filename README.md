@@ -165,6 +165,8 @@ The original design for this project was a project called Sparkflow which was an
 #4B352A because of its association with chocolatte,coffee and grilled meat. it also provides a grounding and sophisticated feel to the app replacing many of the parts that
 #CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as freaming and footers in certain places as well. It also adds a good contrast rate against the green for accessabilty and reabability tests.
 
+#3F2D22 due to contrast testing this colour is not in the chart above but has been chosen as an alternative to #4b352A because it is a close enough match but passed both AA and AAA WCAG tests.
+
 [back to top](#recipe-rescue)
 
 ##### Styling
@@ -351,7 +353,11 @@ original recipe cards contained included and missing ingredients but was looking
 
 ![button normal](/src/assets/images/button-color.png)
 
-button color changed as first test failed AAA so changed to lighter text color to ensure passed
+button color changed as first test failed AAA so changed to lighter text color to ensure passed.
+
+![alternate font color](/src/assets/images/alternate-color-test.png)
+
+alternative color chosen for fonts that is a similar match to the chosen brown but a shade lighter so that it provides an alternative in scenarios where otherwise it would fail. 
 
 
  </details>
