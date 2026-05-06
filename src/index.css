@@ -342,7 +342,7 @@ footer p {
   }
   #recipeSection {
     grid-column: span 2;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
   #recipeResult {
     display: grid;
@@ -354,6 +354,7 @@ footer p {
     height: 90%;
     margin: auto;
   }
+  
 }
 @media screen and (min-width: 900px) {
   /*header styles*/
