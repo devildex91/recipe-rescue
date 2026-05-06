@@ -318,6 +318,11 @@ original recipe cards contained included and missing ingredients but was looking
  <details>
  <summary>Lighthouse tests screenshots</summary>
     
+  ![mobile lighthouse](/src/assets/images/mobile-lighthouse-teset.png)
+
+  ![desktop lighthouse](/src/assets/images/desktop-lighthose-test.png)
+
+  Lighthouse testing could only be done on initial component on loading. This is because it i a single page React app so the page condditionally renders diferent components when certain conditions are met rather than just on loading the page which cannout be tested weith lighthouse. The performance score is only 80 because of LCP which is due to the background image in the nav component.With this being a React app this means that i cannot move the Styling into the head of the HTML document because it is rendered as a JSX element so this would not work for styling and it couldnt be added in as a HTml element with seperate tags on for faster loading for this very reason so chose the compromise of making sure everything else is 100. I did thi because the only way to speed up performance was to lower the quality of the images which in turn ruined both best practices and accessibility all without improving performance enough to make it a worthwhile sacrifice.  
 
  </details>
  
