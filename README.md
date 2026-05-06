@@ -364,10 +364,7 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 ![jsx validator](/src/assets/images/jsx-valid.png)
 
  <details>
-
-<>
-
- <summary>  Contrast testing screenshots</summary>
+ <summary Contrast testing screenshots</summary>
 
 ![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)
 Following first contrast checker to ensure all tests passed I have changed the colour to a diferent shade of brown to ensure it passes all contrast checks.
@@ -466,7 +463,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 1.  Navigate to [devildex91/recipe-rescue](https://github.com/devildex91/recipe-rescue)  
 2.  Click on the green code button  
 3.  Select download zip  
-4.  Once downloaded unpack zipped file to a location of your choosing and you can work on and run the code in an IDE of your choosing(Have fun).  
+4.  Once downloaded unpack zipped file to a location of your choosing, and you can work on and run the code in an IDE of your choosing (Have fun).  
 
   </details>  
 
@@ -491,6 +488,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 
 - geologica imported from [google fonts.](https://fonts.google.com/selection/embed)  
 
+
 [back to top](#recipe-rescue)  
 
 #### Media
@@ -508,8 +506,11 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 ---
 
 - css styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
-
+- All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and github documentation.
+- Gemini used for best practices on where to locate the 404 page in my app without React router as could not find a real answer elsewhere. 
 ##### dependencies for React/Vite
+
+---
 
 - "react": "^19.2.5",
 - "react-dom": "^19.2.5",
@@ -529,5 +530,8 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 
 - react icons for all icons
 - google fonts for font
-- getcssscan for box shadow
+- getcssscan for box shadow  
+- vite documentation for deployment and setup of project
+- github documentation for setup of github pages for deployment
+- React documentation for help with React and jsx elements as well as best practices.
   [back to top](#recipe-rescue)
