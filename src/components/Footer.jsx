@@ -1,4 +1,4 @@
-import logo from "../assets/images/favicon.png";
+import logo from "../assets/images/recipe-rescue-logo.png";
 
 export default function Footer() {
   return (

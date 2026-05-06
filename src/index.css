@@ -131,10 +131,11 @@ form input {
   height: 20px;
   font-size: 16px;
   border-radius: 5px;
-  background-color: var(--primary-color);
+  background-color: var(--highlight-color);
 }
 form input:hover {
-  background-color: var(--highlight-color);
+  background-color: var(--alternate-color);
+  color: var(--highlight-color);
 }
 /*list of ingredients  */
 #listSection li {
@@ -143,7 +144,7 @@ form input:hover {
 }
 /*list section button styles*/
 #listSection button {
-  background-color: var(--primary-color);
+  background-color: var(--alternate-color);
   color: var(--secondary-color);
   color: var(--highlight-color);
   margin: 5px;
@@ -153,7 +154,7 @@ form input:hover {
 #listSection button:hover {
   background-color: var(--highlight-color);
   color: var(--primary-color);
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--alternate-color);
   cursor: pointer;
 }
 /*Recipe section styles*/

@@ -312,12 +312,13 @@ After googling to find solution discovered API has to be put in secrets in actio
 react icons used for favicons
 original recipe cards contained included and missing ingredients but was looking too clutered so were removed with link to full recipe provided instead.
 
- <main> added in to help with accesibility for screen readers
+ main added in to help with accesibility for screen readers
+
 
  <details>
  <summary>Lighthouse tests screenshots</summary>
     
-    
+
  </details>
  
  
@@ -345,7 +346,13 @@ original recipe cards contained included and missing ingredients but was looking
              alt="Valid CSS!" />
      </a>
  </p>
+
+ All JSX components tested at [json table](https://jsontotable.org/jsx-validator) and passed with no errors 
+
+ ![jsx validator](/src/assets/images/jsx-valid.png)
  <details>
+
+ <>
  <summary>  Contrast testing screenshots</summary>
 
   ![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)
@@ -361,6 +368,7 @@ button color changed as first test failed AAA so changed to lighter text color t
 ![alternate font color](/src/assets/images/alternate-color-test.png)
 
 alternative color chosen for fonts that is a similar match to the chosen brown but a shade lighter so that it provides an alternative in scenarios where otherwise it would fail. 
+
 
 
  </details>
