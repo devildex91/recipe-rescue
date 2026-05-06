@@ -9,7 +9,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-
   overflow-x: hidden;
 }
 
@@ -100,7 +99,6 @@ nav {
   height: auto;
   object-fit: contain;
 }
-
 /*List styles*/
 #listSection {
   background-color: var(--secondary-color);
@@ -421,13 +419,11 @@ footer p {
     max-height: 350px;
     width: auto;
   }
-
   #headerImg img.headerPic {
     max-height: 350px;
     width: auto;
     object-fit: fill;
   }
-
   #listSection form {
     display: flex;
     max-width: 450px;

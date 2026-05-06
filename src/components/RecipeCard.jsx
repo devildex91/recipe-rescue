@@ -8,15 +8,13 @@ export default function RecipeCard({
 }) {
   const API = import.meta.env.VITE_SPOONACULAR_API;
 
-  //state for recipe storage from first api call
+  /*state for recipe storage from first api call*/
   const [recipes, setRecipes] = useState([]);
   const ingredientList = ingredients.join(",");
-  //state for storing link to source page for full recipe
+  /*state for storing link to source page for full recipe*/
   const [recipeLink, setRecipeLink] = useState([]);
 
-  /*use effect for api calls
- 1.Gets recipes from list of ingredients and returns a list of recipes
- 2. Uses the Id of those recipes to take you to source when recipeCard is clicked on*/
+  /*use effect for api calls*/
   useEffect(() => {
     if (ingredients.length === 0) return;
 
@@ -32,14 +30,13 @@ export default function RecipeCard({
         setRecipes(result);
       } catch (err) {
         console.error("Fetch error:", err);
-        // Set error state here if needed
       }
     };
 
     fetchRecipes();
   }, [ingredients, ingredientList, API]);
 
-  //function that awaits the button click before getting sourceURL from the Id from recipes
+  /*function that awaits the button click before getting sourceURL from the Id from recipes*/
   async function recipeDetail(recipeId) {
     try {
       const response = await fetch(
@@ -77,7 +74,7 @@ export default function RecipeCard({
       </div>
     </button>
   ));
-/* function to go back to ingredient list*/
+  /* function to go back to ingredient list*/
   function goBack() {
     setRender(false);
   }

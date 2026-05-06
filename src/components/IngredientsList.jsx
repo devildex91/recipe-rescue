@@ -36,8 +36,6 @@ export default function IngredientsList({
         Get recipe
       </button>
     ) : null;
-  //function changes state to true
-
   const ingredientItem = ingredients.map((ingredient, index) => (
     <li key={index}>
       <MdFoodBank /> {ingredient}
