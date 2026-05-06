@@ -51,7 +51,7 @@ The primary goal of Recipe Rescue is to stop food waste. We aim to do this by pr
 
 ---
 
-The business goals of Recipe Rescue are to stop food waste and save the environment. We believe both these goals are interlinked. If we can stop food waste then that not only means more food for everyone, but also less food in landfill. With those two goals in mind we believe that if we can achieve more customers who hate wasting food then we can keep landfills emptyand your plate full.
+The business goals of Recipe Rescue are to stop food waste and save the environment. We believe both these goals are interlinked. If we can stop food waste then that not only means more food for everyone, but also less food in landfill. With those two goals in mind we believe that if we can achieve more customers who hate wasting food then we can keep landfills empty and your plate full.
 
 [back to top](#recipe-rescue)
 
@@ -211,7 +211,7 @@ All images have been sourced from [pexels](https://www.pexels.com/) and the logo
 
 ![Phone ingredients List wireframes](/src/assets/images/Phone-I-list-WF.png)
 
-The div will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to
+The DIV will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to
 
  </details>
 
@@ -238,7 +238,7 @@ The main difference between phone and tablet view is that with the extra space t
 
 ![Tablet wireframe recipe section](/src/assets/images/Tablet-Rec-WF.png)
 
-Once tablet sizes kick in display grid takes over much of the layout of the page and the recipe section has a subgrid that has two columns of 1fr and then auto rows so that all the recipe cards will remain a consistent layout as the screen grows.
+Once tablet sizes kick in display grid takes over much of the layout of the page and the recipe section has a sub-grid that has two columns of 1fr and then auto rows so that all the recipe cards will remain a consistent layout as the screen grows.
 
 </details>
 <details>
@@ -289,9 +289,9 @@ The main difference for desktop screens over tablet screens is that the grid wit
 
 - Visual Studios used as the primary IDE.
 - React and VITE used.
-- Display grid used for main layout and flexbox for improved responsive design within divs.
+- Display grid used for main layout and flexbox for improved responsive design within each DIV.
 - Pexels used for photo on navbar and pictures that appear on larger screens apart from recipe photos are straight from spoonacular API.
-- Github and github pages for deployment.
+- GITHUB and GITHUB pages for deployment.
 
 [back to top](#recipe-rescue)
 
@@ -302,21 +302,22 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ### development bugs and fixes
 
 - original design used only flexbox but changed to grid for more control over general layout across screen size changes.
-- css variables added to make updates easier for things such as color choices and font style.
+- CSS variables added to make updates easier for things such as color choices and font style.
 - had to get rid of gap property on grid and set margins on each section so that navbar and footer spanned 100% screen width without issue.
 - all images resized and compressed for better load times although reverted back to original logo.png as it was causing best practice issues on testing.
-- found a bug as screen sizes increased so did gaps and discovered footer was adding an extra grid row because was set to start at grid 5 which was adding an unnneeded row and causing layout issues
+- found a bug as screen sizes increased so did gaps and discovered footer was adding an extra grid row because was set to start at grid 5 which was adding an unnecessary row and causing layout issues
 - all content was shrinking too far to still be easily readable on extra large screens so added a safety measure at 1800 px and 1200 pixels to ensure that all fonts and images scale properly as screen size grows.
-- on testing discovered once recipe cards render to page image and logo were too large with new sizes so changed from width to max-width to allow to shrink as needed for new content.
-- upon testing ingredients and Recipe sections needed wrapping in a main section for accessibility and subsequently css needed adjusting to keep layout the same.
-- body id added in to set grid styles on as being a React app margin was appearing around root div and body so set both of these to get rid of margin and added in #body to set styles on for rest of content.
+- on testing discovered once recipe cards render to page image and logo were too large with new sizes so changed from width to max-width to allow it to shrink as needed for new content.
+- upon testing ingredients and Recipe sections needed wrapping in a main section for accessibility and subsequently CSS needed adjusting to keep layout the same.
+- body ID added in to set grid styles on as being a React app margin was appearing around root DIV and body so set both of these to get rid of margin and added in #body to set styles on for rest of content.
 - extra margin added to top of footer to create gap when recipe cards appear
 - had to change grid as pictures from API were pixelating at certain sizes and have no control over API images as they are from an external source.
 - All files were in subfolder causing issues deployment issues. To solve this I have had to move all files into root and reconfigure import paths.
-- On first attempt site went live but was not updating on pushing to repository so deleted file paths moved whole project into root from sub directory and followed vite instructions as well as github instructions to get it working as intended.
-- After googling to find solution discovered API has to be put in secrets in actions to make it work on github pages.
+- On first attempt site went live but was not updating on pushing to repository so deleted file paths moved whole project into root from subdirectory and followed VITE instructions as well as GITHUB instructions to get it working as intended.
+- After googling to find solution discovered API has to be put in secrets in actions to make it work on GITHUB pages.
 - Original recipe cards contained included and missing ingredients but was looking too cluttered and causing layout issues. These were removed with link to full recipe provided instead covering making up for taking this away and meaning no need to add full recipe to page helping with API limitations.
  - main section added in to help with accessibility for screen readers.
+ -Occasional broken image in API call due to error on end of the API and out of our control. 
 
  <details>
 
@@ -333,16 +334,16 @@ The same details applied to the testing of Desktop screen sizes, although you ca
  </details>
 
  <details>
- <summary> html tests</summary>
+ <summary> HTML tests</summary>
 
-![html check](/src/assets/images/html-check.png)
-HTML all passed though being a React app the only HTML are stylesheet links and a root div to render content into.
+![HTML check](/src/assets/images/html-check.png)
+HTML all passed though being a React app the only HTML are stylesheet links and a root DIV to render content into.
 
  </details>
 
 - HTML code tested at [validator.w3](https://validator.w3.org/) all pages passed with no errors or warnings.
 
-- CSS tested at[jigsaw.w3](https://jigsaw.w3.org/css-validator/) and the css validates as CSS level 3 + SVG.
+- CSS tested at[jigsaw.w3](https://jigsaw.w3.org/css-validator/) and the CSS validates as CSS level 3 + SVG.
 
   <p>
      <a href="https://jigsaw.w3.org/css-validator/check/referer">
@@ -367,7 +368,7 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
  <details>
  <summary> Contrast testing screenshots</summary>
 
-![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)  
+![brown text dark green background](/src/assets/images/contrast-checker-browntext-darkgreen-background.png)  
 
 Following first contrast checker to ensure all tests passed I have changed the colour to a different shade of brown to ensure it passes all contrast checks.
 ![hover effect](/src/assets/images/hover-effect-buttons.png)
@@ -399,7 +400,7 @@ Alternative color chosen for fonts that is a similar match to the chosen brown b
 #### How to run project
 
  <details>
- <summary>Site has been deployed through Github pages by:</summary>
+ <summary>Site has been deployed through GITHUB pages by:</summary>
 
 ---
 
@@ -415,7 +416,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({  
 plugins: [react()],  
-base: "/your-repo-name/", // 👈 Replace with your exact repository name  
+base: "/your-repo-name/", // Replace with your exact repository name
 })
 
 1. In the terminal again type :  
@@ -445,9 +446,9 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 - Create a new branch in your GitHub repository called gh-pages.  
 - Push the contents of dist to that branch.  
 
-1. Enable github pages by:  
+1. Enable GITHUB pages by:  
 
-- Go to your repository on GitHub.  
+- Go to your repository on GITHUB.  
 - Click Settings > Pages in the left sidebar.  
 - Under Build and deployment, ensure the Source is set to "Deploy from a branch."  
 - Under Branch, select gh-pages and the /(root) folder.  
@@ -489,7 +490,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 ---
 
 - geologica imported from [google fonts.](https://fonts.google.com/selection/embed)  
-
+- Spoonacular API 
 
 [back to top](#recipe-rescue)  
 
@@ -507,8 +508,8 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 
 ---
 
-- css styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
-- All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and github documentation.
+- CSS styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
+- All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
 - Gemini used for best practices on where to locate the 404 page in my app without React router as could not find a real answer elsewhere. 
 ##### dependencies for React/Vite
 
@@ -527,6 +528,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 - "gh-pages": "^6.3.0",
 - "globals": "^17.5.0",
 - "vite": "^8.0.10"
+-  Spoonacular API
 
 #### Acknowledgements
 
@@ -534,6 +536,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name
 - google fonts for font
 - getcssscan for box shadow  
 - vite documentation for deployment and setup of project
-- github documentation for setup of github pages for deployment
-- React documentation for help with React and jsx elements as well as best practices.
+- GITHUB documentation for setup of GITHUB pages for deployment
+- React documentation for help with React and JSX elements as well as best practices.
+- Spoonacular API 
   [back to top](#recipe-rescue)
