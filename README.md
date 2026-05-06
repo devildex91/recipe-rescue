@@ -43,7 +43,7 @@
 
 ---
 
-The primary goal of Recipe Rescue is to stop food waste. We aim to do this by providing our users with the opportunity to use what is left in their fridge. Once we have been provided with your ingredients, we will do all the hard work for you by providing a list of recipes. Not only does that mean you use up your food not bin it and discover a new favorite recipe while you are at it.
+The primary goal of Recipe Rescue is to stop food waste. We aim to do this by providing our users with the opportunity to use what is left in their fridge. Once we have been provided with your ingredients, we will do all the hard work for you by providing a list of recipes. Not only does that mean you fill up your stomach not a basket of shopping, but also discover a new favorite recipe while you are at it.
 
 [back to top](#recipe-rescue)
 
@@ -51,7 +51,7 @@ The primary goal of Recipe Rescue is to stop food waste. We aim to do this by pr
 
 ---
 
-The business goals of Recipe Rescue are to stop food waste and save the environment. We believe both these goals are interlinked. If we can stop food waste then that not only means more food for everyone, but also less food in landfill. With those two goals in mind we believe that if we can achieve more customers who hate wasting food then we can keep landfills empty for longer.
+The business goals of Recipe Rescue are to stop food waste and save the environment. We believe both these goals are interlinked. If we can stop food waste then that not only means more food for everyone, but also less food in landfill. With those two goals in mind we believe that if we can achieve more customers who hate wasting food then we can keep landfills emptyand your plate full.
 
 [back to top](#recipe-rescue)
 
@@ -155,15 +155,15 @@ The original design for this project was a project called Sparkflow which was an
  </details>
  I chose the colour choices above because:
 
-# F0f2BD because it acts as a warm neutral background. It's softer than a pure white on the eyes while keeping the app cosy feeling. It also has an association with grains and sunlight.
+###### F0f2BD because it acts as a warm neutral background. It's softer than a pure white on the eyes while keeping the app cosy feeling. It also has an association with grains and sunlight.
 
-# B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
+###### B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
 
-# CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not feel to fit with the design of the app standing out a little too much and looking out of place.
+###### CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not feel to fit with the design of the app standing out a little too much and looking out of place.
 
-# 4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
+###### 4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
 
-# CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as footers in certain places as well. It also adds a good contrast rate against the green for accessibility and readability tests.
+###### CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as footers in certain places as well. It also adds a good contrast rate against the green for accessibility and readability tests.
 
 # 3F2D22 due to contrast testing, although this colour is not in the chart above but has been chosen as an alternative to #4b352A. This is because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer. Due to accessibility much of the original colour has been replaced with this new colour. 
 [back to top](#recipe-rescue)
@@ -176,7 +176,7 @@ Recipe Rescue has been styled with a mobile first approach ensuring everything w
 
 Following from this all content has a mixture of greens and browns that have all been chosen as they represent different aspects of the food palette. The background colour was chosen as it easier on the eyes as not to overwhelm users.
 
-All information follows a Gestalt principle and all information is kept together where possible.
+All information follows a Gestalt principle and all relevant information is kept together where possible.
 
 We limited the font families to just the one to keep with the consistency and a cohesive user experience throughout the app. This helps with the readability and ensures the contrast is sufficient for accessibility.
 
@@ -188,7 +188,7 @@ All buttons have been designed with hover styles, so the users is always aware o
 
 ---
 
-The background remains #F0f2BD throughout the app so it is warm and neutral helping cognitive overload while remaining warm and consistent throughout.
+The background remains #F0f2BD throughout the app so it is warm and neutral helping reduce cognitive overload while remaining warm and consistent throughout.
 
 [back to top](#recipe-rescue)
 
@@ -291,7 +291,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 - React and VITE used.
 - Display grid used for main layout and flexbox for improved responsive design within divs.
 - Pexels used for photo on navbar and pictures that appear on larger screens apart from recipe photos are straight from spoonacular API.
-- Github and github actions for deployment.
+- Github and github pages for deployment.
 
 [back to top](#recipe-rescue)
 
@@ -319,6 +319,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
  - main section added in to help with accessibility for screen readers.
 
  <details>
+
  <summary>Lighthouse tests screenshots</summary>
 
 ![mobile lighthouse](/src/assets/images/mobile-lighthouse-teset.png)
@@ -364,10 +365,11 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 ![jsx validator](/src/assets/images/jsx-valid.png)
 
  <details>
- <summary Contrast testing screenshots</summary>
+ <summary> Contrast testing screenshots</summary>
 
-![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)
-Following first contrast checker to ensure all tests passed I have changed the colour to a diferent shade of brown to ensure it passes all contrast checks.
+![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)  
+
+Following first contrast checker to ensure all tests passed I have changed the colour to a different shade of brown to ensure it passes all contrast checks.
 ![hover effect](/src/assets/images/hover-effect-buttons.png)
 
 All tests passed for hover effect on buttons.
@@ -382,7 +384,7 @@ Alternative color chosen for fonts that is a similar match to the chosen brown b
 
  </details>
 
- </details>
+ 
 
 [back to top](#recipe-rescue)
 
