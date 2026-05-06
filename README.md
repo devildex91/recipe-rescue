@@ -317,12 +317,15 @@ original recipe cards contained included and missing ingredients but was looking
  <details>
  <summary>Lighthouse tests screenshots</summary>
     
+    
  </details>
  
  
  <details>
  <summary>html tests</summary>
  
+ ![html check](/src/assets/images/html-check.png)
+ HTMl all passed though being a React app the only HTMl are stylesheet links and a root div to render content into.
  </details>
  
  - HTML code tested at [validator.w3](https://validator.w3.org/) all pages passed with no errors or warnings.

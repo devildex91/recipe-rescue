@@ -1,4 +1,4 @@
-import logo from "../assets/images/recipe-rescue-logo.webp";
+import logo from "../assets/images/favicon.png";
 
 export default function Footer() {
   return (

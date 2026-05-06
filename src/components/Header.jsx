@@ -1,7 +1,7 @@
 import titlePic1 from "../assets/images/landing-page-1.webp";
 
 export default function Header() {
-  const screenWidth = window.innerWidth > 768;
+
 
   return (
     <div id="opening" className="shadow">
