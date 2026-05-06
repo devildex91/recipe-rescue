@@ -317,7 +317,9 @@ The main difference for desktop screens over tablet screens is that the grid wit
 - After googling to find solution discovered API has to be put in secrets in actions to make it work on GITHUB pages.
 - Original recipe cards contained included and missing ingredients but was looking too cluttered and causing layout issues. These were removed with link to full recipe provided instead covering making up for taking this away and meaning no need to add full recipe to page helping with API limitations.
  - main section added in to help with accessibility for screen readers.
- -Occasional broken image in API call due to error on end of the API and out of our control. 
+ - Occasional broken image in API call due to error on end of the API and out of our control.
+ - Margin had to be increased along bottom of recipe section as footer was behaving unexpectantly and needed extra margin to be pushed down. 
+
 
  <details>
 
