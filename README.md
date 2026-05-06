@@ -22,18 +22,18 @@
 
 ## [Technologies used](#technologies-used-1)
 
-### [Testing](#testing-1)
+## [Testing](#testing-1)
 
 ## [Deployment](#deployment-1)
 
 [How to run this project](#how-to-run-project)<br>
 
-## [Credits](#)
+## [Credits](#credits-1)
 
 [Content](#content)<br>
- [Media](#media)<br>
- [Code](#code)<br>
- [Acknoledgements](#acknoledgements)<br>
+[Media](#media)<br>
+[Code](#code)<br>
+[Acknoledgements](#acknoledgements)<br>
 
 ### UX
 
@@ -130,17 +130,15 @@ The original design for this project was a project called Sparkflow which was an
 ![logo](/src/assets/images/recipe-rescue-logo.webp)
 
   </details>
-    
-    
-   <p> For the font choices of recipe rescue i designed the logo first which can be seen above. Following this I diddnt want to stray to far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font i chose not too use this within the app as felt certain cutomers may struggle to read this font if used in a high quantity so left it out of the design. 
+
+   <p> For the font choices of recipe rescue i designed the logo first which can be seen above. Following this I diddnt want to stray to far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font i chose not too use this within the app as felt certain cutomers may struggle to read this font if used in a high quantity so left it out of the design.
  </p>
  <details>
  <summary>Fonts</summary>
- 
-   ![geologica](/src/assets/images/geologica.png)
- 
- </details>
 
+![geologica](/src/assets/images/geologica.png)
+
+ </details>
 
 [back to top](#recipe-rescue)
 
@@ -156,16 +154,17 @@ The original design for this project was a project called Sparkflow which was an
  </details>
  I chose the colour choices above because:
 
-#F0f2BD because it acts as a warm neutral background. Its softer than a pure white on the eyes while keeping the app cosy feeling. It also has an assocoiation with grains and sunlight.
+# F0f2BD because it acts as a warm neutral background. Its softer than a pure white on the eyes while keeping the app cosy feeling. It also has an assocoiation with grains and sunlight
 
-#B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
+# B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company
 
-#CA7842 although part of the original design as its been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just diddnt feel to fit with the design of the app standing out a little too much and looking out of place.
+# CA7842 although part of the original design as its been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just diddnt feel to fit with the design of the app standing out a little too much and looking out of place
 
-#4B352A because of its association with chocolatte,coffee and grilled meat. it also provides a grounding and sophisticated feel to the app replacing many of the parts that
-#CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as freaming and footers in certain places as well. It also adds a good contrast rate against the green for accessabilty and reabability tests.
+# 4B352A because of its association with chocolatte,coffee and grilled meat. it also provides a grounding and sophisticated feel to the app replacing many of the parts that
 
-#3F2D22 due to contrast testing this colour is not in the chart above but has been chosen as an alternative to #4b352A because it is a close enough match but passed both AA and AAA WCAG tests.
+# CA7842 was used for this very reason. This is why it has been used in styling buttons and text as well as freaming and footers in certain places as well. It also adds a good contrast rate against the green for accessabilty and reabability tests
+
+# 3F2D22 due to contrast testing this colour is not in the chart above but has been chosen as an alternative to #4b352A because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer due to accessibility much of the orginal colour has been replaced with this now
 
 [back to top](#recipe-rescue)
 
@@ -215,7 +214,7 @@ All images have been sourced from [pexels](https://www.pexels.com/) and the logo
 The div will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to
 
  </details>
- 
+
  <details>
  <summary><bold>View of recipe section on mobile screens </bold></summary>
 
@@ -259,91 +258,100 @@ The styling of the ingredients section is extremely similar to the tablets sizin
 The main difference for desktrop screens over tablet screens is that the grid within the recipe section expands to three colums with auto rows to allow two rows of three recipe cards.
 
 </details>
- 
+
 [back to top](#recipe-rescue)
- 
- 
+
 ### Features
- ---
- 
- #### Existing Features
- ---
- - Ingredients list with ability to add, remove, or clear ingredients.
- - Recipe search that returns 6 recipes based on minimal missing ingredients.
- - Responsive on all screen sizes.
- 
- #### Features left to implement
- ---
- - Full recipe details and steps on how to make will be added to the page at a later date but due to API limits have been added as a link to the Source URL.
- - Advanced search to be added allowing to search based on dietary requirments.
- - Sign in page to be added to allow saving of favourite recipes or specialist search parameters.   
- 
- [back to top](#recipe-rescue)
- 
-### Technologies used 
-   ---
-   -  Visual Studios used as the primary IDE. 
-   -  React and VITE used. 
-   -  Display grid used for main layout and flexbox for improved responsive design within divs.  
-   - Pexels used for photo on navbar and pictures that appear on larger screens apart from recipe photos are straight from spoonacular API.
-   - Github and github actions for deployment. 
-  
- [back to top](#recipe-rescue)
- 
-### Testing
-  ---
-fixes
 
-List and recipe component changed into one component to more easily control state managment for these components
-originally everything was flexbox but changed to grid for morecontrol
-css variables added to make updates easier
-had to get rid of gap and set margins on each section so that navbar and footer spanned whole screen without issue
+---
 
-all images resized and compressed f or better load times
-found a bug as screen sizes increased so did gaps and discovered footer was adding an extra grid row because was set to start at grid 5 which was adding an unnneeded row and causing layout issues
-all content was shrinking too far to still be easily readable an extra large screens so added a safety measure at 1800 px and 1200 pixels to ensure that all fonts and images scale properly as s creen size grows
-on testing dicovered once recipe cards render to page image and logo were too large with new sizes so changed from width to max-width to allow to shrink as needed for new content.
-upon testing ingredients and Recipe sections needed wrapping in a <main> section for accesibility and subsequently css needed adjusting to keep layout the same.
-extra margin added to top of footer to create gap when recipe cards appear
-had to change grid as pictures from API were pixelating at certain sizes
-All files were in subfolder so haver had to move all files into root as was becoming dificult to deploy properly
-On first attemp site went live but was not updating on pushing to repository so deleted file paths moved whole project into root from sub directory and followed vite instructions as well as github instructions to get it working as intended
-After googling to find solution discovered API has to be put in secrets in actions to make it work on github pages
-react icons used for favicons
-original recipe cards contained included and missing ingredients but was looking too clutered so were removed with link to full recipe provided instead.
+#### Existing Features
 
- main added in to help with accesibility for screen readers
+---
 
+- Ingredients list with ability to add, remove, or clear ingredients.
+- Recipe search that returns 6 recipes based on minimal missing ingredients.
+- Responsive on all screen sizes.
+
+#### Features left to implement
+
+---
+
+- Full recipe details and steps on how to make will be added to the page at a later date but due to API limits have been added as a link to the Source URL.
+- Advanced search to be added allowing to search based on dietary requirments.
+- Sign in page to be added to allow saving of favourite recipes or specialist search parameters.
+
+[back to top](#recipe-rescue)
+
+### Technologies used
+
+---
+
+- Visual Studios used as the primary IDE.
+- React and VITE used.
+- Display grid used for main layout and flexbox for improved responsive design within divs.
+- Pexels used for photo on navbar and pictures that appear on larger screens apart from recipe photos are straight from spoonacular API.
+- Github and github actions for deployment.
+
+[back to top](#recipe-rescue)
+
+## Testing
+
+---
+
+### development bugs and fixes
+
+- original design used only flexbox but changed to grid for more control over general layout across screen size changes.
+- css variables added to make updates easier for things such as color choices and font style.
+- had to get rid of gap property on grid and set margins on each section so that navbar and footer spanned 100% screen width without issue.
+- all images resized and compressed for better load times although reverted back to original logo png as was causing best practice issues on testing.
+- found a bug as screen sizes increased so did gaps and discovered footer was adding an extra grid row because was set to start at grid 5 which was adding an unnneeded row and causing layout issues
+- all content was shrinking too far to still be easily readable on extra large screens so added a safety measure at 1800 px and 1200 pixels to ensure that all fonts and images scale properly as screen size grows.
+- on testing dicovered once recipe cards render to page image and logo were too large with new sizes so changed from width to max-width to allow to shrink as needed for new content.
+- upon testing ingredients and Recipe sections needed wrapping in a main section for accesibility and subsequently css needed adjusting to keep layout the same.
+- body id added in to set grid styles on as being a react app margin was appearing around root div and body so set both of these to get rid of margin and added in #body to set styles on for rest of content.
+- extra margin added to top of footer to create gap when recipe cards appear
+- had to change grid as pictures from API were pixelating at certain sizes and have no control over API images as they are from an external source.
+- All files were in subfolder causing issues deployment issues. To solve this I have had to move all files into root and reconfigure import paths.
+- On first attempt site went live but was not updating on pushing to repository so deleted file paths moved whole project into root from sub directory and followed vite instructions as well as github instructions to get it working as intended.
+- After googling to find solution discovered API has to be put in secrets in actions to make it work on github pages.
+- Original recipe cards contained included and missing ingredients but was looking too clutered and causing layout issues.These were removed with link to full recipe provided instead covering making up for taking this away and meaning no need to add full reecipe to page helping with API limitations.
+
+main added in to help with accesibility for screen readers
 
  <details>
  <summary>Lighthouse tests screenshots</summary>
-    
-  ![mobile lighthouse](/src/assets/images/mobile-lighthouse-teset.png)
 
-  ![desktop lighthouse](/src/assets/images/desktop-lighthose-test.png)
+![mobile lighthouse](/src/assets/images/mobile-lighthouse-teset.png)
 
-  Lighthouse testing could only be done on initial component on loading. This is because it i a single page React app so the page condditionally renders diferent components when certain conditions are met rather than just on loading the page which cannout be tested weith lighthouse. The performance score is only 80 because of LCP which is due to the background image in the nav component.With this being a React app this means that i cannot move the Styling into the head of the HTML document because it is rendered as a JSX element so this would not work for styling and it couldnt be added in as a HTml element with seperate tags on for faster loading for this very reason so chose the compromise of making sure everything else is 100. I did thi because the only way to speed up performance was to lower the quality of the images which in turn ruined both best practices and accessibility all without improving performance enough to make it a worthwhile sacrifice.  
+![desktop lighthouse](/src/assets/images/desktop-lighthose-test.png)
+
+Lighthouse testing could only be done on initial component on loading. This is because it i a single page React app so the page condditionally renders diferent components when certain conditions are met rather than just on loading the page which cannout be tested weith lighthouse. The performance score is only 80 because of LCP which is due to the background image in the nav component.With this being a React app this means that i cannot move the Styling into the head of the HTML document because it is rendered as a JSX element so this would not work for styling and it couldnt be added in as a HTml element with seperate tags on for faster loading for this very reason so chose the compromise of making sure everything else is 100. I did thi because the only way to speed up performance was to lower the quality of the images which in turn ruined both best practices and accessibility all without improving performance enough to make it a worthwhile sacrifice.
+
+The same details applies to the testing of Desktop although you can see the sacrifice is less significant on Desktop with a slightly improved performance almost in the 90s.
 
  </details>
- 
- 
+
  <details>
  <summary>html tests</summary>
- 
- ![html check](/src/assets/images/html-check.png)
- HTMl all passed though being a React app the only HTMl are stylesheet links and a root div to render content into.
+
+![html check](/src/assets/images/html-check.png)
+HTMl all passed though being a React app the only HTMl are stylesheet links and a root div to render content into.
+
  </details>
- 
- - HTML code tested at [validator.w3](https://validator.w3.org/) all pages passed with no errors or warnings.
- 
- - CSS tested at[jigsaw.w3](https://jigsaw.w3.org/css-validator/) and the css validates as CSS level 3 + SVG.
+
+- HTML code tested at [validator.w3](https://validator.w3.org/) all pages passed with no errors or warnings.
+
+- CSS tested at[jigsaw.w3](https://jigsaw.w3.org/css-validator/) and the css validates as CSS level 3 + SVG.
+
   <p>
      <a href="https://jigsaw.w3.org/css-validator/check/referer">
          <img style="border:0;width:88px;height:31px"
              src="https://jigsaw.w3.org/css-validator/images/vcss"
              alt="Valid CSS!" />
      </a>
- </p> 
+
+ </p>
  <p>
   <a href="https://jigsaw.w3.org/css-validator/check/referer">
          <img style="border:0;width:88px;height:31px"
@@ -352,19 +360,21 @@ original recipe cards contained included and missing ingredients but was looking
      </a>
  </p>
 
- All JSX components tested at [json table](https://jsontotable.org/jsx-validator) and passed with no errors 
+All JSX components tested at [json table](https://jsontotable.org/jsx-validator) and passed with no errors
 
- ![jsx validator](/src/assets/images/jsx-valid.png)
+![jsx validator](/src/assets/images/jsx-valid.png)
+
  <details>
 
- <>
+<>
+
  <summary>  Contrast testing screenshots</summary>
 
-  ![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)
-  Following firt contrast checker to ensurer all tests passed i have changed all standard font to bold as the first test failed on WCAG AAA for normal text so all is bold to ensure AA and AAA pass contrast checks.
- ![hover effect](/src/assets/images/hover-effect-buttons.png)
+![brown text dark green background](/src/assets/images/contrast%20checker%20browntext-darkgreen%20background.png)
+Following firt contrast checker to ensurer all tests passed i have changed all standard font to bold as the first test failed on WCAG AAA for normal text so all is bold to ensure AA and AAA pass contrast checks.
+![hover effect](/src/assets/images/hover-effect-buttons.png)
 
- All tests passed for hover effect on buttons.
+All tests passed for hover effect on buttons.
 
 ![button normal](/src/assets/images/button-color.png)
 
@@ -372,36 +382,36 @@ button color changed as first test failed AAA so changed to lighter text color t
 
 ![alternate font color](/src/assets/images/alternate-color-test.png)
 
-alternative color chosen for fonts that is a similar match to the chosen brown but a shade lighter so that it provides an alternative in scenarios where otherwise it would fail. 
-
-
+alternative color chosen for fonts that is a similar match to the chosen brown but a shade lighter so that it provides an alternative in scenarios where otherwise it would fail.
 
  </details>
 
-
  </details>
- 
- [back to top](#recipe-rescue)
- 
- 
- ### Deployment
- ---
-  - ##### Note for anybody working on this code React and Vite has been to develop this app so will need to be used to work with this code please see credits for a full list of dependencies and versions
+
+[back to top](#recipe-rescue)
+
+### Deployment
+
+---
+
+- ##### Note for anybody working on this code React and Vite has been to develop this app so will need to be used to work with this code please see credits for a full list of dependencies and versions
 
 [To view site](https://devildex91.github.io/recipe-rescue/)
-#### How to run project 
+
+#### How to run project
+
  <details>
  <summary>Site has been deployed through Github pages by:</summary>
- 
- ---
- 
- 1. Setting up a vite project by opening up your IDE and operning a terminal.
- 2. Type:<br>
-  npm create vite@latest<br>
-   and follow the prompts making sure to select React and javascript. 
- 3. Once set up open vite.config.js and replace the code with :
 
-       import { defineConfig } from 'vite'<br>
+---
+
+1.  Setting up a vite project by opening up your IDE and operning a terminal.
+2.  Type:<br>
+    npm create vite@latest<br>
+    and follow the prompts making sure to select React and javascript.
+3.  Once set up open vite.config.js and replace the code with :
+
+    import { defineConfig } from 'vite'<br>
 
 import react from '@vitejs/plugin-react'<br>
 
@@ -410,13 +420,13 @@ plugins: [react()],<br>
 base: "/your-repo-name/", // 👈 Replace with your exact repository name<br>
 })
 
-4. In the terminal again type : <br>
+1. In the terminal again type : <br>
    npm install gh-pages --save-dev
 
-5. Update package.json by adding the following:
+2. Update package.json by adding the following:
    {
    "name": "my-vite-app",
-   "homepage": "https://your-github-username.github.io/your-repo-name",
+   "homepage": "<https://your-github-username.github.io/your-repo-name>",
    "scripts": { <br>
    "dev": "vite",<br>
    "build": "vite build",<br>
@@ -429,7 +439,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name<br>
 
 - Note: Vite builds into a folder named dist (unlike Create React App which used build), so ensure the script says -d dist.
 
-6. Run: <br>
+1. Run: <br>
    npm run deploy<br>
    This will:<br>
 
@@ -437,7 +447,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name<br>
 - Create a new branch in your GitHub repository called gh-pages.
 - Push the contents of dist to that branch.
 
-7. Enable github pages by:<br>
+1. Enable github pages by:<br>
 
 - Go to your repository on GitHub.
 - Click Settings > Pages in the left sidebar.
@@ -445,19 +455,19 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name<br>
 - Under Branch, select gh-pages and the /(root) folder.
 - Click Save.
 
-###### Your site should now be live at https://your-username.github.io/your-repo-name/
+###### Your site should now be live at <https://your-username.github.io/your-repo-name/>
 
  </details>
 
  <details>
  <summary> To download and work on the code yourself locally. </summary>
- 
- ---
- 
- 1.  Navigate to [devildex91/recipe-rescue](https://github.com/devildex91/recipe-rescue)
- 2.  Click on the green code button
- 3.  Select download zip
- 4.  Once downloaded unpack zipped file to a location of your choosing and you can work on and run the code in an IDE of your choosing(Have fun).
+
+---
+
+1.  Navigate to [devildex91/recipe-rescue](https://github.com/devildex91/recipe-rescue)
+2.  Click on the green code button
+3.  Select download zip
+4.  Once downloaded unpack zipped file to a location of your choosing and you can work on and run the code in an IDE of your choosing(Have fun).
 
   </details>
 
@@ -500,7 +510,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name<br>
 
 - css styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
 
-##### dependencies for React/Vite:
+##### dependencies for React/Vite
 
 - "react": "^19.2.5",
 - "react-dom": "^19.2.5",
@@ -518,4 +528,7 @@ base: "/your-repo-name/", // 👈 Replace with your exact repository name<br>
 
 #### Acknoledgements
 
-[back to top](#recipe-rescue)
+- react icons for all icons
+- google fonts for font
+- getcssscan for box shadow
+  [back to top](#recipe-rescue)
