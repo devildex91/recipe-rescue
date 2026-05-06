@@ -36,14 +36,14 @@ h1,
 h2,
 h3 {
   font-family: var(--header-font);
-  color: var(--primary-color);
+  color: var(--alternate-color);
 }
 p,
 button,
 form,
 li {
   font-family: var(--secondary-font);
-  
+  font-weight: bold;
 }
 /*navbar styles */
 nav {
@@ -130,7 +130,7 @@ nav {
 /*styling for input of form*/
 form input {
   height: 20px;
-  font-size: 25px;
+  font-size:16px;
   border-radius: 5px;
   background-color: var(--primary-color);
 }
@@ -145,6 +145,7 @@ form input:hover {
 /*list section button styles*/
 #listSection button {
   background-color: var(--primary-color);
+  color: var(--secondary-color);
   color: var(--highlight-color);
   margin: 5px;
   padding: 10px;
@@ -167,14 +168,14 @@ form input:hover {
 }
 #backButton {
   background-color: var(--primary-color);
-  color: var(--highlight-color);
+  color: var(--secondary-color);
   margin: 5px;
   padding: 10px;
   border-radius: 4px;
 }
 #backButton:hover {
-  background-color: var(--highlight-color);
-  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--alternate-color);
   border: 3px solid var(--primary-color);
   cursor: pointer;
 }
@@ -207,7 +208,7 @@ form input:hover {
   box-sizing: border-box;
   background-color: var(--secondary-color);
   border-radius: 4px;
-  color: var(--alternate-color);
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,7 +261,7 @@ footer {
   justify-content: center;
 
   background-color: var(--primary-color);
-  color: var(--highlight-color);
+  color: var(--secondary-color);
 
   width: auto;
   height: 100%;
@@ -453,7 +454,7 @@ footer p {
     font-size: 30px;
   }
 }
-/*box shadow properties*/
+/*box shadow properties from  https://getcssscan.com/css-box-shadow-examples*/
 .shadow {
   box-shadow:
     rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
@@ -465,4 +466,3 @@ footer p {
     rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
