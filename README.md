@@ -319,6 +319,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
  - main section added in to help with accessibility for screen readers.
  - Occasional broken image in API call due to error on end of the API and out of our control.
  - Margin had to be increased along bottom of recipe section as footer was behaving unexpectantly and needed extra margin to be pushed down. 
+ - All CSS styles for 404 error page left in the head of the HTML to save conflicting styles causing issues to main content. 
 
 
  <details>
@@ -512,7 +513,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 
 - CSS styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
 - All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
-- Gemini used for best practices on where to locate the 404 page in my app without React router as could not find a real answer elsewhere. 
+ 
 ##### dependencies for React/Vite
 
 ---
@@ -541,4 +542,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 - GITHUB documentation for setup of GITHUB pages for deployment
 - React documentation for help with React and JSX elements as well as best practices.
 - Spoonacular API 
+-Google Gemini used for help finding best practices on where to locate the 404 page in my app without having to use React router as could onl find information on using React Router(For future projects react router will most likerly be used but diddnt want to implement another dependency so late into a nearly fully completed project).
+GITHUB copilot used to confirm best practice for my second API call to fully optimize what could have been quite a bottleneck of code awaiting API calls. 
+
   [back to top](#recipe-rescue)
