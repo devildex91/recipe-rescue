@@ -504,6 +504,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 - All pictures from pexels.com.
 - for all image optimisation [squoosh](https://squoosh.app/) has been used to help with the resize of images and compression tasks.
 - All favicons apart from title favicon from [React icons](https://react-icons.github.io/react-icons/)
+ 
 
 [back to top](#recipe-rescue)
 
@@ -513,6 +514,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 
 - CSS styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
 - All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
+
  
 ##### dependencies for React/Vite
 
@@ -542,7 +544,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 - GITHUB documentation for setup of GITHUB pages for deployment
 - React documentation for help with React and JSX elements as well as best practices.
 - Spoonacular API 
--Google Gemini used for help finding best practices on where to locate the 404 page in my app without having to use React router as could onl find information on using React Router(For future projects react router will most likerly be used but diddnt want to implement another dependency so late into a nearly fully completed project).
+-Google Gemini used for help finding best practices on where to locate the 404 page in my app without having to use React router as could onl find information on using React Router (For future projects react router will most likerly be used but diddnt want to implement another dependency so late into a nearly fully completed project).
 GITHUB copilot used to confirm best practice for my second API call to fully optimize what could have been quite a bottleneck of code awaiting API calls. 
 
   [back to top](#recipe-rescue)
