@@ -544,7 +544,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 - GITHUB documentation for setup of GITHUB pages for deployment
 - React documentation for help with React and JSX elements as well as best practices.
 - Spoonacular API 
--Google Gemini used for help finding best practices on where to locate the 404 page in my app without having to use React router as could onl find information on using React Router (For future projects react router will most likerly be used but diddnt want to implement another dependency so late into a nearly fully completed project).
+-Google Gemini used for help finding best practices on where to locate the 404 page in my app without having to use React router as could only find information on using React Router (For future projects react router will most likely be used but did not want to implement another dependency so late into a nearly fully completed project).
 GITHUB copilot used to confirm best practice for my second API call to fully optimize what could have been quite a bottleneck of code awaiting API calls. 
 
   [back to top](#recipe-rescue)
