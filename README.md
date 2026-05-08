@@ -119,7 +119,7 @@ As a busy home cook I would like to input the ingredients I have left so I can f
 
 ---
 
-The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist [sparkflow designs](/src//assets/images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [larger design](/src/assets/images/wireFrames-computer-closerLookpage.png). Although I did start this project, as I got further in I felt that in order to fully achieve everything possible with this app it was better left for a later project once I had the server side sorted as well so I could add login pages and the user review section could be more responsive and updatable. From that original idea came recipe-rescue. That is because it follows a similar structure to sparkflow in taking a parameter and searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
+The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist. [Original design](/src//assets/images/readme-images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [Original Wireframe](/src/assets/images/readme-images/computer-closerlookpage-wireframes.png). Although I did start this project, as I got further in I felt that in order to fully achieve everything possible with this app it was better left for a later project once I had the server side sorted as well so I could add login pages and the user review section could be more responsive and updatable. From that original idea came recipe-rescue. That is because it follows a similar structure to Sparkflow in taking a parameter and searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
 
 ##### Fonts
 
@@ -137,7 +137,7 @@ The original design for this project was a project called Sparkflow which was an
  <details>
  <summary>Fonts</summary>
 
-![Geologica](/src/assets/images/geologica.png)
+![Geologica](/src/assets/images/readme-images/geologica.png)
 
  </details>
 
@@ -150,7 +150,7 @@ The original design for this project was a project called Sparkflow which was an
  <details>
  <summary> Colours </summary>
 
-![colours](/src/assets/images/colour-choice.png)
+![colours](/src/assets/images/readme-images/site-colour-choices.png)
 
  </details>
  I chose the colour choices above because:
@@ -209,7 +209,7 @@ All images have been sourced from [pexels](https://www.pexels.com/) and the logo
  <details>
  <summary> <bold>First view of phone upon entering site with ingredients list as well as once ingredients have been added.<bold></summary>
 
-![Phone ingredients List wireframes](/src/assets/images/Phone-I-list-WF.png)
+![Phone ingredients List wireframes](/src/assets/images/readme-images/phone-Ingredients-wireframes.png)
 
 The DIV will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to
 
@@ -218,7 +218,7 @@ The DIV will expand to fit the ingredients underneath the form and after five in
  <details>
  <summary><bold>View of recipe section on mobile screens </bold></summary>
 
-![Phone recipe section wireFrame](/src/assets/images/Phone-Rec-WF.png)
+![Phone recipe section wireframe](/src/assets/images/readme-images/phone-recipe-wireframe.png)
 
 Once the ingredients list has been submitted an API call will be made and the recipe section will render onto the page showing 6 recipes that will have minimal extra ingredients needed. The recipe card will also be a button with a link to the source URL for full recipe details.
 
@@ -227,8 +227,8 @@ Once the ingredients list has been submitted an API call will be made and the re
 <details>
 <summary>Tablet Wireframe with and without ingredients</summary>
 
-![Tablet wireframe without ingredients](/src/assets/images/tablet-I-list-No-ing-WF.png)
-![Tablet wireframe with ingredients](/src/assets/images/Tablet-I-list-With-Ing-WF.png)
+![Tablet wireframe without ingredients](/src/assets/images/readme-images/tablet-ingredientlist1-wireframe.png)
+![Tablet wireframe with ingredients](/src/assets/images/readme-images/tablet-ingredientlist2-wireframe.png)
 
 The main difference between phone and tablet view is that with the extra space two images render to the page once the screen size hits 798px. The other difference is that the ingredients and button will appear to the right-hand side of the ingredients form.
 
@@ -236,7 +236,7 @@ The main difference between phone and tablet view is that with the extra space t
 <details>
 <summary>Tablet wireframe of recipe section</summary>
 
-![Tablet wireframe recipe section](/src/assets/images/Tablet-Rec-WF.png)
+![Tablet wireframe recipe section](/src/assets/images/readme-images/tablet-recipe-wireframe.png)
 
 Once tablet sizes kick in display grid takes over much of the layout of the page and the recipe section has a sub-grid that has two columns of 1fr and then auto rows so that all the recipe cards will remain a consistent layout as the screen grows.
 
@@ -244,8 +244,8 @@ Once tablet sizes kick in display grid takes over much of the layout of the page
 <details>
 <summary>Desktop Wireframe with ingredients section</summary>
 
-![Desktop ingredients wireframe](/src/assets/images/Desktop-I-list-No-ing-WF.png)
-![Desktop ingredients with ing](/src/assets/images/Desktop-I-list-With-ing-WF.png)
+![Desktop ingredients wireframe](/src/assets/images/readme-images/desktop-ingredientlist1-wireframe.png)
+![Desktop ingredients with ing](/src/assets/images/readme-images/desktop-ingredientlist2.wireframe.png)
 
 The styling of the ingredients section is extremely similar to the tablets sizing, although all font sizes grow to better fit the space.
 
@@ -253,7 +253,7 @@ The styling of the ingredients section is extremely similar to the tablets sizin
 <details>
 <summary>Desktop wireframe with recipe section</summary>
 
-![Desktop wireframe with recipe section](/src/assets/images/Desktop-rec-WF.png)
+![Desktop wireframe with recipe section](/src/assets/images/readme-images/desktop-recipe-wireframe.png)
 
 The main difference for desktop screens over tablet screens is that the grid within the recipe section expands to three columns with auto rows to allow two rows of three recipe cards.
 
@@ -326,7 +326,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 
  <summary>Lighthouse tests screenshots</summary>
 
-![mobile lighthouse](/src/assets/images/mobile-lighthouse-teset.png)
+![mobile lighthouse](/src/assets/images/mobile-lighthouse-test.png)
 
 ![desktop lighthouse](/src/assets/images/desktop-lighthose-test.png)
 
@@ -339,7 +339,7 @@ The same details applied to the testing of Desktop screen sizes, although you ca
  <details>
  <summary> HTML tests</summary>
 
-![HTML check](/src/assets/images/html-check.png)
+![HTML check](/src/assets/images/readme-images/html-check.png)
 HTML all passed though being a React app the only HTML are stylesheet links and a root DIV to render content into.
 
  </details>
@@ -366,23 +366,23 @@ HTML all passed though being a React app the only HTML are stylesheet links and 
 
 All JSX components tested at [json table](https://jsontotable.org/jsx-validator) and passed with no errors
 
-![jsx validator](/src/assets/images/jsx-valid.png)
+![jsx validator](/src/assets/images/readme-images/jsx-valid.png)
 
  <details>
  <summary> Contrast testing screenshots</summary>
 
-![brown text dark green background](/src/assets/images/contrast-checker-browntext-darkgreen-background.png)  
+![brown text dark green background](/src/assets/images/readme-images/contrast-checker-browntext-darkgreen-background.png)  
 
 Following first contrast checker to ensure all tests passed I have changed the colour to a different shade of brown to ensure it passes all contrast checks.
-![hover effect](/src/assets/images/hover-effect-buttons.png)
+![hover effect](/src/assets/images/readme-images/hover-effect-buttons.png)
 
 All tests passed for hover effect on buttons.
 
-![button normal](/src/assets/images/button-color.png)
+![button normal](/src/assets/images/readme-images/button-color.png)
 
 Button color changed as first test failed AAA so changed to lighter text color to ensure passed.
 
-![alternate font color](/src/assets/images/alternate-color-test.png)
+![alternate font color](/src/assets/images/readme-images/alternate-color-test.png)
 
 Alternative color chosen for fonts that is a similar match to the chosen brown but a shade lighter so that it provides an alternative in scenarios where otherwise it would fail.
 
