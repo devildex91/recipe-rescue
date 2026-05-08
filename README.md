@@ -319,8 +319,8 @@ The main difference for desktop screens over tablet screens is that the grid wit
  - main section added in to help with accessibility for screen readers.
  - Occasional broken image in API call due to error on end of the API and out of our control.
  - Margin had to be increased along bottom of recipe section as footer was behaving unexpectantly and needed extra margin to be pushed down. 
- - All CSS styles for 404 error page left in the head of the HTML to save conflicting styles causing issues to main content. 
-
+ - All CSS styles for 404 error page added to index.css apart from body styles to stop interference between the two and link added in. 
+ 
 
  <details>
 

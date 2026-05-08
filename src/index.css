@@ -3,7 +3,6 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
 #root {
   background-color: #f0f2bd;
   margin: 0;
@@ -11,7 +10,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
 :root {
   --primary-color: #4b352a; /*brown*/
   --secondary-color: #b2cd9c; /*green*/
@@ -55,14 +53,14 @@ nav {
   width: 150px;
   height: 150px;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 /*Header styles*/
 #opening {
   background-color: var(--secondary-color);
   color: var(--alternate-color);
-  margin: 20px 0;
-  border-radius: 4px;
+  margin: 20px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,9 +68,6 @@ nav {
   flex-wrap: wrap;
   min-height: 270px;
   text-align: center;
-  min-width: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -128,7 +123,7 @@ nav {
 form input {
   height: 20px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--highlight-color);
 }
 form input:hover {
@@ -147,7 +142,7 @@ form input:hover {
   color: var(--highlight-color);
   margin: 5px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 #listSection button:hover {
   background-color: var(--highlight-color);
@@ -169,7 +164,7 @@ form input:hover {
   color: var(--highlight-color);
   margin: 5px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 #backButton:hover {
   background-color: var(--highlight-color);
@@ -298,7 +293,6 @@ footer p {
     grid-template-columns: 1fr 1fr;
     grid-column:span 2;
     grid-template-rows: auto;
-    margin: auto;
     height: auto;
     margin:20px;
     padding-bottom: 50px;
@@ -356,7 +350,6 @@ footer p {
     grid-column:span 2;
     height:100%;
   }
-  
 }
 @media screen and (min-width: 900px) {
   /*header styles*/
@@ -394,7 +387,6 @@ footer p {
   .recipeCard h3 {
     font-size: 35px;
   }
-
   .recipeCard h4 {
     font-size: 30px;
   }
@@ -407,8 +399,7 @@ footer p {
     max-width: 300px;
     height: auto;
     margin: 10px;
-
-    border-radius: 4px;
+    border-radius: 8px;
   }
   /*header section*/
   #opening {
@@ -417,7 +408,6 @@ footer p {
   #opening p {
     font-size: 30px;
   }
-
   #listPic img {
     max-height: 350px;
     width: auto;
@@ -460,3 +450,42 @@ footer p {
     rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
+
+/*404 page styles*/
+      .page {
+        max-width: 380px;
+        padding: 24px;
+        border-radius: 12px;
+        background: #b2cd9c;
+        box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+      }
+      .page h1 {
+        margin: 0 0 12px;
+        font-size: 2rem;
+      }
+      .page p {
+        margin: 0 0 18px;
+        line-height: 1.5;
+      }
+      .page button {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 8px;
+        background:var(--primary-color);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .page a {
+        text-decoration: none;
+        color:var(--highlight-color);
+      }
+      .page button:hover {
+        background-color: var(--highlight-color);
+        border: 3px solid var(--primary-color);
+        cursor: pointer;
+      }
+       .page a:hover{
+         color: var(--alternate-color);
+       }
+      
