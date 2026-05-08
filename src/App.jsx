@@ -2,15 +2,15 @@ import { useState } from "react";
 import "./index.css"
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Recipe from "./components/Recipe";
+import MainSection from "./components/MainSection";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div id="body">
+    <div id="gridContainer">
       <Navbar />
       <Header />
-      <Recipe />
+      <MainSection />
       <Footer />
     </div>
   );

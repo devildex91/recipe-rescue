@@ -21,7 +21,7 @@ body {
   --secondary-font: "Geologica", sans-serif;
 }
 /*grid styles for all screen sizes*/
-div#body {
+#gridContainer {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
@@ -47,7 +47,7 @@ li {
 nav {
   display: flex;
   width: 100%;
-  background: url("./assets/images/title-img.webp") no-repeat center/cover;
+  background: url("./assets/images/nav-image.webp") no-repeat center/cover;
   justify-content: center;
   align-items: center;
 }
@@ -279,10 +279,10 @@ footer p {
 /*seperate styles as screens get larger*/
 @media screen and (min-width: 768px) {
   /*grid templates */
-  #body {
+  #gridContainer {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
   }
   main {
     display: grid;
@@ -296,13 +296,11 @@ footer p {
   #opening {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column:span 2;
     grid-template-rows: auto;
     margin: auto;
     height: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin:20px;
     padding-bottom: 50px;
     font-size: 18px;
   }
@@ -353,6 +351,10 @@ footer p {
     width: 90%;
     height: 90%;
     margin: auto;
+  }
+  footer{
+    grid-column:span 2;
+    height:100%;
   }
   
 }

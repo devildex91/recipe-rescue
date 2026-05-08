@@ -7,13 +7,11 @@ export default function RecipeCard({
   ingredients,
 }) {
   const API = import.meta.env.VITE_SPOONACULAR_API;
-
   /*state for recipe storage from first api call*/
   const [recipes, setRecipes] = useState([]);
   const ingredientList = ingredients.join(",");
   /*state for storing link to source page for full recipe*/
   const [recipeLink, setRecipeLink] = useState([]);
-
   /*use effect for api calls*/
   useEffect(() => {
     if (ingredients.length === 0) return;

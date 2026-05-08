@@ -1,4 +1,4 @@
-import titlePic1 from "../assets/images/landing-page-1.webp";
+import titlePic1 from "../assets/images/header-pic.webp";
 
 export default function Header() {
 

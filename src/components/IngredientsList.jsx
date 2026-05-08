@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ingredientPic from "../assets/images/landing-page-2.png";
+import ingredientPic from "../assets/images/ingredients-pic.png";
 import { MdFoodBank } from "react-icons/md";
 
 export default function IngredientsList({
@@ -17,23 +17,23 @@ export default function IngredientsList({
           newIngredient,
         ]);
       } else {
-        alert(`Youve already entered ${newIngredient}`);
+        alert(`You have already entered ${newIngredient}`);
         return ingredients;
       }
     }
   }}
-  //Function to handle removing items from list
+  /*Function to handle removing items from list*/
   function removeIngredient() {
     setIngredients((prevIngredients) => prevIngredients.slice(0, -1));
   }
-  //function to clear list
+  /*function to clear list*/
   function clearIngredient() {
     setIngredients([]);
   }
-  //Variable to render get recipe button onto page after 5 ingredients added to list
+  /*Variable to render get recipe button onto page after 5 ingredients added to list*/
   const buttonRender =
     ingredients.length >= 5 ? (
-      //button calls getRecipe to change state and render recipe to page
+      /*button calls getRecipe to change state and render recipe to page*/
       <button id="getRecipe" onClick={getRecipe}>
         Get recipe
       </button>
@@ -43,7 +43,7 @@ export default function IngredientsList({
       <MdFoodBank /> {ingredient}
     </li>
   ));
-  //variable to conditionally render button to page if list has items within it
+  /*variable containing JSX for Ingredients list*/ 
   const listRender = (
     <section id="listSection" className="shadow">
       <div id="listPic">
