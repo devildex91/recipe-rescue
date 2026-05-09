@@ -340,7 +340,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 
 ![mobile lighthouse](/src/assets/images/readme-images/mobile-lighthouse-test.png)
 
-On first testing I found that due to image loading in the nav bar was effecting performance so took it to compress all the files into Webp. This helped my loading times but sacrificed accessibility. It also effected my best practice scores because of the pixelation of the images as they got larger. This meant that I had a choice on which to prioritize, and chose to prioritize accessibility. Because of this I reverted to larger but better quality photos which improved the accessibility scores as well as adding in some missing aria labels brought the score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in my input in the ingredients form were not passing testing. This was an unexpected problem as I had checked the colours in a separate contrast checker before using the selected colours. Once I had fixed these issues my accessibility score increased to 100 and performance was sat at 85. 
+On first testing I found that due to image loading in the nav bar was effecting performance so took it to compress all the files into Webp. This helped my loading times but sacrificed accessibility. It also effected my best practice scores because of the pixelation of the images as they got larger. This meant that I had a choice on which to prioritize, and chose to prioritize accessibility. Because of this I reverted to larger but better quality photos which improved the accessibility scores as well as adding in some missing aria labels brought the score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in my input in the ingredients form were not passing testing. This was an unexpected problem as I had checked the colours in a separate contrast checker before using the selected colours. Eventhough they had passed on a separate check I altered the colours until the score passed through Lighthouse as well which is why the input shows up a different colour to the buttons underneath. Once I had fixed these issues my accessibility score increased to 100 and performance was sat at 85. 
 
 Another problem I faced was that lighthouse testing could only be done on the initial component on loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than just on loading the page which cannot be tested with lighthouse. The performance score is only 85 because of LCP which is due to the background image in the nav component. With this being a React app this means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. This means it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I did this because as explained above anything that could be done sacrificed what I considered more important scores elsewhere. 
 
@@ -359,31 +359,45 @@ The same details applied to the testing of Desktop screen sizes, although you ca
 | Test number 	| Expected results 	|              	|               	|     	| Actual Result 	|               	|                	|     	|   	|   	|
 |-------------	|------------------	|--------------	|---------------	|-----	|---------------	|---------------	|----------------	|-----	|---	|---	|
 |             	| Performance      	| Accessibility 	| Best practice 	| SEO 	| Performance   	| Accessibility  	| Best practice  	| SEO 	|   	|   	|
-| 1           	| 90               	| 100          	| 100           	| 100 	| 75            	| 95            	| 100            	| 92  	|   	|   	|
-| 2           	| 90               	| 100          	| 100           	| 100 	| 80            	| 85            	| 95             	| 92  	|   	|   	|
-| 3           	| 85               	| 100          	| 100           	| 100 	| 85            	| 100           	| 100            	| 100 	|   	|   	|
+| 1           	| 100              	| 100          	| 100           	| 100 	| 100           	| 87            	| 100            	| 90 	|   	|   	|
+| 2           	| 100               | 100          	| 100           	| 90 	  | 100            	| 100            	| 100             	| 90  	|   	|   	|
+| 3           	| 100               | 100          	| 100           	| 90   	|100            	| 100           	| 100            	| 90 	|   	|   	|
 |             	|                  	|              	|               	|     	|               	|               	|                	|     	|   	|   	|
 
 ![first lighthouse test](/src/assets/images/readme-images/404-lighthouse-first.png)
 ![second lighthouse test](/src/assets/images/readme-images/404-lighthouse-second.png)
-
+![third lighthouse test](/src/assets/images/readme-images/404-lighthouse-third.png)
 #### Mobile 404 notes
 
 Upon first test although expected no errors accessibility issues arose due to spacing between the button and the link within causing issues. In order to solve this I increased both the spacing and margins around both the button and the link tag as well as increasing the font size so I could rectify these issues which upon the next test had been resolved. 
 
 I have chosen to leave the SEO scores as it is nota page that I believe requires the search engine score as it is a page purely for once an error has occurred and believed the score was high enough to warrant no action.
 
+Third test uploaded, although all scores are the same as the second the button element was removed so it passed HTML check so resubmitted latest test to confirm results were all the same
+
 ![Desktop 404 test](/src/assets/images/readme-images/404-lighthouse-desktop.png)
+![Desktop 404 second](/src/assets/images/readme-images/404-lighthouse-second-desktop.png)
 
 #### Desktop 404 notes
- Again similar to the main content once i had solved all the issues on mobile view the results were identical on Desktop view as well
+ Again similar to the main content once I had solved all the issues on mobile view the results were identical on Desktop view as well
+
+ Second screenshot submitted for same reason as last mobile design changed due to HTML not passing so included latest screenshot with same scores.
  </details>
 
  <details>
  <summary> HTML tests</summary>
 
+#### Main content HTML check
+
 ![HTML check](/src/assets/images/readme-images/html-check.png)
 HTML all passed though being a React app the only HTML are stylesheet links and a root DIV to render content into.
+
+#### 404 page HTML check
+
+![404 first check](/src/assets/images/readme-images/404-HTML-first.png)
+![404 second check](/src/assets/images/readme-images/404-HTML-second.png)
+
+After first test failure all trailing slashed were removed as well as styling the a href to look like a button and removing the button element and everything passed. But meant lighthouse testing had to be redone. 
 
  </details>
 

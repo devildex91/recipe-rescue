@@ -485,18 +485,21 @@ footer p {
         font-weight: 700;
       }
       .page a {
+          display: inline-block;
+        padding:25px;
+        margin:20px;
+        border-radius: 8px;
+        background:var(--primary-color);
         text-decoration: none;
-        padding:15px;
-        margin:15px;
+        font-weight: 700;
         font-size: larger;
         color:var(--highlight-color);
       }
-      .page button:hover {
-        background-color: var(--highlight-color);
-        border: 3px solid var(--primary-color);
-        cursor: pointer;
-      }
+    
        .page a:hover{
          color: var(--alternate-color);
+         background-color: var(--highlight-color);
+        border: 3px solid var(--primary-color);
+        cursor: pointer;
        }
       
