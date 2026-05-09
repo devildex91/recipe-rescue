@@ -324,16 +324,59 @@ The main difference for desktop screens over tablet screens is that the grid wit
 
  <details>
 
- <summary>Lighthouse tests screenshots</summary>
+ <summary>Lighthouse test results</summary>
 
-![mobile lighthouse](/src/assets/images/mobile-lighthouse-test.png)
+#### main content scores
 
-![desktop lighthouse](/src/assets/images/desktop-lighthose-test.png)
+| Test number 	| Expected results 	|              	|               	|     	| Actual Result 	|               	|                	|     	|   	|   	|
+|-------------	|------------------	|--------------	|---------------	|-----	|---------------	|---------------	|----------------	|-----	|---	|---	|
+|             	| Performance      	| Accessibility 	| Best practice 	| SEO 	| Performance   	| Accessibility  	| Best practice  	| SEO 	|   	|   	|
+| 1           	| 90               	| 100          	| 100           	| 100 	| 75            	| 95            	| 100            	| 92  	|   	|   	|
+| 2           	| 90               	| 100          	| 100           	| 100 	| 80            	| 85            	| 95             	| 92  	|   	|   	|
+| 3           	| 85               	| 100          	| 100           	| 100 	| 85            	| 100           	| 100            	| 100 	|   	|   	|
+|             	|                  	|              	|               	|     	|               	|               	|                	|     	|   	|   	|
 
-Lighthouse testing could only be done on initial component on loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than just on loading the page which cannot be tested with lighthouse. The performance score is only 80 because of LCP which is due to the background image in the nav component. With this being a React app this means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. This means it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason so chose the compromise of making sure everything else is 100. I did this because the only way to speed up performance was to lower the quality of the images which in turn ruined both best practices and accessibility all without improving performance enough to make it a worthwhile sacrifice.
+ #### Mobile lighthouse notes
+
+![mobile lighthouse](/src/assets/images/readme-images/mobile-lighthouse-test.png)
+
+On first testing I found that due to image loading in the nav bar was effecting performance so took it to compress all the files into Webp. This helped my loading times but sacrificed accessibility. It also effected my best practice scores because of the pixelation of the images as they got larger. This meant that I had a choice on which to prioritize, and chose to prioritize accessibility. Because of this I reverted to larger but better quality photos which improved the accessibility scores as well as adding in some missing aria labels brought the score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in my input in the ingredients form were not passing testing. This was an unexpected problem as I had checked the colours in a separate contrast checker before using the selected colours. Once I had fixed these issues my accessibility score increased to 100 and performance was sat at 85. 
+
+Another problem I faced was that lighthouse testing could only be done on the initial component on loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than just on loading the page which cannot be tested with lighthouse. The performance score is only 85 because of LCP which is due to the background image in the nav component. With this being a React app this means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. This means it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I did this because as explained above anything that could be done sacrificed what I considered more important scores elsewhere. 
+
+The SEO was easily fixed by adding in a META description in the head of my index.html and that fixed the score. 
+
+#### Desktop lighthouse notes
+
+![Desktop lighthouse](/src/assets/images/readme-images/desktop-lighthose-test.png)
+
+The desktop testing was easy by comparison as all the hard work had been done on the mobile testing and the images that appear as the screen gets larger had already been compressed while sorting the picture within the navbar. Because of this the scores all came in at the same as the phone screen sizes with an increased performance rating so no more fixes were required.   
 
 The same details applied to the testing of Desktop screen sizes, although you can see the sacrifice is less significant on Desktop with a slightly improved performance almost in the 90s.
 
+#### 404 lighthouse scores
+
+| Test number 	| Expected results 	|              	|               	|     	| Actual Result 	|               	|                	|     	|   	|   	|
+|-------------	|------------------	|--------------	|---------------	|-----	|---------------	|---------------	|----------------	|-----	|---	|---	|
+|             	| Performance      	| Accessibility 	| Best practice 	| SEO 	| Performance   	| Accessibility  	| Best practice  	| SEO 	|   	|   	|
+| 1           	| 90               	| 100          	| 100           	| 100 	| 75            	| 95            	| 100            	| 92  	|   	|   	|
+| 2           	| 90               	| 100          	| 100           	| 100 	| 80            	| 85            	| 95             	| 92  	|   	|   	|
+| 3           	| 85               	| 100          	| 100           	| 100 	| 85            	| 100           	| 100            	| 100 	|   	|   	|
+|             	|                  	|              	|               	|     	|               	|               	|                	|     	|   	|   	|
+
+![first lighthouse test](/src/assets/images/readme-images/404-lighthouse-first.png)
+![second lighthouse test](/src/assets/images/readme-images/404-lighthouse-second.png)
+
+#### Mobile 404 notes
+
+Upon first test although expected no errors accessibility issues arose due to spacing between the button and the link within causing issues. In order to solve this I increased both the spacing and margins around both the button and the link tag as well as increasing the font size so I could rectify these issues which upon the next test had been resolved. 
+
+I have chosen to leave the SEO scores as it is nota page that I believe requires the search engine score as it is a page purely for once an error has occurred and believed the score was high enough to warrant no action.
+
+![Desktop 404 test](/src/assets/images/readme-images/404-lighthouse-desktop.png)
+
+#### Desktop 404 notes
+ Again similar to the main content once i had solved all the issues on mobile view the results were identical on Desktop view as well
  </details>
 
  <details>
