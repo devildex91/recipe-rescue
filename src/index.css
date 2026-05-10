@@ -465,12 +465,7 @@ footer p {
         margin: 0 0 12px;
         font-size: 2rem;
       }
-      main{
-        display:flex;
-        justify-content: center;
-        height:fit-content;
-        width:380px;
-      }
+    
       .page p {
         margin: 0 0 18px;
         line-height: 1.5;

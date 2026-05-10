@@ -23,6 +23,11 @@
 ## [Technologies used](#technologies-used-1)
 
 ## [Testing](#testing-1)
+[Lighthouse tests](#lighthouse-tests)  
+[HTML tests](#html-tests)  
+[CSS tests](#css-tests)  
+[JSX tests](#jsx-tests)  
+[Contrast tests](#contrast-tests)  
 
 ## [Deployment](#deployment-1)
 
@@ -319,9 +324,10 @@ The main difference for desktop screens over tablet screens is that the grid wit
  - main section added in to help with accessibility for screen readers.
  - Occasional broken image in API call due to error on end of the API and out of our control.
  - Margin had to be increased along bottom of recipe section as footer was behaving unexpectantly and needed extra margin to be pushed down. 
- - All CSS styles for 404 error page added to index.css apart from body styles to stop interference between the two and link added in. 
- 
+  
+ [back to top](#recipe-rescue)
 
+### Lighthouse tests
  <details>
 
  <summary>Lighthouse test results</summary>
@@ -382,10 +388,15 @@ Third test uploaded, although all scores are the same as the second the button e
  Again similar to the main content once I had solved all the issues on mobile view the results were identical on Desktop view as well
 
  Second screenshot submitted for same reason as last mobile design changed due to HTML not passing so included latest screenshot with same scores.
+
+ [back to top](#recipe-rescue)
  </details>
 
+### HTML tests
  <details>
  <summary> HTML tests</summary>
+
+ - HTML code tested at [validator.w3](https://validator.w3.org/) all pages passed with no errors or warnings.
 
 #### Main content HTML check
 
@@ -399,50 +410,92 @@ HTML all passed though being a React app the only HTML are stylesheet links and 
 
 After first test failure all trailing slashed were removed as well as styling the a href to look like a button and removing the button element and everything passed. But meant lighthouse testing had to be redone. 
 
+[back to top](#recipe-rescue)
  </details>
 
-- HTML code tested at [validator.w3](https://validator.w3.org/) all pages passed with no errors or warnings.
+### CSS tests
+<details>
+ <summary> CSS testing</summary>
 
-- CSS tested at[jigsaw.w3](https://jigsaw.w3.org/css-validator/) and the CSS validates as CSS level 3 + SVG.
+ #### index CSS test
 
-  <p>
-     <a href="https://jigsaw.w3.org/css-validator/check/referer">
-         <img style="border:0;width:88px;height:31px"
-             src="https://jigsaw.w3.org/css-validator/images/vcss"
-             alt="Valid CSS!" />
-     </a>
+ - CSS tested at[jigsaw.w3](https://jigsaw.w3.org/css-validator/) and the CSS validates as CSS level 3 + SVG.
 
- </p>
- <p>
-  <a href="https://jigsaw.w3.org/css-validator/check/referer">
-         <img style="border:0;width:88px;height:31px"
-             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-             alt="Valid CSS!" />
-     </a>
- </p>
+ ![index-css-test](/src/assets/images/readme-images/index-css-check.png)
 
-All JSX components tested at [json table](https://jsontotable.org/jsx-validator) and passed with no errors
+ Although no errors were found within the CSS originally the CSS was split into index.css and app.css. In order to improve the efficiency and because I had no real components that needed individually styling I chose to move it all into one index.css file. I felt this meant that the loading times would be increased as it did not need to look for two separate CSS files. Another change I made to my CSS was that I added CSS variables for easier updateability of the site for things such as colours and fonts.
 
-![jsx validator](/src/assets/images/readme-images/jsx-valid.png)
+ ![404 css](/src/assets/images/readme-images/404-css-check.png)
 
+ The CSS in the head of my 404-page passed all checks. All the rest of the CSS was integrated into index.css file, although the decision was made to keep the body styles in the head of the HTML file to stop it reacting with any body styles already included for the main app. I also felt that this was a better option that adding another DIV purely to style within index.css. While testing my site to confirm all was working as intended I noticed I had forgotten that I had wrapped list section in a main element so when I added the main styling to my index.css it had broken the styling for my main App. To fix this I have moved the main styling for 404 back into the head of the 404 page. The tests above still apply as the code passed whilst going through the main index.css test, so I know that it does not need retesting now it has been moved as the code did not change only location.    
+
+[back to top](#recipe-rescue)
+ </details>
+
+### JSX tests
+<details>
+<summary>JSX testing</summary>
+
+#### JSX testing
+All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
+
+##### Navbar
+![navbar-jsx](/src/assets/images/readme-images/Navbar-jsx-test.png)
+##### Header
+![Header-jsx](/src/assets/images/readme-images/Header-jsx-test.png)
+##### MainSection
+![MainSection-jsx](/src/assets/images/readme-images/MainSection-jsx-test.png)
+##### IngredientsList
+![IngredientsSection-jsx](/src/assets/images/readme-images/IngredientsList-jsx-test.png)
+##### RecipeCard
+![RecipeCard-jsx](/src/assets/images/readme-images/Recipe-jsx-test.png)
+##### Footer
+![Footer-jsx](/src/assets/images/readme-images/Footer-jsx-test.png)
+##### App
+![App-jsx](/src/assets/images/readme-images/App-jsx-test.png)
+##### Main
+![main-jsx](/src/assets/images/readme-images/main-jsx-test.png)
+
+All checks passed first time which was the expected result, although earlier in the development cycle Main section was just called recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the seperate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code as with a separate JSX element doing as close to one thing each you can easily navigate through to update sections as needed without effecting the rest of the code.   
+
+[back to top](#recipe-rescue)
+</details>
+
+### Contrast tests
  <details>
- <summary> Contrast testing screenshots</summary>
+ <summary> Contrast testing </summary>
+
+ #### Contrast testing
+
+ - all contrast testing carried out at [webaim](https://webaim.org/resources/contrastchecker/)
+
+##### #4B352A foreground & #B2CD9C background
 
 ![brown text dark green background](/src/assets/images/readme-images/contrast-checker-browntext-darkgreen-background.png)  
 
-Following first contrast checker to ensure all tests passed I have changed the colour to a different shade of brown to ensure it passes all contrast checks.
+First test passed on all tests but AAA. Originally to solve this I made all the text bold. Once I had seen how this looked on the page I decided to add a lighter shade of brown which is screenshotted later in the contrast checking so that I had the option to change the fonts to #3F2D22 so that it was not too different as not to effect the visual appearance of the page whilst passing all contrast checks.    
+
+##### #4B352A background & #B2CD9C foreground
+![original-button](/src/assets/images/readme-images/original-button-contrast.png)
+
+Being the same colours as above it failed on the exact same test with the buttons styles. Because of this as seen with the colour choices below. Because the buttons failed as well I took the choice to change the brown throughout most of the app to #3F2D22 as it passes all contrast checks as shown later in the contrast checks. 
+
+##### #F0F2BD foreground & #4B352A background 
 ![hover effect](/src/assets/images/readme-images/hover-effect-buttons.png)
 
-All tests passed for hover effect on buttons.
+All tests passed for hover effect on buttons as after the failed tests previously I took the decision to use the background colour for the site for a better contrast rating with the brown. This works for most of the site although for some reason still failed with the dark background on the lighthouse testing so reversed the effects to that of the buttons in the input box and this passed all contrast checks including lighthouse testing. 
 
+##### #F0F2BD background & #4B352A foreground
 ![button normal](/src/assets/images/readme-images/button-color.png)
 
-Button color changed as first test failed AAA so changed to lighter text color to ensure passed.
+All tests passed like described above the button colour and hover effect are the same colours but in reverse so once I had made the decision to change after the original failed tests this was more a formality as i knew it would pass the contrast test.  
 
+##### #3F2D22 foreground & #B2CD9C background
 ![alternate font color](/src/assets/images/readme-images/alternate-color-test.png)
 
-Alternative color chosen for fonts that is a similar match to the chosen brown but a shade lighter so that it provides an alternative in scenarios where otherwise it would fail.
+As described above this was the alternate brown chosen so that I could guarantee all tests would pass without having all fonts bold. It was done by sliding the bar to a lighter shade of brown to ensure not only all contrast checks passed, but remained as close to the original colour as I could.
 
+[back to top](#recipe-rescue)
  </details>
 
  
