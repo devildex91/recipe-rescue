@@ -238,7 +238,7 @@ Once the ingredients list has been submitted an API call will be made and the re
 ![Tablet wireframe without ingredients](/src/assets/images/readme-images/tablet-ingredientlist1-wireframe.png)
 ![Tablet wireframe with ingredients](/src/assets/images/readme-images/tablet-ingredientlist2-wireframe.png)
 
-The main difference between phone and tablet view is that with the extra space two images render to the page once the screen size hits 798px. The other difference is that the ingredients and button will appear to the right-hand side of the ingredients form.
+The main difference between phone and tablet view is that with the extra space two images render to the page once the screen size hits 768px. The other difference is that the ingredients and button will appear to the right-hand side of the ingredients form.
 
 </details>
 <details>
