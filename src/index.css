@@ -195,6 +195,7 @@ form input:hover {
   border: none;
   padding: 0;
   margin: 0;
+ 
 }
 /*cards containing recipe info*/
 .recipeCard {
@@ -204,10 +205,10 @@ form input:hover {
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: auto;
-  padding: 40px 40px 60px;
+  padding:0 40px  40px 40px;
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -221,6 +222,7 @@ form input:hover {
   height: auto;
   display: block;
   object-fit: cover;
+  margin-top:10px;
 }
 .recipeCard ul {
   align-self: flex-start;
