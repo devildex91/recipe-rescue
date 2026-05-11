@@ -1,8 +1,6 @@
 import titlePic1 from "../assets/images/header-pic.webp";
 
 export default function Header() {
-
-
   return (
     <div id="opening" className="shadow">
       <div id="textDiv">

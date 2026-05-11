@@ -195,7 +195,6 @@ form input:hover {
   border: none;
   padding: 0;
   margin: 0;
- 
 }
 /*cards containing recipe info*/
 .recipeCard {
@@ -208,7 +207,7 @@ form input:hover {
   align-items: center;
   text-align: center;
   margin: auto;
-  padding:0 40px  40px 40px;
+  padding: 0 40px 40px 40px;
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -222,7 +221,7 @@ form input:hover {
   height: auto;
   display: block;
   object-fit: cover;
-  margin-top:10px;
+  margin-top: 10px;
 }
 .recipeCard ul {
   align-self: flex-start;
@@ -293,10 +292,10 @@ footer p {
   #opening {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column:span 2;
+    grid-column: span 2;
     grid-template-rows: auto;
     height: auto;
-    margin:20px;
+    margin: 20px;
     padding-bottom: 50px;
     font-size: 18px;
   }
@@ -348,9 +347,9 @@ footer p {
     height: 90%;
     margin: auto;
   }
-  footer{
-    grid-column:span 2;
-    height:100%;
+  footer {
+    grid-column: span 2;
+    height: 100%;
   }
 }
 @media screen and (min-width: 900px) {
@@ -453,50 +452,47 @@ footer p {
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-
 /*404 page styles*/
-      .page {
-        max-width: 380px;
-        padding: 24px;
-        border-radius: 12px;
-        max-height:fit-content;
-        background: #b2cd9c;
-        
-      }
-      .page h1 {
-        margin: 0 0 12px;
-        font-size: 2rem;
-      }
-    
-      .page p {
-        margin: 0 0 18px;
-        line-height: 1.5;
-      }
-      .page button {
-        display: inline-block;
-        padding:25px;
-        margin:20px;
-        border-radius: 8px;
-        background:var(--primary-color);
-        text-decoration: none;
-        font-weight: 700;
-      }
-      .page a {
-          display: inline-block;
-        padding:25px;
-        margin:20px;
-        border-radius: 8px;
-        background:var(--primary-color);
-        text-decoration: none;
-        font-weight: 700;
-        font-size: larger;
-        color:var(--highlight-color);
-      }
-    
-       .page a:hover{
-         color: var(--alternate-color);
-         background-color: var(--highlight-color);
-        border: 3px solid var(--primary-color);
-        cursor: pointer;
-       }
-      
+.page {
+  max-width: 380px;
+  padding: 24px;
+  border-radius: 12px;
+  max-height: fit-content;
+  background: #b2cd9c;
+}
+.page h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+}
+
+.page p {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.page button {
+  display: inline-block;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 8px;
+  background: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+.page a {
+  display: inline-block;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 8px;
+  background: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: larger;
+  color: var(--highlight-color);
+}
+
+.page a:hover {
+  color: var(--alternate-color);
+  background-color: var(--highlight-color);
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+}

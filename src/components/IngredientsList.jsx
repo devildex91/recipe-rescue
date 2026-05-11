@@ -9,19 +9,22 @@ export default function IngredientsList({
 }) {
   function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
-    if (newIngredient === ""){alert("please enter an ingredient to continue")}else{
-    if (newIngredient.length > 0) {
-      if (!ingredients.includes(newIngredient)) {
-        setIngredients((prevIngredients) => [
-          ...prevIngredients,
-          newIngredient,
-        ]);
-      } else {
-        alert(`You have already entered ${newIngredient}`);
-        return ingredients;
+    if (newIngredient === "") {
+      alert("please enter an ingredient to continue");
+    } else {
+      if (newIngredient.length > 0) {
+        if (!ingredients.includes(newIngredient)) {
+          setIngredients((prevIngredients) => [
+            ...prevIngredients,
+            newIngredient,
+          ]);
+        } else {
+          alert(`You have already entered ${newIngredient}`);
+          return ingredients;
+        }
       }
     }
-  }}
+  }
   /*Function to handle removing items from list*/
   function removeIngredient() {
     setIngredients((prevIngredients) => prevIngredients.slice(0, -1));
@@ -43,7 +46,7 @@ export default function IngredientsList({
       <MdFoodBank /> {ingredient}
     </li>
   ));
-  /*variable containing JSX for Ingredients list*/ 
+  /*variable containing JSX for Ingredients list*/
   const listRender = (
     <section id="listSection" className="shadow">
       <div id="listPic">

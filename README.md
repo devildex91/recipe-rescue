@@ -473,6 +473,10 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 
 All checks passed first time which was the expected result, although earlier in the development cycle the Main section was just called Recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code as with a separate JSX element doing as close to one thing each you can easily navigate through to update sections as needed without affecting the rest of the code.
 
+Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State but somehow that had survived the change in direction for the code and has subsequently been deleted and the screenshot above will be of the newly tested with this code deleted.below you will find a screenshot of the deleted state.
+
+![redundant useState](/src/assets/images/readme-images/redundent-useState.png) 
+
 [Back to top](#recipe-rescue)
 
 </details>
