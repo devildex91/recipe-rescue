@@ -178,9 +178,9 @@ The original design for this project was a project called Sparkflow which was an
 
 ---
 
-Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and up. The site has been styled with a 20px margin between all content that where possible has consistently remained throughout most of the content at all screen sizes allowing breathing room to avoid cognitive overload.
+Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and up. The site has been styled to have a consistent layout throughout for ease of use for all users as well as a colour palette to avoid cognitive overload whilst keeping with the food theme of the app. 
 
-Following from this all content has a mixture of greens and browns that have all been chosen as they represent different aspects of the food palette. The background colour was chosen as it is easier on the eyes as not to overwhelm users.
+All content has a mixture of greens and browns that have all been chosen as they represent different aspects of the food palette. The background colour was chosen as it is easier on the eyes as not to overwhelm users.
 
 All information follows a Gestalt principle and all relevant information is kept together where possible.
 
