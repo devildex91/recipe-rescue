@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div id="opening" className="shadow">
       <div id="textDiv">
-        <h2>Welcome to Recipe Rescue</h2>
+        <h1>Welcome to Recipe Rescue</h1>
         <p>
           Our aim is to stop food waste one ingredient at a time. How you might
           ask? Well, you provide us with the ingredients (at least 5

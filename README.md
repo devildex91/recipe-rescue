@@ -363,6 +363,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 - Link to the source site for full recipe details, ingredients lists and how to make the recipe.
 - Responsive on all screen sizes.
 
+[Back to top](#recipe-rescue)
 ### User Goals mapping
 
 ---
@@ -370,7 +371,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 <details>
 <summary>User goals mapping</summary>
 
-- In order to show how each Recipe Rescue design choice has been done with the user in mind please see the following table listing all design aspects and the corresponding User Stories supporting this choice.
+- To support the existing features that have been implemented please see the table below outlines the User Stories that have been implemented onto the App and supporting screenshots for evidence.
 
 | User Story                         	| Acceptance Criteria                                                                                                                                                                   	| Supporting designs                                                                                                                                                                                                                              	|
 |------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -403,6 +404,8 @@ The main difference for desktop screens over tablet screens is that the grid wit
 <details>
 <summary>User stories still to implement</summary>
 
+- Please see the table below that shows the User Stores behind the features left to implement along with our reasoning for not implementing them yet. 
+
 | User Story          	| User criteria                                                                                                                                                                                	| Reason not implemented                                                                                                                                                                                                                                                                                                                                     	|
 |---------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Dietary preference  	| Users can exclude specific ingredients <br>Search results must update dynamically based on these filters<br>A filter menu is accessible from the search screen                               	| At this stage of the development we are looking to generate a MVP(minimum viable product).<br>This is because we want to see how well the product works and make sure all the basic<br>features are working as seamlessly as possible before any updates with more features are<br>added.                                                                  	|
@@ -414,12 +417,23 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ### Technologies used
 
 ---
+| Technology     	| Use                                       	|
+|----------------	|-------------------------------------------	|
+| Visual Studios 	| Primary IDE                               	|
+|  Vite          	| Development Server                        	|
+| React          	| Javascript library/component architecture 	|
+| Squoosh        	| Compression of images                     	|
+| GITHUB         	| Hosting and managing repositories         	|
+| GEMINI         	| Supported learning and best practices     	|
+| GITHUB copilot 	| Supported learning and best practices     	|
+| Google font    	| importing Gelogica for use                	|
+| Pexels         	| Image sourcing                            	|
+| Lighthouse     	| Testing                                   	|
+| validator.w3   	| HTML testing                              	|
+| jigsaw.w3      	| CSS testing                               	|
+| json table     	| JSX testing                               	|
+| webaim         	| contrast testing                          	|
 
-- Visual Studios used as the primary IDE.
-- React and VITE used.
-- Display grid used for main layout and flexbox for improved responsive design within each DIV.
-- Pexels used for photo on navbar and pictures that appear on larger screens apart from recipe photos are straight from spoonacular API.
-- GITHUB and GITHUB pages for deployment.
 
 [Back to top](#recipe-rescue)
 
@@ -707,8 +721,9 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 | Firefox         	| P       	| P       	|
 | Edge            	| P       	| P       	|
 
--All browsers tested to make sure everything reacts as it should as well as keyboard accessibility on all browsers as well.
-- All buttons and links reacted as they should and conditional rendering components reacted as  they were intended to. 
+-All browsers have been thoroughly tested to ensure that all button clicks, keyboard navigation, input fields, and conditional rendering word exactly as intended and no layout issues occur. 
+
+
 
 
 [Back to top](#recipe-rescue)
