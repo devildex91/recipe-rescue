@@ -17,8 +17,10 @@
 
 ## [Features](#features-1)
 
-[Existing features](#existing-features)  
+[Existing features](#existing-features)
+[User Goals mapping](#user-goals-mapping)  
 [Features left to implement](#features-left-to-implement)
+[User Goals still to implement](#user-goals-still-to-implement)
 
 ## [Technologies used](#technologies-used-1)
 
@@ -29,18 +31,19 @@
 [CSS tests](#css-tests)  
 [JSX tests](#jsx-tests)  
 [Contrast tests](#contrast-tests)  
-[Keyboard Accessibility tests](#keyboard-accessibility-testing)
+[Keyboard Accessibility tests](#keyboard-accessibility-tests)
+[Development bugs and fixes](#development-bugs-and-fixes)
+[Cross browser testing](#cross-browser-testing)
 
 ## [Deployment](#deployment-1)
 
 [How to run this project](#how-to-run-project)
 
 ## [Credits](#credits-1)
+[Content/Media/Code/Acknowledgements](#contentmediacodeacknowledgements)   
+[dependencies](#dependencies-for-reactvite)
 
-[Content](#content)  
-[Media](#media)  
-[Code](#code)  
-[Acknowledgements](#Acknowledgements)
+
 
 ### UX
 
@@ -192,7 +195,7 @@ As a budget-conscious user, I want to see exactly what I’m missing for a recip
 - Images must maintain a consistent aspect ratio to keep the grid organized.
 - If a recipe is missing an image in the database then a placeholder image must be shown.
 
-**Tasks**
+##### Tasks
 
 - Implement an img tag with an onerror attribute to catch broken links.
 - Apply CSS properties to ensure images don't stretch.
@@ -422,17 +425,12 @@ The main difference for desktop screens over tablet screens is that the grid wit
 | Visual Studios 	| Primary IDE                               	|
 |  Vite          	| Development Server                        	|
 | React          	| Javascript library/component architecture 	|
-| Squoosh        	| Compression of images                     	|
 | GITHUB         	| Hosting and managing repositories         	|
 | GEMINI         	| Supported learning and best practices     	|
 | GITHUB copilot 	| Supported learning and best practices     	|
-| Google font    	| importing Gelogica for use                	|
-| Pexels         	| Image sourcing                            	|
-| Lighthouse     	| Testing                                   	|
-| validator.w3   	| HTML testing                              	|
-| jigsaw.w3      	| CSS testing                               	|
-| json table     	| JSX testing                               	|
-| webaim         	| contrast testing                          	|
+| HTML            | Language used                               |
+| CSS             | Language used                               |
+|Javascript       | Language used                               |
 
 
 [Back to top](#recipe-rescue)
@@ -685,21 +683,36 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 <details>
 <summary>Development bugs and fixes</summary>
 
-- Original design used only flexbox but changed to grid for more control over general layout across screen size changes.
-- Found a bug in the height as screen sizes increased and the gap between the footer and the content above increased dramatically. I discovered that the footer was adding an extra grid row because was set to start at grid 5 which was adding an unnecessary row and causing layout issues
-- All content was shrinking too far to still be easily readable on extra large screens so added a safety measure at 1800 px and 1200 pixels to ensure that all fonts and images scale properly as screen size grows.
-- On testing discovered once recipe cards render to page image and logo were too large with new sizes so changed from width to max-width to allow it to shrink as needed for new content.
-- Upon testing ingredients and Recipe sections needed wrapping in a main section for accessibility and subsequently CSS needed adjusting to keep layout the same.
-- gridContainer ID added in to set grid styles on as being a React app margin was appearing around root DIV and body so set both of these to get rid of margin and added in #gridContainer to set styles on for the rest of content.
-- Extra margin added to the top of the footer to create a gap between the top of the footer and the bottom of the recipe cards. This is due to the unpredictability of the content coming from the API so list length and image size/quality cannot be controlled.
-- Had to change the grid as pictures from API were pixelating at certain sizes and have no control over API images as they are from an external source.
-- All files were in the subfolder causing issues with deployment to GITHUB. To solve this I have had to move all files into root and reconfigure import paths.
-- On first attempt the site went live but was not updating on pushing to the repository so deleted file paths moved the whole project into root from subdirectory and followed VITE instructions as well as GITHUB instructions to get it working as intended.
-- After googling to find a solution, the discovered API has to be put in secrets in actions to make it work on GITHUB pages.
-- The original recipe cards container had both missing ingredients and ingredients you already had but was looking too cluttered and causing layout issues. These were removed with a link to full recipe provided instead covering making up for taking this away and meaning no need to add full recipe to page helping with API limitations.
-- Main section added in to help with accessibility for screen readers.
-- Occasional broken image in API call due to error on end of the API and out of our control.
-- Margin had to be increased along the bottom of the recipe section as the footer was behaving unexpectedly and needed extra margin to be pushed down.
+| Bugs/changes/                      	| Fix                                                                                                                                                                                                                                         	|
+|------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| flex layout                        	| Originally used pure flexbox for styling but updated to use display grid and flexbox for better responsiveness and layout controls                                                                                                          	|
+| Footer bug larger screen sizes     	| Footer was set to start at a grid number that diddnt exist so was adding an extra grid to accomodate the position number so had to delete grid position to fix issue                                                                        	|
+| Content shrinkage on large screens 	| Had to add extra media queries at 1200px and 1800px to stop content shrinkage and to make sure everything readable at all sizes.                                                                                                            	|
+| recipe card layout issue           	| As recipe cards rendered to page the logo in nav was not shrinking because of sizing so had to change from width to max-width to allow images to fit the content better                                                                     	|
+| Accesibility issue                 	| Had to wrap content in a main tag for screen readers and accessibility. Also had to adjust CSS to suit new main div being added                                                                                                             	|
+| react gap issue                    	| Had to add seperate gridContainer div for grid styles as body and root div have seperate styles for overflow and margin to stop margin around whole page.                                                                                   	|
+| Footer margin                      	| Recipoe cards are unpredictable because cannot guarantee how many ingredients will be missing. To counteract this an extra margin has been added too top of footer and bottom of recipe cards so that nothing can overflow each other.      	|
+| image pixelation                   	| As recipe card iamges are from API and were pixerlating at certain sizes the grid layout was altered slightly for recipe section so they cannot get large enough to pixelate.                                                               	|
+| Deployment issue                   	| All of my react app was in a subfolder to my repository so was not deploying properly so had to move everything into root and adjut all file paths to correct issue                                                                         	|
+| API issue                          	| API hidden in .env file but on deployment to GITHUB stopped working and discovered through google that i had to put it in secrets in GITHUB actions to solve issue.                                                                         	|
+| recipe card layout issue 2         	| Originally had both missing and included ingredients on recipe cards but was taking up too much space and looked clutered so removed included ingredients and added link to full recipe instead. This also helped resolve API usage issues. 	|
+| Broken image                       	| Occasionally broken image broken from API end so a placeholder image has been added to solve the issue.                                                                                                                                     	|
+| Recipe section margin              	| Extra margin added to bottom of recipe section to ensure footer always stays in place at bottom of page                                                                                                                                     	|
+                                   	                                                                                                                                                                                                                                          	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [Back to top](#recipe-rescue)
 [](/src/assets/images/readme-images/)
@@ -713,17 +726,17 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 <details>
 <summary> Cross browser testing</summary>
 
-| Browser         	| Pass(P) 	| Fail(F) 	|
-|-----------------	|---------	|---------	|
-| Chrome(Desktop) 	| P       	| P       	|
-| Chrome(mobile)  	| P       	| P       	|
-| Safari          	| P       	| P       	|
-| Firefox         	| P       	| P       	|
-| Edge            	| P       	| P       	|
+- Table guide
+- (Expected result/Actual result )
 
--All browsers have been thoroughly tested to ensure that all button clicks, keyboard navigation, input fields, and conditional rendering word exactly as intended and no layout issues occur. 
-
-
+| Action         	| All components render 	| Form works 	| Form buttons work 	| Back to ingredients button work 	| Recipe cards load correctly  	| Link from recipe cards work 	| Images respond as intended 	|
+|----------------	|-----------------------	|------------	|-------------------	|---------------------------------	|------------------------------	|-----------------------------	|----------------------------	|
+| Browser        	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
+| Chrome         	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
+| Chrome(mobile) 	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
+| Safari         	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
+| Edge           	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
+| Firefox        	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
 
 
 [Back to top](#recipe-rescue)
@@ -823,37 +836,34 @@ base: "/your-repo-name/", // Replace with your exact repository name
 
 [Back to top](#recipe-rescue)
 
-### Credits
-
+### Credits 
 ---
-
-#### Content
-
+#### Content/Media/Code/Acknowledgements
 ---
+| Credits             	| Use                        	|
+|----------------------	|----------------------------	|
+| React Icons          	| All Icons                  	|
+| Google fonts         	| fonts                      	|
+| getcssscan           	| box-shadow property        	|
+| VITE documentation   	| deployment and setup       	|
+| GITHUB documentation 	| GITHUB pages setup         	|
+| REACT documentation  	| JSX elements/best practice 	|
+| Spoonacular          	|  API                       	|
+| SQUOOSH              	| Image compression          	|
+| Pexels               	| Image sourcing             	|
+| Google fonts         	| importing Geologica        	|
+| Lighthouse           	| Testing                    	|
+| validator.w3   	      | HTML testing                |
+| jigsaw.w3      	      | CSS testing                 |
+| json table     	      | JSX testing                 |
+| webaim         	      | contrast testing            |
+|Logo.com               | Logo and title favicon      |
 
-- geologica imported from [google fonts.](https://fonts.google.com/selection/embed)
-- Spoonacular API
+###### All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
 
 [Back to top](#recipe-rescue)
 
-#### Media
-
----
-
-- All pictures from pexels.com.
-- for all image optimization [squoosh](https://squoosh.app/) has been used to help with the resize of images and compression tasks.
-- All favicons apart from title favicon from [React icons](https://react-icons.github.io/react-icons/)
-
-[Back to top](#recipe-rescue)
-
-#### Code
-
----
-
-- CSS styles for box shadow properties from [getcssscan](https://getcssscan.com/css-box-shadow-examples)
-- All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
-
-##### dependencies for React/Vite
+#### dependencies for React/Vite
 
 ---
 
@@ -872,16 +882,4 @@ base: "/your-repo-name/", // Replace with your exact repository name
 - "vite": "^8.0.10"
 - Spoonacular API(Your own account and API key will be needed if working on yourself locally)
 
-#### Acknowledgements
-
-- React icons for all icons
-- Google fonts for font
-- getcssscan for box shadow
-- VITE documentation for deployment and setup of project
-- GITHUB documentation for setup of GITHUB pages for deployment
-- React documentation for help with React and JSX elements as well as best practices.
-- Spoonacular API
-  -Google Gemini used for help to find best practices on where to locate the 404 page in my app without having to use React router as could only find information on using React Router (For future projects react router will most likely be used but did not want to implement another dependency and refactor whole site for the 404 page).
-- GITHUB copilot used to confirm best practice for my second API call to fully optimize what could have been quite a bottleneck of code awaiting API calls.
-
-  [Back to top](#recipe-rescue)
+ [Back to top](#recipe-rescue)
