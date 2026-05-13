@@ -53,7 +53,7 @@
 
 ---
 
-The primary goal of Recipe Rescue is to stop food waste. We aim to do this by providing our users with the opportunity to use what is left in their fridge. Once we have been provided with your ingredients, we will do all the hard work for you by providing a list of recipes. Not only does that mean you fill up your stomach not a basket of shopping, but also discover a new favorite recipe while you are at it.
+The primary goal of Recipe Rescue is to reduce food waste. We will do this by providing our users with the opportunity to use food left available to them. Once we have been provided with your ingredients, we will do all the hard work for you by providing a list of recipes. Not only does that mean that you can reduce that ever-growing shopping bill. But also discover a love of food and fill your bellies not your bins. 
 
 [Back to top](#recipe-rescue)
 
@@ -61,7 +61,11 @@ The primary goal of Recipe Rescue is to stop food waste. We aim to do this by pr
 
 ---
 
-The business goals of Recipe Rescue are to stop food waste and save the environment. We believe both these goals are interlinked. If we can stop food waste then that not only means more food for everyone, but also less food in landfill. With those two goals in mind we believe that if we can achieve more customers who hate wasting food then we can keep landfills empty and your plate full.
+The business goals of Recipe Rescue are:
+- To simplify Meal discovery
+- Optimise household budgets
+- Maximise user acquisition by targeting budget conscious shoppers, students and home cooks.
+- Long term business goals would be to secure partnerships with major supermarkets to offer personalised shopping lists to your favourite Supermarkets.  
 
 [Back to top](#recipe-rescue)
 
@@ -69,9 +73,13 @@ The business goals of Recipe Rescue are to stop food waste and save the environm
 
 ---
 
-The goals for new users are to find new ideas for recipes to spice up their dinner times. They also want to discover new ways to use up what food they have left. Another goal is to save money.
-
-For existing customers they wish to not only continue to save money but also to keep discovering what amazing ways they can use up their food that they did not believe was possible.
+The goals for users would be :
+- Save money on their shopping
+- Reduce Household waste
+- Save time on meal planning
+- Avoid last minute shopping trips by making the most of their ingredients. 
+- Clear old cupboard filling ingredients
+- Use foods close to expiry dates
 
 [Back to top](#recipe-rescue)
 
@@ -208,7 +216,7 @@ As a budget-conscious user, I want to see exactly what I’m missing for a recip
 
 ---
 
-The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist. [Original design](/src//assets/images/readme-images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [Original Wireframe](/src/assets/images/readme-images/computer-closerlookpage-wireframes.png). Although I did start this project, as I got further in I felt that in order to fully achieve everything possible with this app it was better left for a later project once I had the server side sorted as well so I could add login pages and the user review section could be more responsive and updatable. From that original idea came recipe-rescue. That is because it follows a similar structure to Sparkflow in taking a parameter and searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
+The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist. [Original design](/src//assets/images/readme-images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [Original Wireframe](/src/assets/images/readme-images/computer-closerlookpage-wireframes.png). Although I did start this project, as it progressed I felt that in order to fully achieve everything possible with this app it was better left for a later project. Once I had the server side sorted as well, I could add login pages and the user review section could be more responsive and updatable. From that original idea came Recipe Rescue. That is because it follows a similar structure to Sparkflow in taking a parameter, searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
 
 ##### Fonts
 
@@ -248,7 +256,7 @@ The original design for this project was a project called Sparkflow which was an
 
 ###### B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
 
-###### CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not feel to fit with the design of the app standing out a little too much and looking out of place.
+###### CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not fit with the design of the app standing out a little too much and looking out of place.
 
 ###### 4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
 
@@ -260,15 +268,15 @@ The original design for this project was a project called Sparkflow which was an
 
 ---
 
-Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and up. The site has been styled to have a consistent layout throughout for ease of use for all users as well as a colour palette to avoid cognitive overload whilst keeping with the food theme of the app. 
+- Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and up. The site has been styled to have a consistent layout throughout for ease of use for all users as well as a colour palette to avoid cognitive overload whilst keeping with the food theme of the app. 
 
-All content has a mixture of greens and browns that have all been chosen as they represent different aspects of the food palette. The background colour was chosen as it is easier on the eyes as not to overwhelm users.
+- All content has a mixture of greens and browns that have all been chosen as they represent different aspects of the food palette. The background colour was chosen as it is easier on the eyes as not to overwhelm users.
 
-All information follows a Gestalt principle and all relevant information is kept together where possible.
+- All information follows a Gestalt principle and all relevant information is kept together where possible.
 
-We limited the font families to just the one to keep with the consistency and a cohesive user experience throughout the app. This helps with the readability and ensures the contrast is sufficient for accessibility.
+- We limited the font families to just the one to keep with the consistency and a cohesive user experience throughout the app. This helps with the readability and ensures the contrast is sufficient for accessibility.
 
-All buttons have been designed with hover styles, so the user is always aware of where they are on the page and the contrast between the colours remains.
+- All buttons have been designed with hover styles, so the user is always aware of where they are on the page and the contrast between the colours remains.
 
 [back to top](#recipe-rescue)
 
@@ -276,9 +284,9 @@ All buttons have been designed with hover styles, so the user is always aware of
 
 ---
 
-The background remains #F0f2BD throughout the app so it is warm and neutral helping reduce cognitive overload while remaining warm and consistent throughout.
+- The background remains #F0f2BD throughout the app. So it is warm and neutral helping reduce cognitive overload while remaining warm and consistent throughout.
 
-The exception to this background is the nav element which has a background image instead(please see picture below).
+- The exception to this background is the nav element which has a background image instead(please see picture below).
 
 [nav-image](/src/assets/images/nav-image.webp)
 
@@ -288,9 +296,9 @@ The exception to this background is the nav element which has a background image
 
 ---
 
-All images have been chosen as they not only follow the theme of the app but also follow the colour scheme of the site where possible.
+- All images have been chosen as they not only follow the theme of the app but also follow the colour scheme of the site where possible.
 
-All images have been sourced from [pexels](https://www.pexels.com/) and the logo for the nav section of the page and within the copyright and favicon was created using [logo.com](https://logo.com/).
+- All images have been sourced from [pexels](https://www.pexels.com/) and the logo for the nav section of the page and within the copyright and favicon was created using [logo.com](https://logo.com/).
 
 [Back to top](#recipe-rescue)
 
@@ -303,7 +311,7 @@ All images have been sourced from [pexels](https://www.pexels.com/) and the logo
 
 ![Phone ingredients List wireframes](/src/assets/images/readme-images/phone-Ingredients-wireframes.png)
 
-The DIV will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to Spoonacular.
+- The DIV will expand to fit the ingredients underneath the form and after five ingredients have been added a button will render. This will send an API call to Spoonacular.
 
  </details>
 
@@ -312,7 +320,7 @@ The DIV will expand to fit the ingredients underneath the form and after five in
 
 ![Phone recipe section wireframe](/src/assets/images/readme-images/phone-recipe-wireframe.png)
 
-Once the ingredients list has been submitted an API call will be made and the recipe section will render onto the page showing 6 recipes that will have minimal extra ingredients needed. The recipe card will also be a button with a link to the source URL for full recipe details.
+- Once the ingredients list has been submitted an API call will be made and the recipe section will render onto the page. This will produce six recipes that will have minimal extra ingredients needed. The recipe card will also be a button with a link to the source URL for full recipe details.
 
  </details>
 
@@ -322,7 +330,7 @@ Once the ingredients list has been submitted an API call will be made and the re
 ![Tablet wireframe without ingredients](/src/assets/images/readme-images/tablet-ingredientlist1-wireframe.png)
 ![Tablet wireframe with ingredients](/src/assets/images/readme-images/tablet-ingredientlist2-wireframe.png)
 
-The main difference between the phone and tablet view is that with the extra space two images render to the page once the screen size hits 768px. The other difference is that the ingredients and button will appear to the right-hand side of the ingredients form.
+The main difference between the phone and tablet view is that with the extra space two images render to the page. Once the screen size hits 768px. The other difference is that the ingredients and button will appear to the right-hand side of the ingredients form.
 
 </details>
 <details>
