@@ -277,7 +277,7 @@ The background remains #F0f2BD throughout the app so it is warm and neutral help
 
 The exception to this background is the nav element which has a background image instead(please see picture below).
 
-![nav-image](/src/assets/images/nav-image.webp)
+[nav-image](/src/assets/images/nav-image.webp)
 
 [Back to top](#recipe-rescue)
 
@@ -363,6 +363,31 @@ The main difference for desktop screens over tablet screens is that the grid wit
 - Link to the source site for full recipe details, ingredients lists and how to make the recipe.
 - Responsive on all screen sizes.
 
+### User Goals mapping
+
+---
+
+<details>
+<summary>User goals mapping</summary>
+
+- In order to show how each Recipe Rescue design choice has been done with the user in mind please see the following table listing all design aspects and the corresponding User Stories supporting this choice.
+
+| User Story                         	| Acceptance Criteria                                                                                                                                                                   	| Supporting designs                                                                                                                                                                                                                              	|
+|------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Responsive layout                  	| Responsive to whatever screen size is used. <br>Website clearly tells user what  they need to do.                                                                                     	| [responsive design](/src/assets/images/readme-images/responsive-design.png)<br>[clear instructions](/src/assets/images/readme-images/clear-instructions.png)<br>[clear instruction 2](/src/assets/images/readme-images/clear-instructions2.png) 	|
+| Missing Ingredient                 	| Each recipe card displays the missing ingredient.                                                                                                                                     	| [recipe card](/src/assets/images/readme-images/recipe-card.png)                                                                                                                                                                                 	|
+| Ingredient based search recipe     	| Users can add multiple ingredients to search.   <br>The app returns a list of recipes that includes as many ingredients as possible.                                                  	| [ingredients form](/src/assets/images/readme-images/ingredient-list-form.png)<br>[recipe cards](/src/assets/images/readme-images/recipe-cards.png)                                                                                              	|
+| Discovering recipes by ingredients 	| The system accepts a list of at least five ingredients.  <br>It returns six recipe cards.  <br>Each card displays a high quality image, a title and a list of missing ingredients.    	| [ingredients form](/src/assets/images/readme-images/ingredient-list-form.png)<br>[recipe cards](/src/assets/images/readme-images/recipe-cards.png)                                                                                              	|
+| Visual Recipe Selection            	| Every recipe card must contain an image. <br>Images must maintain a consistent aspect ratio.                                                                                          	| [recipe card](/src/assets/images/readme-images/recipe-card.png)<br>[aspect ratios](/src/assets/images/readme-images/aspect-ratios.png)    
+
+                                                                                                       	|
+
+
+ 
+[Back to top](#recipe-rescue)
+</details>
+
+
 #### Features left to implement
 
 ---
@@ -370,6 +395,19 @@ The main difference for desktop screens over tablet screens is that the grid wit
 - Full recipe details and steps on how to make it will be added to the page at a later date but due to API limits have been added as a link to the Source URL.
 - Advanced search to be added allowing to search based on dietary requirements.
 - Sign in page to be added to allow saving of favourite recipes or specialist search parameters.
+
+### User Goals still to implement
+
+---
+
+<details>
+<summary>User stories still to implement</summary>
+
+| User Story          	| User criteria                                                                                                                                                                                	| Reason not implemented                                                                                                                                                                                                                                                                                                                                     	|
+|---------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Dietary preference  	| Users can exclude specific ingredients <br>Search results must update dynamically based on these filters<br>A filter menu is accessible from the search screen                               	| At this stage of the development we are looking to generate a MVP(minimum viable product).<br>This is because we want to see how well the product works and make sure all the basic<br>features are working as seamlessly as possible before any updates with more features are<br>added.                                                                  	|
+| User login          	| Set up login section for users<br>A recently viewed section appears on the menu of your home page when logged in<br>Clicking a recent item takes the user directly to that recipe's preview. 	| Similar to above we did not  see at this stage the benefit of creating user login sections<br>for a purely front end project. Some of the features also would require more API calls so <br>at this stage working within the remit of the free API being used feel that these are all <br>developments to be made if we choose to develop the app further. 	|
+</details> 
 
 [Back to top](#recipe-rescue)
 
@@ -390,6 +428,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ---
 
 ### Lighthouse tests
+---
 
  <details>
 
@@ -459,6 +498,7 @@ The second screenshot submitted for the same reason as the last mobile design ch
  </details>
 
 ### HTML tests
+---
 
  <details>
  <summary> HTML tests</summary>
@@ -477,11 +517,13 @@ HTML all passed though being a React app the only HTML are stylesheet links and 
 
 After first test failure all trailing slashes were removed as well as styling the a href to look like a button and removing the button element and everything passed. But meant lighthouse testing had to be redone.
 
+
 [Back to top](#recipe-rescue)
 
  </details>
 
 ### CSS tests
+---
 
 <details>
  <summary> CSS testing</summary>
@@ -512,11 +554,12 @@ While testing my site to confirm all was working as intended I noticed I had for
  </details>
 
 ### JSX tests
+---
 
 <details>
 <summary>JSX testing</summary>
 
-#### JSX testing
+
 
 All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 
@@ -563,6 +606,7 @@ Whilst checking through my code I notice a redundant useState called recipeLink.
 </details>
 
 ### Contrast tests
+---
 
  <details>
  <summary> Contrast testing </summary>
@@ -606,6 +650,7 @@ As described above this was the alternate brown chosen so that I could guarantee
  </details>
 
 ### Keyboard Accessibility tests
+---
 
  <details>
  <summary>Keyboard Accessibility</summary>
@@ -621,6 +666,7 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
  </details>
 
 ### development bugs and fixes
+---
 
 <details>
 <summary>Development bugs and fixes</summary>
@@ -642,7 +688,30 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 - Margin had to be increased along the bottom of the recipe section as the footer was behaving unexpectedly and needed extra margin to be pushed down.
 
 [Back to top](#recipe-rescue)
+[](/src/assets/images/readme-images/)
+</details>
 
+
+
+
+### Cross browser testing
+---
+<details>
+<summary> Cross browser testing</summary>
+
+| Browser         	| Pass(P) 	| Fail(F) 	|
+|-----------------	|---------	|---------	|
+| Chrome(Desktop) 	| P       	| P       	|
+| Chrome(mobile)  	| P       	| P       	|
+| Safari          	| P       	| P       	|
+| Firefox         	| P       	| P       	|
+| Edge            	| P       	| P       	|
+
+-All browsers tested to make sure everything reacts as it should as well as keyboard accessibility on all browsers as well.
+- All buttons and links reacted as they should and conditional rendering components reacted as  they were intended to. 
+
+
+[Back to top](#recipe-rescue)
 </details>
 
 [Back to top](#recipe-rescue)
