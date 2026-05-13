@@ -78,7 +78,7 @@ For existing customers they wish to not only continue to save money but also to 
 
 For full Acceptance Criteria and tasks please follow [this link](https://github.com/users/devildex91/projects/6/views/1?layout=board) to the project board for Recipe Rescue.
 
-##### User Story
+##### User Story 1-Responsive layout
 
 As a first time visitor I would like it to be simple to use and follow to achieve a list of recipes.
 
@@ -92,7 +92,7 @@ As a first time visitor I would like it to be simple to use and follow to achiev
 - Ensure all sections are easy to use and simple to follow.
 - Apply a flexible layout so that it works on all screen sizes.
 
-##### User-Story
+##### User-Story 2-Missing Ingredients
 
 As a user, I want to see how many ingredients I am missing for a specific recipe, so that I can decide if it's worth a quick trip to the shop or if I should choose a different meal.
 
@@ -104,7 +104,7 @@ As a user, I want to see how many ingredients I am missing for a specific recipe
 
 - Make sure the recipe card displays all the missing ingredients for each recipe.
 
-##### User Story
+##### User Story 3-Ingredient based Recipe Search 
 
 As a busy home cook I would like to input the ingredients I have left so I can find recipes I can make with minimal extra ingredients.
 
@@ -114,11 +114,90 @@ As a busy home cook I would like to input the ingredients I have left so I can f
 - The app returns a list of recipes that include as many of the ingredients available as possible.
 - Each recipe must display a title, image and all the ingredients missing.
 
-**Tasks**
+##### Tasks
 
 - Build an input field to add ingredients too.
 - Integrate a related API to handle recipe search.
 - Design a recipe card to display the information from the API.
+
+##### User Story 4-Dietary preference
+
+As a user with specific dietary restrictions I want to filter my ingredient search results by diet or allergy, so that I only see recipes that are safe and appropriate for me to eat.
+
+##### Acceptance Criteria
+
+- Users can exclude specific ingredients
+- Search results must update dynamically based on these filters
+- A filter menu is accessible from the search screen
+
+##### Tasks
+
+- Create a settings component to filter ingredients
+- Pass dietary parameters into the API search
+
+##### User Story 5-User login
+
+ As a user, I want my own login to see a history of my "Recent Rescues," so that I can quickly find a recipe I looked at earlier in the day without re-entering my ingredients.
+
+##### Acceptance Criteria
+
+- Set up a login section for users. 
+- A Recently Viewed section appears on the menu of your home page when logged in.
+- Clicking a recent item takes the user directly to that recipe's preview.
+
+##### Tasks
+
+- Set up a users login section to save their previous searches and recipes
+- Build a horizontal scrolling component for the Recent list
+- Implement a Clear History function within the app settings
+
+##### User Story 6-Discovering recipes by Ingredients 
+
+As a busy home cook, I want to input the ingredients I already have so that I can find recipes without going to the grocery store.
+
+##### Acceptance Criteria
+
+- The system accepts a list of at least one ingredient.
+- The system returns exactly 6 recipe cards.
+- Each card must display a high-quality image, a title, and a clear list of missing ingredients.
+
+##### Tasks
+
+- Design and implement a comma-separated or tag-based input field for ingredients.
+- Develop the backend logic to query the recipe database based on the ingredient list.
+- Create a Recipe Card UI component that handles image rendering and text layout.
+- Implement a limit/pagination function to ensure exactly 6 results are returned
+
+##### User Story 7-Indentifying missing ingredients
+
+As a budget-conscious user, I want to see exactly what I’m missing for a recipe so that I can decide if it's worth a quick trip to the shop.
+
+ ##### Acceptance Criteria
+
+- The "Missing Ingredients" section must be visually distinct 
+- The list must exclude the ingredients the user already entered.
+
+##### Tasks
+
+- Write a comparison function to subtract "User Ingredients" from "Recipe Total Ingredients."
+- Style the missing ingredients list.
+
+##### User Story 8-Visual recipe Selection
+
+ As a visual learner, I want to see a picture of the finished dish so that I can pick a meal that looks appetizing.
+
+##### Acceptance Criteria
+
+- Every recipe card must contain an image.
+- Images must maintain a consistent aspect ratio to keep the grid organized.
+- If a recipe is missing an image in the database then a placeholder image must be shown.
+
+**Tasks**
+
+- Implement an img tag with an onerror attribute to catch broken links.
+- Apply CSS properties to ensure images don't stretch.
+- Set up a fallback asset  for missing photos.
+
 
 [Back to top](#recipe-rescue)
 
