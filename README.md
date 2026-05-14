@@ -341,6 +341,7 @@ The original design for this project was a project called Sparkflow which was an
 ![image-1](/src/assets/images/header-pic.webp)
 ![image-2](/src/assets/images/ingredients-pic.png)
 ![image-3](/src/assets/images/favicon.png)
+![placeholder](/src/assets/images/placeholder-image.png)
 </details>
 
 [Back to top](#recipe-rescue)
@@ -603,6 +604,7 @@ Other issues I faced with my CSS was the gap property with display grid affectin
 
 While final testing noticed that the images on recipe card were behaving erratically disrupting the organised layout of the page. I solved this problem by removing some of the flexbox properties namely the justify-content from recipeCard DIV and adding a margin top of 10px to the image to keep it relative to the top of the recipe card no matter the size. Although this means the images turn out smaller than previosly, as they are low quality images from the external API this improves the visual quality of the images.(please see screenshots below for before and after shots)
 
+
 ![erratic-images](/src/assets/images/readme-images/erratic-image.png)  
 ![after-image-fix](/src/assets/images/readme-images/new-image-layout.png)
 
@@ -644,7 +646,7 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 
 ##### RecipeCard
 
-![RecipeCard-jsx](/src/assets/images/readme-images/Recipe-jsx-test.png)
+![RecipeCard-jsx](/src/assets/images/readme-images/Recipe-card-jsx-retest.png)
 
 ##### Footer
 
@@ -660,9 +662,13 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 
 All checks passed first time which was the expected result, although earlier in the development cycle the Main section was just called Recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code as with a separate JSX element doing as close to one thing each you can easily navigate through to update sections as needed without affecting the rest of the code.
 
-Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State but somehow that had survived the change in direction for the code and has subsequently been deleted and the screenshot above will be of the newly tested with this code deleted.below you will find a screenshot of the deleted state.
+Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State but somehow that had survived the change in direction for the code and has subsequently been deleted and the screenshot above will be of the new test with this code deleted. Below you will find a screenshot of the deleted state.
 
 ![redundant useState](/src/assets/images/readme-images/redundent-useState.png) 
+
+A placeholder image has also been added in as was getting reports that some API images were not loading. The above RecipeCard test is a retest after the image has been added in.
+
+
 
 [Back to top](#recipe-rescue)
 
