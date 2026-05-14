@@ -824,6 +824,8 @@ Other issues I faced with my CSS was the gap property with display grid affectin
 
 While final testing noticed that the images on the recipe card were behaving erratically disrupting the organised layout of the page. I solved this problem by removing some of the flexbox properties namely the justify-content from recipeCard DIV and adding a margin top of 10px to the image to keep it relative to the top of the recipe card no matter the size. Although this means the images turn out smaller than previously, as they are low quality images from the external API this improves the visual quality of the images.(please see screenshots below for before and after shots)
 
+CSS testing updated as I changed the h2 for a h1 for accessibility reasons. After this I failed to update the CSS targeting the old h2. While checking the website I noticed the styling was out, so all has been updated along with a new CSS test to suit. 
+
 
 
 
@@ -838,6 +840,8 @@ The CSS in the head of my 404-page passed all checks. All the rest of the CSS wa
 
 
 While testing my site to confirm all was working as intended I noticed I had forgotten that I had wrapped the list section in a main element so when I added the main styling to my index.css it had broken the styling for my main app. To fix this I have moved the main styling for 404 back into the head of the 404 page. The tests above still apply as the code passed whilst going through the main index.css test, so I know that it does not need retesting now it has been moved as the code did not change only location.
+
+
 
 
 [Back to top](#recipe-rescue)

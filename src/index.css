@@ -373,7 +373,7 @@ footer p {
 /*extra control for xlarge screens */
 @media screen and (min-width: 1200px) {
   /*header */
-  #opening h2 {
+  #opening h1 {
     font-size: 40px;
     margin: 0 0 10px 0;
   }
