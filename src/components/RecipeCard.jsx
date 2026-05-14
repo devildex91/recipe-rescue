@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MdOutlineFoodBank } from "react-icons/md";
+import placeholderImage from "../assets/images/placeholder-image.png"
 export default function RecipeCard({
   setRender,
   render,
@@ -10,6 +11,8 @@ export default function RecipeCard({
   /*state for recipe storage from first api call*/
   const [recipes, setRecipes] = useState([]);
   const ingredientList = ingredients.join(",");
+
+  const placeholderAlt = "Image of a burger with apology that image will not load at current time"
   /*use effect for api calls*/
   useEffect(() => {
     if (ingredients.length === 0) return;
@@ -53,7 +56,7 @@ export default function RecipeCard({
       onClick={() => recipeDetail(recipe.id)}
     >
       <div className="recipeCard shadow" key={recipe.id}>
-        <img src={recipe.image} alt={recipe.title} />
+        <img src={recipe.image || placeholderImage} alt={recipe.title||  placeholderAlt } />
         <span>(Click on me for full recipe)</span>
         <h3>
           <MdOutlineFoodBank /> {recipe.title}
