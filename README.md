@@ -53,7 +53,12 @@
 
 ---
 
-The primary goal of Recipe Rescue is to reduce food waste. We will do this by providing our users with the opportunity to use food left available to them. Once we have been provided with your ingredients, we will do all the hard work for you by providing a list of recipes. Not only does that mean that you can reduce that ever-growing shopping bill. But also discover a love of food and fill your bellies not your bins. 
+The primary goal of Recipe Rescue are:
+ - To reduce food waste by providing our users with the opportunity to use food left available to them. 
+ - To provide a list of recipes that include as many of those ingredients as possible.
+ - To reduce shopping bills and increase the money left avaliable to the user. 
+ - To get people loving food again. 
+ - To get users trying new recipes they might not have thought about before. 
 
 [Back to top](#recipe-rescue)
 
