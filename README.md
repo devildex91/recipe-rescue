@@ -17,10 +17,10 @@
 
 ## [Features](#features-1)
 
-[Existing features](#existing-features)
-[User Goals mapping](#user-goals-mapping)  
-[Features left to implement](#features-left-to-implement)
-[User Goals still to implement](#user-goals-still-to-implement)
+[Existing features](#existing-features)   
+[User Goals mapping](#user-goals-mapping)    
+[Features left to implement](#features-left-to-implement)   
+[User Goals still to implement](#user-goals-still-to-implement)   
 
 ## [Technologies used](#technologies-used-1)
 
@@ -31,9 +31,9 @@
 [CSS tests](#css-tests)  
 [JSX tests](#jsx-tests)  
 [Contrast tests](#contrast-tests)  
-[Keyboard Accessibility tests](#keyboard-accessibility-tests)
-[Development bugs and fixes](#development-bugs-and-fixes)
-[Cross browser testing](#cross-browser-testing)
+[Keyboard Accessibility tests](#keyboard-accessibility-tests)   
+[Development bugs and fixes](#development-bugs-and-fixes)   
+[Cross browser testing](#cross-browser-testing)   
 
 ## [Deployment](#deployment-1)
 
@@ -247,20 +247,32 @@ The original design for this project was a project called Sparkflow which was an
  <details>
  <summary> Colours </summary>
 
-![colours](/src/assets/images/readme-images/site-colour-choices.png)
+| Colour           	| Hex code  	 |
+|------------------	|-----------	 |
+| Dark Brown       	| "#4B352A" 	|
+| vivid orange     	| "#CA7842" 	|
+| sage green       	| "#B2CD9C" 	|
+| pale-green/beige 	| "#F0F2BD" 	|
+| very dark brown  	| "#3F2D22" 	|
 
- </details>
+[Original colour palette](/src/assets/images/readme-images/site-colour-choices.png)
+
+ 
  I chose the colour choices above because:
 
-###### F0f2BD because it acts as a warm neutral background. It's softer than a pure white on the eyes while keeping the app cosy feeling. It also has an association with grains and sunlight.
+###### #F0f2BD because it acts as a warm neutral background. It's softer than a pure white on the eyes while keeping the app cosy feeling. It also has an association with grains and sunlight.
 
-###### B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
+###### #B2CD9C because it associates with vegetables, herbs and healthy eating. It also promotes freshness and sustainability as well as a natural and organic feel which is in keeping with the business plans of the company.
 
-###### CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not fit with the design of the app standing out a little too much and looking out of place.
+###### #CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not fit with the design of the app standing out a little too much and looking out of place.
 
-###### 4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
+###### #4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
 
-###### 3F2D22 due to contrast testing, although this colour is not in the chart above but has been chosen as an alternative to #4b352A. This is because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer. Due to accessibility much of the original colour has been replaced with this new colour.
+###### #3F2D22 due to contrast testing, although this colour is not in the chart above but has been chosen as an alternative to #4b352A. This is because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer. Due to accessibility much of the original colour has been replaced with this new colour.
+
+[Back to top](#recipe-rescue)
+
+</details>
 
 [Back to top](#recipe-rescue)
 
