@@ -249,9 +249,6 @@ The original design for this project was a project called Sparkflow which was an
 
 ---
 
- <details>
- <summary> Colours </summary>
-
 | Colour           	| Hex code  	 |
 |------------------	|-----------	 |
 | Dark Brown       	| "#4B352A" 	|
@@ -259,9 +256,12 @@ The original design for this project was a project called Sparkflow which was an
 | sage green       	| "#B2CD9C" 	|
 | pale-green/beige 	| "#F0F2BD" 	|
 | very dark brown  	| "#3F2D22" 	|
+ <details>
+ <summary> Original colour palette </summary>
 
-[Original colour palette](/src/assets/images/readme-images/site-colour-choices.png)
+![Original colour palette](/src/assets/images/readme-images/site-colour-choices.png)
 
+</details >
  
  I chose the colour choices above because:
 
@@ -273,11 +273,8 @@ The original design for this project was a project called Sparkflow which was an
 
 ###### #4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
 
-###### #3F2D22 due to contrast testing, although this colour is not in the chart above but has been chosen as an alternative to #4b352A. This is because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer. Due to accessibility much of the original colour has been replaced with this new colour.
+###### #3F2D22 due to contrast testing, although this colour is not in the palette above but has been chosen as an alternative to #4b352A. This is because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer. Due to accessibility much of the original brown has been replaced with this new colour.
 
-[Back to top](#recipe-rescue)
-
-</details>
 
 [Back to top](#recipe-rescue)
 
@@ -304,9 +301,11 @@ The original design for this project was a project called Sparkflow which was an
 - The background remains #F0f2BD throughout the app. So it is warm and neutral helping reduce cognitive overload while remaining warm and consistent throughout.
 
 - The exception to this background is the nav element which has a background image instead(please see picture below).
+<details>
+<summary>nav background image</summary>
 
-[nav-image](/src/assets/images/nav-image.webp)
-
+![nav-image](/src/assets/images/nav-image.webp)
+</details>
 [Back to top](#recipe-rescue)
 
 ##### Images
@@ -316,6 +315,13 @@ The original design for this project was a project called Sparkflow which was an
 - All images have been chosen as they not only follow the theme of the app but also follow the colour scheme of the site where possible.
 
 - All images have been sourced from [pexels](https://www.pexels.com/) and the logo for the nav section of the page and within the copyright and favicon was created using [logo.com](https://logo.com/).
+<details>
+<summary>Images</summary>
+
+![image-1](/src/assets/images/header-pic.webp)
+![image-2](/src/assets/images/ingredients-pic.png)
+![image-3](/src/assets/images/favicon.png)
+</details>
 
 [Back to top](#recipe-rescue)
 
@@ -437,7 +443,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 | User Story          	| User criteria                                                                                                                                                                                	| Reason not implemented                                                                                                                                                                                                                                                                                                                                     	|
 |---------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Dietary preference  	| Users can exclude specific ingredients <br>Search results must update dynamically based on these filters<br>A filter menu is accessible from the search screen                               	| At this stage of the development we are looking to generate a MVP(minimum viable product).<br>This is because we want to see how well the product works and make sure all the basic<br>features are working as seamlessly as possible before any updates with more features are<br>added.                                                                  	|
-| User login          	| Set up login section for users<br>A recently viewed section appears on the menu of your home page when logged in<br>Clicking a recent item takes the user directly to that recipe's preview. 	| Similar to above we did not  see at this stage the benefit of creating user login sections<br>for a purely front end project. Some of the features also would require more API calls so <br>at this stage working within the remit of the free API being used feel that these are all <br>developments to be made if we choose to develop the app further. 	|
+| User login          	| Set up login section for users<br> A recently viewed section appears on the menu of your home page when logged in<br> Clicking a recent item takes the user directly to that recipe's preview. 	| Similar to above we did not  see at this stage the benefit of creating user login sections<br>for a purely front end project. Some of the features also would require more API calls so <br>at this stage working within the remit of the free API being used feel that these are all <br>developments to be made if we choose to develop the app further. 	|
 </details> 
 
 [Back to top](#recipe-rescue)
@@ -719,28 +725,12 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 | Footer margin                      	| Recipoe cards are unpredictable because cannot guarantee how many ingredients will be missing. To counteract this an extra margin has been added too top of footer and bottom of recipe cards so that nothing can overflow each other.      	|
 | image pixelation                   	| As recipe card iamges are from API and were pixerlating at certain sizes the grid layout was altered slightly for recipe section so they cannot get large enough to pixelate.                                                               	|
 | Deployment issue                   	| All of my react app was in a subfolder to my repository so was not deploying properly so had to move everything into root and adjut all file paths to correct issue                                                                         	|
-| API issue                          	| API hidden in .env file but on deployment to GITHUB stopped working and discovered through google that i had to put it in secrets in GITHUB actions to solve issue.                                                                         	|
-| recipe card layout issue 2         	| Originally had both missing and included ingredients on recipe cards but was taking up too much space and looked clutered so removed included ingredients and added link to full recipe instead. This also helped resolve API usage issues. 	|
-| Broken image                       	| Occasionally broken image broken from API end so a placeholder image has been added to solve the issue.                                                                                                                                     	|
-| Recipe section margin              	| Extra margin added to bottom of recipe section to ensure footer always stays in place at bottom of page                                                                                                                                     	|
-                                   	                                                                                                                                                                                                                                          	
+| API issue                          	| API hidden in .env file but on deployment to GITHUB stopped working and discovered through Google that I had to put it in secrets in GITHUB actions to solve issue.                                                                         	|
+| Recipe card layout issue 2         	| Originally had both missing and included ingredients on recipe cards but was taking up too much space and looked cluttered so removed included ingredients and added link to full recipe instead. This also helped resolve API usage issues. 	|
+| Broken image                       	| Occasionally broken image broken from the API end, so a placeholder image has been added to solve the issue.                                                                                                                                     	|
+| Recipe section margin              	| Extra margin added to bottom of recipe section to ensure footer always stays in place at bottom of page                                                                                                                                     	|                                                                                                                                                                
+ [Back to top](#recipe-rescue)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Back to top](#recipe-rescue)
-[](/src/assets/images/readme-images/)
 </details>
 
 
