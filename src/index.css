@@ -71,12 +71,12 @@ nav {
   box-sizing: border-box;
   font-size: 16px;
 }
-#opening h2 {
+#opening h1 {
   font-size: 25px;
   margin-bottom: 0;
 }
 #opening p {
-  margin-top: 5px;
+  margin-top: 0px;
   font-size: 15px;
 }
 /*class to keep images hidden on smaller screens*/
