@@ -284,16 +284,6 @@ The original design for this project was a project called Sparkflow which was an
 
 - Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and up. The site has been styled to have a consistent layout throughout for ease of use for all users as well as a colour palette to avoid cognitive overload whilst keeping with the food theme of the app. 
 
-<details>
-<summary>Responsive design </summary>
-
-![mobile](/src/assets/images/readme-images/Mobile-view.png)
-![tablet](/src/assets/images/readme-images/Tablet-view.png)
-![Desktop](/src/assets/images/readme-images/Desktop-view.png)
-
-
-</details>
-
 - All content has a mixture of greens and browns that have all been chosen as they represent different aspects of the food palette. The background colour was chosen as it is easier on the eyes as not to overwhelm users.
 
 - All information follows a Gestalt principle and all relevant information is kept together where possible.
@@ -414,9 +404,32 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ---
 
 - Ingredients list with ability to add, remove, or clear ingredients.
+
+<details>
+<summary>Ingredients list</summary>
+
+[ingredients list](/src/assets/images/readme-images/ingredient-list-form.png)
+</details>
 - Recipe search that returns 6 recipes based on minimal missing ingredients.
+<details>
+<summary>recipe cards</summary>
+
+[recipe cards](//src/assets/images/readme-images/recipe-cards.png)
+</details>
+
 - Link to the source site for full recipe details, ingredients lists and how to make the recipe.
+
 - Responsive on all screen sizes.
+
+<details>
+<summary>Responsive design </summary>
+
+![mobile](/src/assets/images/readme-images/Mobile-view.png)
+![tablet](/src/assets/images/readme-images/Tablet-view.png)
+![Desktop](/src/assets/images/readme-images/Desktop-view.png)
+
+
+</details>
 
 [Back to top](#recipe-rescue)
 ### User Goals mapping
