@@ -408,13 +408,13 @@ The main difference for desktop screens over tablet screens is that the grid wit
 <details>
 <summary>Ingredients list</summary>
 
-[ingredients list](/src/assets/images/readme-images/ingredient-list-form.png)
+![ingredients list](/src/assets/images/readme-images/ingredient-list-form.png)
 </details>
 - Recipe search that returns 6 recipes based on minimal missing ingredients.
 <details>
 <summary>recipe cards</summary>
 
-[recipe cards](//src/assets/images/readme-images/recipe-cards.png)
+![recipe cards](//src/assets/images/readme-images/recipe-cards.png)
 </details>
 
 - Link to the source site for full recipe details, ingredients lists and how to make the recipe.
