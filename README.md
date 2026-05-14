@@ -414,7 +414,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 <details>
 <summary>recipe cards</summary>
 
-![recipe cards](//src/assets/images/readme-images/recipe-cards.png)
+![recipe cards](/src/assets/images/readme-images/recipe-cards.png)
 </details>
 
 - Link to the source site for full recipe details, ingredients lists and how to make the recipe.
@@ -615,7 +615,7 @@ Although no errors were found within the CSS originally the CSS was split into i
 
 Other issues I faced with my CSS was the gap property with display grid affecting the nav and footer elements. In order to solve this I chose to get rid of the gap property completely and instead add margins to the DIVS and content where necessary to achieve the look I wanted. In doing this it solved the problem with my nav and footer, and they spanned 100% width again.
 
-While final testing noticed that the images on recipe card were behaving erratically disrupting the organised layout of the page. I solved this problem by removing some of the flexbox properties namely the justify-content from recipeCard DIV and adding a margin top of 10px to the image to keep it relative to the top of the recipe card no matter the size. Although this means the images turn out smaller than previosly, as they are low quality images from the external API this improves the visual quality of the images.(please see screenshots below for before and after shots)
+While final testing noticed that the images on recipe card were behaving erratically disrupting the organised layout of the page. I solved this problem by removing some of the flexbox properties namely the justify-content from recipeCard DIV and adding a margin top of 10px to the image to keep it relative to the top of the recipe card no matter the size. Although this means the images turn out smaller than previously, as they are low quality images from the external API this improves the visual quality of the images.(please see screenshots below for before and after shots)
 
 
 ![erratic-images](/src/assets/images/readme-images/erratic-image.png)  
@@ -675,7 +675,7 @@ All JSX components tested at [json table](https://jsontotable.org/jsx-validator)
 
 All checks passed first time which was the expected result, although earlier in the development cycle the Main section was just called Recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code as with a separate JSX element doing as close to one thing each you can easily navigate through to update sections as needed without affecting the rest of the code.
 
-Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State but somehow that had survived the change in direction for the code and has subsequently been deleted and the screenshot above will be of the new test with this code deleted. Below you will find a screenshot of the deleted state.
+Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the Spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State. Somehow that had survived the change in direction for the code and has subsequently been deleted. The screenshot above will be of the new test with this code deleted. Below you will find a screenshot of the deleted state.
 
 ![redundant useState](/src/assets/images/readme-images/redundent-useState.png) 
 
@@ -896,22 +896,21 @@ base: "/your-repo-name/", // Replace with your exact repository name
 ---
 | Credits             	| Use                        	|
 |----------------------	|----------------------------	|
-| React Icons          	| All Icons                  	|
-| Google fonts         	| fonts                      	|
-| getcssscan           	| box-shadow property        	|
-| VITE documentation   	| deployment and setup       	|
-| GITHUB documentation 	| GITHUB pages setup         	|
-| REACT documentation  	| JSX elements/best practice 	|
-| Spoonacular          	|  API                       	|
-| SQUOOSH              	| Image compression          	|
-| Pexels               	| Image sourcing             	|
-| Google fonts         	| importing Geologica        	|
+| [React Icons](https://react-icons.github.io/react-icons/)          	| All Icons                  	|
+| [Google fonts](https://fonts.google.com/)         	| fonts                      	|
+| [getcssscan](https://getcssscan.com/)           	| box-shadow property        	|
+| [VITE documentation](https://vite.dev/)   	| deployment and setup       	|
+| [GITHUB documentation](https://docs.github.com/en) 	| GITHUB pages setup         	|
+| [REACT documentation](https://react.dev/)  	| JSX elements/best practice 	|
+| [Spoonacular](https://spoonacular.com/food-api)          	|  API                       	|
+| [SQUOOSH](https://squoosh.app/)              	| Image compression          	|
+| [Pexels](https://squoosh.app/)               	| Image sourcing             	|
 | Lighthouse           	| Testing                    	|
-| validator.w3   	      | HTML testing                |
-| jigsaw.w3      	      | CSS testing                 |
-| json table     	      | JSX testing                 |
-| webaim         	      | contrast testing            |
-|Logo.com               | Logo and title favicon      |
+| [validator.w3](https://validator.w3.org/)   	      | HTML testing                |
+| [jigsaw.w3](https://jigsaw.w3.org/css-validator/)      	      | CSS testing                 |
+| [json table](https://jsontotable.org/)     	      | JSX testing                 |
+| [webaim](https://webaim.org/resources/contrastchecker/)         	      | contrast testing            |
+|[Logo.com](https://logo.com/)               | Logo and title favicon      |
 
 ###### All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
 
