@@ -53,10 +53,10 @@
 
 ---
 
-The primary goal of Recipe Rescue are:
+The primary goals of Recipe Rescue are:
  - To reduce food waste by providing our users with the opportunity to use food left available to them. 
  - To provide a list of recipes that include as many of those ingredients as possible.
- - To reduce shopping bills and increase the money left avaliable to the user. 
+ - To reduce shopping bills and increase the money left available to the user. 
  - To get people loving food again. 
  - To get users trying new recipes they might not have thought about before. 
 
@@ -70,7 +70,7 @@ The business goals of Recipe Rescue are:
 - To simplify Meal discovery
 - Optimise household budgets
 - Maximise user acquisition by targeting budget conscious shoppers, students and home cooks.
-- Long term business goals would be to secure partnerships with major supermarkets to offer personalised shopping lists to your favourite Supermarkets.  
+- Long term business goals are to secure partnerships with major supermarkets to offer personalised shopping lists to your favourite Supermarkets.  
 
 [Back to top](#recipe-rescue)
 
@@ -78,7 +78,7 @@ The business goals of Recipe Rescue are:
 
 ---
 
-The goals for users would be :
+The goals for users would be:
 - Save money on their shopping
 - Reduce Household waste
 - Save time on meal planning
@@ -153,7 +153,7 @@ As a user with specific dietary restrictions I want to filter my ingredient sear
 
 ##### User Story 5-User login
 
- As a user, I want my own login to see a history of my "Recent Rescues," so that I can quickly find a recipe I looked at earlier in the day without re-entering my ingredients.
+ As a user, I want my own login to see a history of my Recent Rescues, so that I can quickly find a recipe I looked at earlier in the day without re-entering my ingredients.
 
 ##### Acceptance Criteria
 
@@ -210,9 +210,8 @@ As a budget-conscious user, I want to see exactly what I’m missing for a recip
 
 ##### Tasks
 
-- Implement an img tag with an onerror attribute to catch broken links.
 - Apply CSS properties to ensure images don't stretch.
-- Set up a fallback asset  for missing photos.
+- Set up a fallback asset for missing photos.
 
 
 [Back to top](#recipe-rescue)
@@ -249,7 +248,7 @@ The original design for this project was a project called Sparkflow which was an
 
 ---
 
-| Colour           	| Hex code  	 |
+| Colours           	| Hex code  	 |
 |------------------	|-----------	 |
 | Dark Brown       	| "#4B352A" 	|
 | vivid orange     	| "#CA7842" 	|
@@ -294,7 +293,7 @@ The original design for this project was a project called Sparkflow which was an
 <details>
 <summary>Button hover styles</summary>
 
-- Top/Btm buttons normal
+- Top/Bottom buttons normal
 - Middle button hover effect
 
 ![button hover](/src/assets/images/readme-images/Button-hover.png)
@@ -309,11 +308,11 @@ The original design for this project was a project called Sparkflow which was an
 
 - The background remains #F0f2BD throughout the app. So it is warm and neutral helping reduce cognitive overload while remaining warm and consistent throughout.
 
-- The exception to this background is the nav element which has a background image instead(please see picture below).
+- The exception to this background is the nav element which has a background image instead (please see picture below).
 <details>
 <summary>nav background image</summary>
 
-![nav-image](/src/assets/images/nav-image.webp)
+![Nav-image](/src/assets/images/nav-image.webp)
 </details>
 
 [Back to top](#recipe-rescue)
@@ -404,32 +403,10 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ---
 
 - Ingredients list with ability to add, remove, or clear ingredients.
-
-<details>
-<summary>Ingredients list</summary>
-
-![ingredients list](/src/assets/images/readme-images/ingredient-list-form.png)
-</details>
 - Recipe search that returns 6 recipes based on minimal missing ingredients.
-<details>
-<summary>recipe cards</summary>
-
-![recipe cards](/src/assets/images/readme-images/recipe-cards.png)
-</details>
-
-- Link to the source site for full recipe details, ingredients lists and how to make the recipe.
-
+- Link to the source site for full recipe details, ingredients lists and how to make the recipe (recipe cards in above screenshot act as links to external source sites).
 - Responsive on all screen sizes.
 
-<details>
-<summary>Responsive design </summary>
-
-![mobile](/src/assets/images/readme-images/Mobile-view.png)
-![tablet](/src/assets/images/readme-images/Tablet-view.png)
-![Desktop](/src/assets/images/readme-images/Desktop-view.png)
-
-
-</details>
 
 [Back to top](#recipe-rescue)
 ### User Goals mapping
@@ -439,15 +416,15 @@ The main difference for desktop screens over tablet screens is that the grid wit
 <details>
 <summary>User goals mapping</summary>
 
-- To support the existing features that have been implemented please see the table below outlines the User Stories that have been implemented onto the App and supporting screenshots for evidence.
+- To support the existing features that have been implemented, please see the table below that outlines implemented User Stories and their supporting evidence screenshots.
 
 | User Story                         	| Acceptance Criteria                                                                                                                                                                   	| Supporting designs                                                                                                                                                                                                                              	|
 |------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Responsive layout                  	| Responsive to whatever screen size is used. <br>Website clearly tells user what  they need to do.                                                                                     	| [responsive design](/src/assets/images/readme-images/responsive-design.png)<br>[clear instructions](/src/assets/images/readme-images/clear-instructions.png)<br>[clear instruction 2](/src/assets/images/readme-images/clear-instructions2.png) 	|
-| Missing Ingredient                 	| Each recipe card displays the missing ingredient.                                                                                                                                     	| [recipe card](/src/assets/images/readme-images/recipe-card.png)                                                                                                                                                                                 	|
-| Ingredient based search recipe     	| Users can add multiple ingredients to search.   <br>The app returns a list of recipes that includes as many ingredients as possible.                                                  	| [ingredients form](/src/assets/images/readme-images/ingredient-list-form.png)<br>[recipe cards](/src/assets/images/readme-images/recipe-cards.png)                                                                                              	|
-| Discovering recipes by ingredients 	| The system accepts a list of at least five ingredients.  <br>It returns six recipe cards.  <br>Each card displays a high quality image, a title and a list of missing ingredients.    	| [ingredients form](/src/assets/images/readme-images/ingredient-list-form.png)<br>[recipe cards](/src/assets/images/readme-images/recipe-cards.png)                                                                                              	|
-| Visual Recipe Selection            	| Every recipe card must contain an image. <br>Images must maintain a consistent aspect ratio.                                                                                          	| [recipe card](/src/assets/images/readme-images/recipe-card.png)<br>[aspect ratios](/src/assets/images/readme-images/aspect-ratios.png)    
+| Responsive layout                  	| Responsive to whatever screen size is used. <br>Website clearly tells user what they need to do.                                                                                     	| [Responsive design](/src/assets/images/readme-images/responsive-design.png)<br>[Clear instructions](/src/assets/images/readme-images/clear-instructions.png)<br>[Clear instruction 2](/src/assets/images/readme-images/clear-instructions2.png) 	|
+| Missing Ingredient                 	| Each recipe card displays the missing ingredient.                                                                                                                                     	| [Recipe card](/src/assets/images/readme-images/recipe-card.png)                                                                                                                                                                                 	|
+| Ingredient based search recipe     	| Users can add multiple ingredients to search.   <br>The app returns a list of recipes that includes as many ingredients as possible.                                                  	| [Ingredients form](/src/assets/images/readme-images/ingredient-list-form.png)<br>[Recipe cards](/src/assets/images/readme-images/recipe-cards.png)                                                                                              	|
+| Discovering recipes by ingredients 	| The system accepts a list of at least five ingredients.  <br>It returns six recipe cards.  <br>Each card displays a high quality image, a title and a list of missing ingredients.    	| [Ingredients form](/src/assets/images/readme-images/ingredient-list-form.png)<br>[Recipe cards](/src/assets/images/readme-images/recipe-cards.png)                                                                                              	|
+| Visual Recipe Selection            	| Every recipe card must contain an image. <br>Images must maintain a consistent aspect ratio.                                                                                          	| [Recipe card](/src/assets/images/readme-images/recipe-card.png)<br>[aspect ratios](/src/assets/images/readme-images/aspect-ratios.png)    
 
                                                                                                        	|
 
@@ -476,8 +453,8 @@ The main difference for desktop screens over tablet screens is that the grid wit
 
 | User Story          	| User criteria                                                                                                                                                                                	| Reason not implemented                                                                                                                                                                                                                                                                                                                                     	|
 |---------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Dietary preference  	| Users can exclude specific ingredients <br>Search results must update dynamically based on these filters<br>A filter menu is accessible from the search screen                               	| At this stage of the development we are looking to generate a MVP(minimum viable product).<br>This is because we want to see how well the product works and make sure all the basic<br>features are working as seamlessly as possible before any updates with more features are<br>added.                                                                  	|
-| User login          	| Set up login section for users<br> A recently viewed section appears on the menu of your home page when logged in<br> Clicking a recent item takes the user directly to that recipe's preview. 	| Similar to above we did not  see at this stage the benefit of creating user login sections<br>for a purely front end project. Some of the features also would require more API calls so <br>at this stage working within the remit of the free API being used feel that these are all <br>developments to be made if we choose to develop the app further. 	|
+| Dietary preference  	| Users can exclude specific ingredients <br>Search results must update dynamically based on these filters<br> A filter menu is accessible from the search screen                               	| At this stage of the development we are looking to generate an MVP (minimum viable product). This is because we want to see how well the product works and make sure all the basic features are working as seamlessly as possible before any updates with more features are added.                                                                  	|
+| User login          	| Set up login section for users<br> A recently viewed section appears on the menu of your home page when logged in<br> Clicking a recent item takes the user directly to that recipe's preview. 	| Similar to above we did not see at this stage the benefit of creating user login sections for a purely front end project. Some of the features also would require more API calls so working within the remit of the free API being used feel that these are all developments to be made if we choose to develop the app further. 	|
 </details> 
 
 [Back to top](#recipe-rescue)
@@ -587,12 +564,12 @@ The second screenshot submitted for the same reason as the last mobile design ch
 ![HTML check](/src/assets/images/readme-images/html-check.png)
 HTML all passed though being a React app the only HTML are stylesheet links and a root DIV to render content into.
 
-#### 404 page HTML check
+#### 404-page HTML check
 
 ![404 first check](/src/assets/images/readme-images/404-HTML-first.png)
 ![404 second check](/src/assets/images/readme-images/404-HTML-second.png)
 
-After first test failure all trailing slashes were removed as well as styling the a href to look like a button and removing the button element and everything passed. But meant lighthouse testing had to be redone.
+After first test failure all trailing slashes were removed as well as styling the "<a>" href to look like a button and removing the button element and everything passed. But meant lighthouse testing had to be redone.
 
 
 [Back to top](#recipe-rescue)
@@ -755,15 +732,15 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 
 | Bugs/changes/                      	| Fix                                                                                                                                                                                                                                         	|
 |------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| flex layout                        	| Originally used pure flexbox for styling but updated to use display grid and flexbox for better responsiveness and layout controls                                                                                                          	|
-| Footer bug larger screen sizes     	| Footer was set to start at a grid number that diddnt exist so was adding an extra grid to accomodate the position number so had to delete grid position to fix issue                                                                        	|
+| Flex layout                        	| Originally used pure flexbox for styling but updated to use display grid and flexbox for better responsiveness and layout controls                                                                                                          	|
+| Footer bug larger screen sizes     	| Footer was set to start at a grid number that did not exist so was adding an extra grid to accommodate the position number so had to delete grid position to fix issue                                                                        	|
 | Content shrinkage on large screens 	| Had to add extra media queries at 1200px and 1800px to stop content shrinkage and to make sure everything readable at all sizes.                                                                                                            	|
-| recipe card layout issue           	| As recipe cards rendered to page the logo in nav was not shrinking because of sizing so had to change from width to max-width to allow images to fit the content better                                                                     	|
-| Accesibility issue                 	| Had to wrap content in a main tag for screen readers and accessibility. Also had to adjust CSS to suit new main div being added                                                                                                             	|
-| react gap issue                    	| Had to add seperate gridContainer div for grid styles as body and root div have seperate styles for overflow and margin to stop margin around whole page.                                                                                   	|
-| Footer margin                      	| Recipoe cards are unpredictable because cannot guarantee how many ingredients will be missing. To counteract this an extra margin has been added too top of footer and bottom of recipe cards so that nothing can overflow each other.      	|
-| image pixelation                   	| As recipe card iamges are from API and were pixerlating at certain sizes the grid layout was altered slightly for recipe section so they cannot get large enough to pixelate.                                                               	|
-| Deployment issue                   	| All of my react app was in a subfolder to my repository so was not deploying properly so had to move everything into root and adjut all file paths to correct issue                                                                         	|
+| Recipe card layout issue           	| As recipe cards rendered to page the logo in nav was not shrinking because of sizing so had to change from width to max-width to allow images to fit the content better                                                                     	|
+| Accessibility issue                 	| Had to wrap content in a main tag for screen readers and accessibility. Also had to adjust CSS to suit new main DIV being added                                                                                                             	|
+| React gap issue                    	| Had to add separate gridContainer DIV for grid styles as body and root DIV have separate styles for overflow and margin to stop margin around whole page.                                                                                   	|
+| Footer margin                      	| Recipe cards are unpredictable because cannot guarantee how many ingredients will be missing. To counteract this an extra margin has been added too top of footer and bottom of recipe cards so that nothing can overflow each other.      	|
+| Image pixelation                   	| As recipe card images are from API and were pixelating at certain sizes the grid layout was altered slightly for recipe section so they cannot get large enough to pixelate.                                                               	|
+| Deployment issue                   	| All of my React app was in a subfolder to my repository so was not deploying properly so had to move everything into root and adjust all file paths to correct issue                                                                         	|
 | API issue                          	| API hidden in .env file but on deployment to GITHUB stopped working and discovered through Google that I had to put it in secrets in GITHUB actions to solve issue.                                                                         	|
 | Recipe card layout issue 2         	| Originally had both missing and included ingredients on recipe cards but was taking up too much space and looked cluttered so removed included ingredients and added link to full recipe instead. This also helped resolve API usage issues. 	|
 | Broken image                       	| Occasionally broken image broken from the API end, so a placeholder image has been added to solve the issue.                                                                                                                                     	|
@@ -787,7 +764,7 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 |----------------	|-----------------------	|------------	|-------------------	|---------------------------------	|------------------------------	|-----------------------------	|----------------------------	|
 | Browser        	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
 | Chrome         	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
-| Chrome(mobile) 	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
+| Chrome (mobile) 	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
 | Safari         	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
 | Edge           	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
 | Firefox        	| Pass/Pass             	| Pass/Pass  	| Pass/Pass         	| Pass/Pass                       	| Pass/Pass                    	| Pass/Pass                   	| Pass/Pass                  	|
@@ -813,7 +790,7 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 
 ---
 
-1.  Setting up a Vite project by opening up your IDE and opening a terminal.
+1.  Set up a Vite project by opening up your IDE and opening a terminal.
 2.  Type:  
     npm create vite@latest<br>  
     and follow the prompts making sure to select React and javascript.
