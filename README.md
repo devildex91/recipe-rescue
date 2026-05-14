@@ -613,6 +613,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 - Advanced search to be added allowing to search based on dietary requirements.
 - Sign in page to be added to allow saving of favourite recipes or specialist search parameters.
 
+[Back to top](#recipe-rescue)
 
 ### User Goals still to implement
 
@@ -1059,10 +1060,6 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 [Back to top](#recipe-rescue)
 </details>
 
-
-[Back to top](#recipe-rescue)
-
-
 ### Deployment
 
 
@@ -1162,7 +1159,8 @@ base: "/your-repo-name/", // Replace with your exact repository name
 1.  Navigate to [devildex91/recipe-rescue](https://github.com/devildex91/recipe-rescue)
 2.  Click on the green code button
 3.  Select download zip
-4.  Once downloaded, unpack the zipped file to a location of your choosing, and you can work on and run the code in an IDE of your choosing (Have fun).
+4.  Once downloaded, unpack the zipped file to a location of your choosing, and you can work on and run the code in an IDE of your choosing.
+5. Before running this code set up your React environment, open a terminal and type npm install. This should download all dependencies needed. For reference see dependencies section at end of README to confirm all have been downloaded. 
 
 
   </details>
