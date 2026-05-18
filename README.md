@@ -373,7 +373,7 @@ The original design for this project was a project called Sparkflow which was an
 ###### #CA7842 although part of the original design as it's been shown to stimulate the appetite and associates with spices and warmth it was kept out of the final design as it just did not fit with the design of the app standing out a little too much and looking out of place.
 
 
-###### #4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app replacing many of the parts that
+###### #4B352A because of its association with chocolate, coffee and grilled meat. It also provides a grounding and sophisticated feel to the app.
 
 
 ###### #3F2D22 due to contrast testing, although this colour is not in the palette above but has been chosen as an alternative to #4b352A. This is because it is a close enough match but passed both AA and AAA WCAG tests. Although the original colour is still used for the footer. Due to accessibility much of the original brown has been replaced with this new colour.
