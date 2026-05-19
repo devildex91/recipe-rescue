@@ -9,8 +9,11 @@ export default function MainSection() {
   const [render, setRender] = useState(false);
   /*function changes state to true*/
   function getRecipe() {
+    if (ingredients.length < 5){
+      alert("Please enter five ingredients to continue")
+    } else{
     setRender(true);
-  }
+  }}
   return (
     <main>
       {render ? (

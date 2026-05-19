@@ -35,7 +35,7 @@ export default function IngredientsList({
   }
   /*Variable to render get recipe button onto page after 5 ingredients added to list*/
   const buttonRender =
-    ingredients.length >= 5 ? (
+    ingredients.length >= 1 ? (
       /*button calls getRecipe to change state and render recipe to page*/
       <button id="getRecipe" onClick={getRecipe}>
         Get recipe
