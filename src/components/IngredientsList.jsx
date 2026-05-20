@@ -1,30 +1,34 @@
 import { useEffect, useState } from "react";
 import ingredientPic from "../assets/images/ingredients-pic.png";
 import { MdFoodBank } from "react-icons/md";
-
+import ingredientsData from "../data/ingredientsData.json"
 export default function IngredientsList({
   ingredients,
   setIngredients,
   getRecipe,
 }) {
-  function handleSubmit(formData) {
-    const newIngredient = formData.get("ingredient");
-    if (newIngredient === "") {
-      alert("please enter an ingredient to continue");
-    } else {
-      if (newIngredient.length > 0) {
-        if (!ingredients.includes(newIngredient)) {
-          setIngredients((prevIngredients) => [
-            ...prevIngredients,
-            newIngredient,
-          ]);
-        } else {
-          alert(`You have already entered ${newIngredient}`);
-          return ingredients;
-        }
-      }
-    }
+  const [selectedIngredient, setSelectedIngredient] = useState('');
+  const [loading, setLoading] = useState(true);
+useEffect(() => {
+    const initialNames = ingredientsData.map(item => item.name);
+        setIngredients([]);
+        setLoading(false);
+  }, []);
+
+ function handleSubmit(event) {
+  event.preventDefault();
+  const newIngredient = selectedIngredient.trim();
+  if (!newIngredient) {
+    alert("please enter an ingredient to continue");
+    return;
   }
+  if (!ingredients.includes(newIngredient)) {
+    setIngredients(prev => [...prev, newIngredient]);
+    setSelectedIngredient("");
+  } else {
+    alert(`You have already entered ${newIngredient}`);
+  }
+}
   /*Function to handle removing items from list*/
   function removeIngredient() {
     setIngredients((prevIngredients) => prevIngredients.slice(0, -1));
@@ -58,14 +62,20 @@ export default function IngredientsList({
         />
       </div>
       <div id="formDiv">
-        <form action={handleSubmit} className="ingredientsForm">
-          <label htmlFor="ingredient">Enter your ingredients here:</label>
-          <input
-            type="text"
-            id="ingredient"
-            name="ingredient"
-            aria-label="Add ingredient"
-          ></input>
+        <form onSubmit={handleSubmit} className="ingredientsForm">
+          <label htmlFor="ingredient">Choose an ingredient: </label>
+      <select 
+        id="ingredient" 
+        value={selectedIngredient} 
+        onChange={(e) => setSelectedIngredient(e.target.value)}
+      >
+        <option value="">-- Select an Ingredient --</option>
+        {ingredientsData.map((ingredient) => (
+          <option key={ingredient.key} value={ingredient.name}>
+            {ingredient.name}
+          </option>
+        ))}
+      </select>
           <button type="submit">Add ingredient</button>
           <button type="button" onClick={removeIngredient}>
             Remove ingredient

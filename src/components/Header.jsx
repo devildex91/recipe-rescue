@@ -6,7 +6,7 @@ export default function Header() {
       <div id="textDiv">
         <h1>Welcome to Recipe Rescue</h1>
         <h2>Our aim is to stop food waste</h2> 
-        <h3>with these simple steps</h3>
+        <h3>with these simple steps:</h3>
         <ol id="instructions">
           <li>Enter a minimum of five ingredients in the form below</li>
           <li>Click on the Get recipe button that will appear.</li>
