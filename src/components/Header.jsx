@@ -5,13 +5,14 @@ export default function Header() {
     <div id="opening" className="shadow">
       <div id="textDiv">
         <h1>Welcome to Recipe Rescue</h1>
-        <p>
-          Our aim is to stop food waste one ingredient at a time. How you might
-          ask? Well, you provide us with the ingredients (at least 5
-          please-we're good but we can't work miracles!), and we provide the
-          recipe. It really is that simple. So if you're ready to go lets stop
-          the waste and start the taste.
-        </p>
+        <h2>Our aim is to stop food waste</h2> 
+        <h3>with these simple steps</h3>
+        <ol id="instructions">
+          <li>Enter a minimum of five ingredients in the form below</li>
+          <li>CLick on the Get recipe button that will appear.</li>
+          <li>Pick a recipe from the six that appear.</li>
+          <li>Click the recipe for full details</li>
+        </ol>
       </div>
       <div id="headerImg">
         <img

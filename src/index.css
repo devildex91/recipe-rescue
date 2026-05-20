@@ -88,6 +88,10 @@ nav {
   display: flex;
   flex-direction: column;
 }
+#instructions{
+  list-style-position: inside;
+  font-weight: bold;
+}
 /*styles for image in header*/
 #headerImg img {
   width: auto;
@@ -131,9 +135,20 @@ form input:hover {
   color: var(--highlight-color);
 }
 /*list of ingredients  */
-#listSection li {
+/*#listSection li {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 350px;
+}*/
+#ingredientsList{
+   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 350px;
 }
 /*list section button styles*/
 #listSection button {
@@ -426,7 +441,9 @@ footer p {
     padding-top: 10px;
   }
   #listSection li {
+    
     font-size: 30px;
+   
   }
   button {
     font-size: 30px;
