@@ -9,7 +9,7 @@ export default function Header() {
         <h3>with these simple steps</h3>
         <ol id="instructions">
           <li>Enter a minimum of five ingredients in the form below</li>
-          <li>CLick on the Get recipe button that will appear.</li>
+          <li>Click on the Get recipe button that will appear.</li>
           <li>Pick a recipe from the six that appear.</li>
           <li>Click the recipe for full details</li>
         </ol>

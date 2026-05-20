@@ -91,6 +91,8 @@ nav {
 #instructions{
   list-style-position: inside;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 /*styles for image in header*/
 #headerImg img {
@@ -135,18 +137,14 @@ form input:hover {
   color: var(--highlight-color);
 }
 /*list of ingredients  */
-/*#listSection li {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  max-height: 350px;
-}*/
+
 #ingredientsList{
    list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
   flex-wrap: wrap;
   max-height: 350px;
 }
