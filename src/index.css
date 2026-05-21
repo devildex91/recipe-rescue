@@ -28,6 +28,9 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
+  #gridContainer:has(#fullRecipe) #opening {
+  display: none;
+}
 /*font styles for all sections*/
 h1,
 h2,
@@ -234,8 +237,8 @@ form #ingredient:hover {
   max-width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
   margin-top: 10px;
+
 }
 .recipeCard ul {
   align-self: flex-start;
@@ -262,6 +265,44 @@ form #ingredient:hover {
   margin-bottom: 0;
   margin-top: 5px;
 }
+
+/*Full recipe styles*/
+#fullRecipe{
+  background-color: var(--secondary-color);
+  display:flex;
+  flex-direction: column;
+  margin:20px;
+  border-radius: 8px;
+}
+#fullRecipe img{
+  margin:20px;
+  max-width: 100%;
+  height: auto;    
+  display: block; 
+
+}
+#fullRecipe button{
+  width:fit-content;
+  height: fit-content;
+   background-color: var(--alternate-color);
+  color: var(--highlight-color);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
+#fullRecipe button:hover{
+   background-color: var(--highlight-color);
+  color: var(--alternate-color);
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+}
+#fullRecipe h3,h4,ol,ul,p{
+  margin: 10px;
+}
+#fullRecipe li {
+  padding:3px;
+}
+
 /*footer styles*/
 footer {
   display: flex;
@@ -294,6 +335,8 @@ footer p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto auto;
   }
+  /*Hides opening if fullRecipe is on the page*/
+
   main {
     display: grid;
     grid-column: span 2;
@@ -374,7 +417,6 @@ footer p {
   /*recipe styles*/
   #recipeResult {
     align-items: center;
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     margin: auto;
@@ -409,6 +451,15 @@ footer p {
   .recipeCard li {
     font-size: 25px;
   }
+  #fullRecipe{
+    flex-direction:row;
+    
+  }
+  #fullRecipe img{
+    max-width:50%;
+    height:50%;
+  }
+  
 }
 @media screen and (min-width: 1900px) {
   #logo {
