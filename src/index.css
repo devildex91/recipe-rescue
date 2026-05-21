@@ -44,6 +44,7 @@ form,
 li {
   font-family: var(--secondary-font);
 }
+img {border-radius:8px;}
 /*navbar styles */
 nav {
   display: flex;
@@ -191,7 +192,7 @@ form #ingredient:hover {
 }
 /*outer div of recipe section*/
 #recipeSection {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 /*div to contain recipe cards on render*/
 #recipeResult {
@@ -200,7 +201,7 @@ form #ingredient:hover {
   grid-auto-rows: 1fr;
   gap: 20px;
   padding: 20px;
-  margin: 10px 0;
+  margin: 0 0;
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -335,12 +336,11 @@ footer p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows:auto;
   }
-  /*Hides opening if fullRecipe is on the page*/
-
   main {
     display: grid;
     grid-column: span 2;
     grid-template-rows: subgrid;
+    margin-bottom: 0;
   }
   nav {
     grid-column: span 2;
@@ -385,7 +385,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   #listPic {
     margin: 20px;
@@ -417,7 +417,6 @@ footer p {
     grid-column: span 2;
     align-self:end;
     margin-top:30px ;
-    
     grid-row: 4;
   }
 }
