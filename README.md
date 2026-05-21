@@ -306,6 +306,8 @@ As a budget-conscious user, I want to see exactly what I’m missing for a recip
 
 
 The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist. [Original design](/src//assets/images/readme-images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [Original Wireframe](/src/assets/images/readme-images/computer-closerlookpage-wireframes.png). Although I did start this project, as it progressed I felt that in order to fully achieve everything possible with this app it was better left for a later project. Once I had the server side sorted as well, I could add login pages and the user review section could be more responsive and updatable. From that original idea came Recipe Rescue. That is because it follows a similar structure to Sparkflow in taking a parameter, searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
+ 
+ Following on from user testing the design has been altered to include a dropdown of ingredients rather than an input field.  The opening text has also been shortened to a list of instructions as users were finding it difficult to work out how to use the app and finding the opening text distracting.
 
 
 ##### Fonts

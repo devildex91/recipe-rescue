@@ -310,7 +310,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   width: auto;
-  height: auto;
+  height:auto;
 }
 .footerLogo {
   height: 20px;
@@ -406,7 +406,8 @@ footer p {
   }
    #fullRecipe{
     flex-direction:row;
-    
+     padding-bottom: 150px;
+    margin-bottom: 0;
   }
   #fullRecipe img{
     max-width:50%;
@@ -463,8 +464,6 @@ footer p {
   .recipeCard li {
     font-size: 25px;
   }
-
-  
 }
 @media screen and (min-width: 1900px) {
   #logo {
