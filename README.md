@@ -43,7 +43,8 @@
 [Contrast tests](#contrast-tests)  
 [Keyboard Accessibility tests](#keyboard-accessibility-tests)  
 [Development bugs and fixes](#development-bugs-and-fixes)  
-[Cross browser testing](#cross-browser-testing)  
+[Cross browser testing](#cross-browser-testing)   
+[User Testing](#user-testing) 
 
 
 ## [Deployment](#deployment-1)
@@ -1092,6 +1093,8 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 
 [Back to top](#recipe-rescue)
 </details>
+
+[Back to top](#recipe-rescue)
 
 
 ### Deployment
