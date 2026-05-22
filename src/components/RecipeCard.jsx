@@ -86,7 +86,7 @@ export default function RecipeCard({
   ));
 
   const renderFullRecipe = fullRecipe ? (
-    <div id = "fullRecipe" key ={fullRecipe.id}>
+    <div id = "fullRecipe" className = "shadow" key ={fullRecipe.id}>
       
       <img src = {fullRecipe.image || placeholderImage}
        alt = {fullRecipe.title || placeholderAlt}

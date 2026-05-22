@@ -472,6 +472,9 @@ footer p {
   .recipeCard li {
     font-size: 25px;
   }
+   #fullRecipe{
+    width:100%;
+  }
 }
 @media screen and (min-width: 1900px) {
   #logo {
