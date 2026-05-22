@@ -286,9 +286,10 @@ main:has(#fullRecipe) {
 }
 #fullRecipe img {
   margin: 20px;
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width:100%;
+  height:auto;
+  display:block;
+  
 }
 #fullRecipe button {
   width: fit-content;
@@ -419,14 +420,6 @@ footer p {
     min-height: 100%;
     margin: auto;
   }
-  #fullRecipe {
-    flex-direction: row;
-    margin-bottom: 20px;
-  }
-  #fullRecipe img {
-    max-width: 50%;
-    height: 50%;
-  }
   footer {
     grid-column: span 2;
     align-self: end;
@@ -478,8 +471,22 @@ footer p {
   .recipeCard li {
     font-size: 25px;
   }
-  #fullRecipe {
-    width: 100%;
+
+   #fullRecipe {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+     width: 100%;
+  }
+  #fullRecipe img {
+    width:50%;
+    height:50%;
+    align-self: flex-start;
+    
+  }
+  #textContent{
+    align-self: flex-end;
+
   }
 }
 @media screen and (min-width: 1900px) {
