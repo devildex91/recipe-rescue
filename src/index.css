@@ -280,6 +280,9 @@ main:has(#fullRecipe){
   border-radius: 8px;
   grid-row:100%;
 }
+#fullRecipe:hover{
+   border: 10px solid var(--primary-color);
+}
 #fullRecipe img{
   margin:20px;
   max-width: 100%;
