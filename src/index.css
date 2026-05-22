@@ -28,7 +28,7 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
-  #gridContainer:has(#fullRecipe) #opening {
+#gridContainer:has(#fullRecipe) #opening {
   display: none;
 }
 /*font styles for all sections*/
@@ -44,7 +44,9 @@ form,
 li {
   font-family: var(--secondary-font);
 }
-img {border-radius:8px;}
+img {
+  border-radius: 8px;
+}
 /*navbar styles */
 nav {
   display: flex;
@@ -78,10 +80,11 @@ nav {
 #opening h1 {
   font-size: 25px;
   margin-bottom: 0;
-  margin-top:5px;
+  margin-top: 5px;
 }
-#opening h2,#opening h3 {
-  margin:0;
+#opening h2,
+#opening h3 {
+  margin: 0;
   font-size: 20px;
 }
 /*class to keep images hidden on smaller screens*/
@@ -93,7 +96,7 @@ nav {
   display: flex;
   flex-direction: column;
 }
-#instructions{
+#instructions {
   list-style-position: inside;
   font-weight: bold;
   margin: 0;
@@ -143,15 +146,15 @@ form #ingredient:hover {
 }
 /*list of ingredients  */
 
-#ingredientsList{
-   list-style: none;
+#ingredientsList {
+  list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-height:auto;
+  height: auto;
 }
 /*list section button styles*/
 #listSection button {
@@ -240,7 +243,6 @@ form #ingredient:hover {
   height: auto;
   display: block;
   margin-top: 10px;
-
 }
 .recipeCard ul {
   align-self: flex-start;
@@ -267,49 +269,51 @@ form #ingredient:hover {
   margin-bottom: 0;
   margin-top: 5px;
 }
-main:has(#fullRecipe){
-  display:flex;
+main:has(#fullRecipe) {
+  display: flex;
   align-items: stretch;
 }
 /*Full recipe styles*/
-#fullRecipe{
+#fullRecipe {
   background-color: var(--secondary-color);
-  display:flex;
+  display: flex;
   flex-direction: column;
-  margin:20px;
+  margin: 20px;
   border-radius: 8px;
-  grid-row:100%;
 }
-#fullRecipe:hover{
-   border: 10px solid var(--primary-color);
+#fullRecipe:hover {
+  border: 10px solid var(--primary-color);
 }
-#fullRecipe img{
-  margin:20px;
+#fullRecipe img {
+  margin: 20px;
   max-width: 100%;
-  height: auto;    
-  display: block; 
-
+  height: auto;
+  display: block;
 }
-#fullRecipe button{
-  width:fit-content;
+#fullRecipe button {
+  width: fit-content;
   height: fit-content;
-   background-color: var(--alternate-color);
+  background-color: var(--alternate-color);
   color: var(--highlight-color);
   margin: 5px;
   padding: 10px;
   border-radius: 8px;
 }
-#fullRecipe button:hover{
-   background-color: var(--highlight-color);
+#fullRecipe button:hover {
+  background-color: var(--highlight-color);
   color: var(--alternate-color);
   border: 3px solid var(--primary-color);
   cursor: pointer;
 }
-#fullRecipe h3,h4,ol,ul,p{
+#fullRecipe h3,
+h4,
+ol,
+ul,
+p {
   margin: 10px;
 }
 #fullRecipe li {
-  padding:3px;
+  padding: 3px;
 }
 
 /*footer styles*/
@@ -319,7 +323,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   width: auto;
-  height:auto;
+  height: auto;
 }
 .footerLogo {
   height: 20px;
@@ -342,7 +346,7 @@ footer p {
   #gridContainer {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows:auto;
+    grid-template-rows: auto;
   }
   main {
     display: grid;
@@ -350,9 +354,9 @@ footer p {
     grid-template-rows: subgrid;
     margin-bottom: 0;
   }
-  main:has(#fullRecipe){
-  grid-row: 2/4;
-}
+  main:has(#fullRecipe) {
+    grid-row: 2/4;
+  }
   nav {
     grid-column: span 2;
   }
@@ -415,22 +419,21 @@ footer p {
     min-height: 100%;
     margin: auto;
   }
-   #fullRecipe{
-    flex-direction:row;
+  #fullRecipe {
+    flex-direction: row;
     margin-bottom: 20px;
   }
-  #fullRecipe img{
-    max-width:50%;
-    height:50%;
+  #fullRecipe img {
+    max-width: 50%;
+    height: 50%;
   }
   footer {
     grid-column: span 2;
-    align-self:end;
-    margin-top:30px ;
+    align-self: end;
+    margin-top: 30px;
     grid-row: 4;
     height: 100%;
   }
- 
 }
 @media screen and (min-width: 900px) {
   /*header styles*/
@@ -466,17 +469,17 @@ footer p {
   }
   .recipeCard h3 {
     font-size: 25px;
-    margin:5px;
+    margin: 5px;
   }
   .recipeCard h4 {
     font-size: 20px;
-    margin:5px;
+    margin: 5px;
   }
   .recipeCard li {
     font-size: 25px;
   }
-   #fullRecipe{
-    width:100%;
+  #fullRecipe {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1900px) {
@@ -509,9 +512,7 @@ footer p {
     padding-top: 10px;
   }
   #listSection li {
-    
     font-size: 30px;
-   
   }
   button {
     font-size: 30px;

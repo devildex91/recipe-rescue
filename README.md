@@ -687,34 +687,36 @@ The main difference for desktop screens over tablet screens is that the grid wit
 | 1           | 90               | 100           | 100           | 100 | 75            | 95            | 100           | 92  |     |     |
 | 2           | 90               | 100           | 100           | 100 | 80            | 85            | 95            | 92  |     |     |
 | 3           | 85               | 100           | 100           | 100 | 85            | 100           | 100           | 100 |     |     |
-|             |                  |               |               |     |               |               |               |     |     |     |
+| 4           | 85               |100            |100            | 100 | 82            | 100           |100            | 100 |     |     |
 
 
 #### Mobile lighthouse notes
 
 
-![mobile lighthouse](/src/assets/images/readme-images/mobile-lighthouse-test.png)
+![mobile lighthouse](/src/assets/images/readme-images/phone-lighthouse-test.png)
 
 
 On first testing I found that due to image loading times the nav bar performance was being affected. To solve this I tried compressing all the files into Webp. This helped my loading times although not a great deal but sacrificed accessibility. It also affected my best practice scores because of the pixelation of the images as they got larger. This meant that I had a choice on which to prioritize, and chose to prioritize accessibility. Because of this I reverted to larger but better quality photos while keeping them webp where possible. This improved the accessibility scores as well as adding in some missing aria labels brought the score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in my input in the ingredients form were not passing testing. This was an unexpected problem as I had checked the colours in a separate contrast checker before using the selected colours. Even though they had passed on a separate check I altered the colours until the score passed through Lighthouse as well which is why the input shows up a different colour to the buttons underneath it. Once I had fixed these issues my accessibility score increased to 100 and performance was set at 85.
 
 
 Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 because of LCP which is due to the background image in the nav component. With this being a React app this means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. This means it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I did this because as explained above anything that could be done sacrificed what I considered more important scores elsewhere.
-
-
 The SEO was easily fixed by adding in a META description in the head of my index.html and that fixed the score.
+
+** The fourth and final test scores came out very similar to previous but were redone as after final user testing was done and the feedback was taken into account the whole page was changed slightly. The most notable changes are the drop-down bar rather than the input box. The other main change is the text in the opening has been changed to a clear instruction list for better usability. 
 
 
 #### Desktop lighthouse notes
 
 
-![Desktop lighthouse](/src/assets/images/readme-images/desktop-lighthose-test.png)
+![Desktop lighthouse](/src/assets/images/readme-images/desktop-lighthouse-test.png)
 
 
 The desktop testing was easy by comparison as all the hard work had been done on the mobile testing and the images that appear as the screen gets larger had already been compressed while sorting the picture within the navbar. Because of this the scores all came in at the same as the phone screen sizes with an increased performance rating so no more fixes were required.
 
 
 The same details applied to the testing of Desktop screen sizes, although you can see the sacrifice is less significant on Desktop with a slightly improved performance almost in the 90s.
+
+** Like the mobile lighthouse tests an updated test was carried out to test the new features. With the reduced text content changed and the dropdown box add this seemed to dramatically increase the scores into the high 90s for performance with everything else at 100% which was highly unexpected but positive result.
 
 
 #### 404 lighthouse scores
@@ -828,6 +830,8 @@ While final testing noticed that the images on the recipe card were behaving err
 
 CSS testing updated as I changed the h2 for a h1 for accessibility reasons. After this I failed to update the CSS targeting the old h2. While checking the website I noticed the styling was out, so all has been updated along with a new CSS test to suit. 
 
+** CSS retested as styled had been added for the new fullRecipe section. Again everything passed with no errors. 
+
 
 
 
@@ -912,6 +916,8 @@ All checks passed first time which was the expected result, although earlier in 
 
 
 Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the Spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State. Somehow that had survived the change in direction for the code and has subsequently been deleted. The screenshot above will be of the new test with this code deleted. Below you will find a screenshot of the deleted state.
+
+** All jsx tests updated and all passed to reflect the changes made after user testing.
 
 
 ![Redundant useState](/src/assets/images/readme-images/redundent-useState.png)
@@ -1065,6 +1071,28 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 
 [Back to top](#recipe-rescue)
 </details>
+
+### User testing
+
+<details>
+<summary>User testing notes</summary>
+
+#### Issues
+- Upon user testing discovered that:
+- when to many ingredients were added they would blow out of the intended layout.
+- Another issue discovered was that no ingredients would be spell checked and the ability to add things that are not ingredients. 
+- Users also mentioned that having a link to full recipes was a bit confusing as it was not in keeping with the layout of the page and could be confusing when having to get to know a completley new site. 
+- They also noted that the paragraph in the header section although had intructions were again confusing as they were imbeded in a paragraph of text. 
+
+#### Solutions
+- CSS properties were altered to fix the layout issue and allow the ingredients to wrap where necessary. 
+- In order to solve the spell check issue a JSON file of ingredients was added along with a dropdown of ingredients. This solved both the issue of spell checking and made sure things that are not ingredients cannot be added to the list.
+- A separate full recipe section has now been added so they still get access to the full recipe in the same way as they followed to get to the external website. This full recipe now follows the same layout design of the rest of the site to improve user experience. 
+- The paragraph of instructions was completely changed to a simple ordered list of instructions that saves any confusion over what needs to be done to use the site properly.  
+
+[Back to top](#recipe-rescue)
+</details>
+
 
 ### Deployment
 
