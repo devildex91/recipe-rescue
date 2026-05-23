@@ -1439,7 +1439,7 @@ Whilst checking through my code I notice a redundant useState called recipeLink.
  
  
  #### Retest notes
-** All JSX tests updated and all passed to reflect the changes made after user testing.
+ All JSX tests updated and all passed to reflect the changes made after user testing.
 
 
 FullRecipe and secondRender states were added with the updated code for the fullRecipe section of the page. This was to render fullRecipe to the page on clicking the recipe card instead of the original link to the external site. This meant I could still use the same API call that was being used to get the external link. The only difference was how the data was stored and extracted for use. This throws up a new problem of API limits, which is just enough for the scope of the project, but going further with development would require a payment option.
