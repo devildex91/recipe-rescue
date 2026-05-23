@@ -9,7 +9,6 @@ export default function RecipeCard({
 }) {
   const API = import.meta.env.VITE_SPOONACULAR_API;
   /*state for recipe storage from first api call*/
-
   const [recipes, setRecipes] = useState([]);
   /* useState for full recipe details*/
   const [fullRecipe, setFullRecipe] = useState(null);
@@ -55,7 +54,7 @@ export default function RecipeCard({
       console.error("Fetch error:", err);
     }
   }
-
+/*variable storing recipe cards for conditional rendering*/ 
   const recommendedRecipes = recipes.map((recipe) => (
     <button
       className="unbutton"
@@ -83,7 +82,7 @@ export default function RecipeCard({
       </div>
     </button>
   ));
-
+/* variable storing full recipe to condtionally render*/
   const renderFullRecipe = fullRecipe ? (
     <div id="fullRecipe" className="shadow" key={fullRecipe.id}>
       <img
@@ -142,7 +141,7 @@ export default function RecipeCard({
     </section>
   );
 
-  /* function to go back to ingredient list*/
+  /* function to change state and go back*/
   function goBack() {
     setRender(false);
   }

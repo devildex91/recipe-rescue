@@ -28,6 +28,7 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
+/*style to hide opening so #fullRecipe can take up whole page*/
 #gridContainer:has(#fullRecipe) #opening {
   display: none;
 }
@@ -286,10 +287,9 @@ main:has(#fullRecipe) {
 }
 #fullRecipe img {
   margin: 20px;
-  max-width:100%;
-  height:auto;
-  display:block;
-  
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 #fullRecipe button {
   width: fit-content;
@@ -355,6 +355,7 @@ footer p {
     grid-template-rows: subgrid;
     margin-bottom: 0;
   }
+  /*styles to change grid layout for #fullRecipe*/
   main:has(#fullRecipe) {
     grid-row: 2/4;
   }
@@ -471,22 +472,20 @@ footer p {
   .recipeCard li {
     font-size: 25px;
   }
-
-   #fullRecipe {
+  /*styles to change layout for #fullRecipe on large screens*/
+  #fullRecipe {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
-     width: 100%;
+    width: 100%;
   }
   #fullRecipe img {
-    width:50%;
-    height:50%;
+    width: 50%;
+    height: 50%;
     align-self: flex-start;
-    
   }
-  #textContent{
+  #textContent {
     align-self: flex-end;
-
   }
 }
 @media screen and (min-width: 1900px) {
