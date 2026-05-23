@@ -697,13 +697,15 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ![mobile lighthouse](/src/assets/images/readme-images/phone-lighthouse-test.png)
 
 
-On first testing I found that due to image loading times the nav bar performance was being affected. To solve this I tried compressing all the files into Webp. This helped my loading times although not a great deal but sacrificed accessibility. It also affected my best practice scores because of the pixelation of the images as they got larger. This meant that I had a choice on which to prioritize, and chose to prioritize accessibility. Because of this I reverted to larger but better quality photos while keeping them webp where possible. This improved the accessibility scores as well as adding in some missing aria labels brought the score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in my input in the ingredients form were not passing testing. This was an unexpected problem as I had checked the colours in a separate contrast checker before using the selected colours. Even though they had passed on a separate check I altered the colours until the score passed through Lighthouse as well which is why the input shows up a different colour to the buttons underneath it. Once I had fixed these issues my accessibility score increased to 100 and performance was set at 85.
+On first testing I found that due to image loading times the nav bar performance was being affected. To solve this I tried compressing all the files into Webp. This helped my loading times although not a great deal but sacrificed accessibility. It also affected my best practice scores because of the pixelation of the images as they got larger. To solve this I chose to prioritize accessibility. I reverted to larger but better quality photos while keeping them webp where possible. This along with adding in missing aria labels improved the accessibility score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in the input within ingredients form were not passing testing, even though the colours had already been through contrast testing.To make sure they passed I still altered the colours until the score passed through Lighthouse as well. That is why the input(now a dropdown) shows up a different colour to the rest of the form. Once I had fixed these issues my accessibility score increased to 100 and performance was set at 85(now 82).
 
 
-Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 because of LCP which is due to the background image in the nav component. With this being a React app this means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. This means it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I did this because as explained above anything that could be done sacrificed what I considered more important scores elsewhere.
-The SEO was easily fixed by adding in a META description in the head of my index.html and that fixed the score.
+Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP which is due to the background image in the nav component. With this being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I came to this decision so that as explained above the performance was sacrificed so that what I considered more important scores could be kept elsewhere.
 
-** The fourth and final test scores came out very similar to previous but were redone as after final user testing was done and the feedback was taken into account the whole page was changed slightly. The most notable changes are the drop-down bar rather than the input box. The other main change is the text in the opening has been changed to a clear instruction list for better usability. 
+The SEO was lastly easily fixed by adding in a META description in the head of my index.html and that fixed the score.
+
+#### Redesign notes
+ The fourth and final test scores came out very similar to previous tests but were redone due to User Testing. Once user testing was done and the feedback was taken into account, the whole page was changed slightly. The most notable changes are the drop-down bar rather than the input box. The text in the opening has been simplified to a clear instruction list for better usability. 
 
 
 #### Desktop lighthouse notes
@@ -712,12 +714,10 @@ The SEO was easily fixed by adding in a META description in the head of my index
 ![Desktop lighthouse](/src/assets/images/readme-images/desktop-lighthouse-test.png)
 
 
-The desktop testing was easy by comparison as all the hard work had been done on the mobile testing and the images that appear as the screen gets larger had already been compressed while sorting the picture within the navbar. Because of this the scores all came in at the same as the phone screen sizes with an increased performance rating so no more fixes were required.
+The desktop testing was easy by comparison as all the hard work had been done on the mobile testing. The images that appear as the screen gets larger, had already been compressed while sorting the picture within the navbar. The scores all came in at the same as the phone screen sizes with an increased performance rating so no more fixes were required.
 
-
-The same details applied to the testing of Desktop screen sizes, although you can see the sacrifice is less significant on Desktop with a slightly improved performance almost in the 90s.
-
-** Like the mobile lighthouse tests an updated test was carried out to test the new features. With the reduced text content changed and the dropdown box add this seemed to dramatically increase the scores into the high 90s for performance with everything else at 100% which was highly unexpected but positive result.
+#### Redesign notes
+ Like the mobile lighthouse tests an updated test was carried out for the new features. With the reduced text content, and the dropdown box replacing the input box, seemed to dramatically increase the scores into the high 90s for performance with everything else at 100% which was an unexpected but positive result.
 
 
 #### 404 lighthouse scores
@@ -740,13 +740,13 @@ The same details applied to the testing of Desktop screen sizes, although you ca
 #### Mobile 404 notes
 
 
-Upon first test although expected no errors, accessibility issues arose due to spacing between the button and the link causing issues. In order to solve this I increased both the spacing and margins around both the button and the link tag as well as increasing the font size so I could rectify these issues which upon the next test had been resolved.
+Upon first test although expected no errors, accessibility issues arose due to spacing between the button and the link causing issues. In order to solve this I increased both the spacing and margins around both the button and the link tag as well as increasing the font size so I could rectify these issues which had been resolved by the next test.
 
 
 I have chosen to leave the SEO scores as it is not a page that I believe requires the search engine score as it is a page purely for once an error has occurred and believed the score was high enough to warrant no action.
 
 
-Third test uploaded, although all scores are the same as the second the button element was removed so it passed HTML check so resubmitted latest test to confirm results were all the same
+Third test uploaded, although all scores are the same as the second the button element was removed so it passed HTML check so resubmitted latest test to confirm results were all the same.
 
 
 ![Desktop 404 test](/src/assets/images/readme-images/404-lighthouse-desktop.png)
@@ -756,7 +756,7 @@ Third test uploaded, although all scores are the same as the second the button e
 #### Desktop 404 notes
 
 
-Again similar to the main content once I had solved all the issues on mobile view the results were identical on Desktop view as well
+Again similar to the main content once I had solved all the issues on mobile view the results were identical on Desktop view as well.
 
 
 The second screenshot submitted for the same reason as the last mobile design changed due to HTML not passing so included the latest screenshot with the same scores.
@@ -793,7 +793,7 @@ HTML all passed though being a React app the only HTML are stylesheet links and 
 ![404 second check](/src/assets/images/readme-images/404-HTML-second.png)
 
 
-After first test failure all trailing slashes were removed as well as styling the "<a>" href to look like a button and removing the button element and everything passed. But meant lighthouse testing had to be redone.
+After first test failure all trailing slashes were removed as well as styling the "<a>" href to look like a button and removing the button element and everything passed. This meant lighthouse testing had to be redone.
 
 
 
@@ -821,7 +821,7 @@ After first test failure all trailing slashes were removed as well as styling th
 ![index-css-test](/src/assets/images/readme-images/index-css-check.png)
 
 
-Although no errors were found within the CSS originally the CSS was split into index.css and app.css. In order to improve the efficiency and because I had no real components that needed individually styling I chose to move it all into one index.css file. I felt this meant that the loading times would be increased as it did not need to look for two separate CSS files. Another change I made to my CSS was that I added CSS variables for easier updateability of the site for things such as colours and fonts.
+Although no errors were found within the CSS originally the CSS was split into index.css and app.css. In order to improve the efficiency and because I had no real components that needed individually styling I chose to move it all into one index.css file. I felt this meant that the loading times would be increased as it did not need to look for two separate CSS files. Another change I made to my CSS was that I added CSS variables for easier updateability of the site for things such as colours and fonts.This shows in the fact I have added two seperate CSS variables for fonts for just one font. This is so if the font changes at a later date this is easier to change. 
 
 
 Other issues I faced with my CSS was the gap property with display grid affecting the nav and footer elements. In order to solve this I chose to get rid of the gap property completely and instead add margins to the DIVS and content where necessary to achieve the look I wanted. In doing this it solved the problem with my nav and footer, and they spanned 100% width again.
@@ -831,7 +831,7 @@ While final testing noticed that the images on the recipe card were behaving err
 
 CSS testing updated as I changed the h2 for a h1 for accessibility reasons. After this I failed to update the CSS targeting the old h2. While checking the website I noticed the styling was out, so all has been updated along with a new CSS test to suit. 
 
-** CSS retested as styled had been added for the new fullRecipe section. Again everything passed with no errors. 
+** CSS retested as styled had been added for the new fullRecipe section. Again everything passed with no errors. The screenshot above is of the latest test.  
 
 
 
@@ -846,24 +846,17 @@ CSS testing updated as I changed the h2 for a h1 for accessibility reasons. Afte
 The CSS in the head of my 404-page passed all checks. All the rest of the CSS was integrated into index.css file, although the decision was made to keep the body styles in the head of the HTML file to stop it reacting with any body styles already included for the main app. I also felt that this was a better option than adding another DIV purely to style within index.css.
 
 
-While testing my site to confirm all was working as intended I noticed I had forgotten that I had wrapped the list section in a main element so when I added the main styling to my index.css it had broken the styling for my main app. To fix this I have moved the main styling for 404 back into the head of the 404 page. The tests above still apply as the code passed whilst going through the main index.css test, so I know that it does not need retesting now it has been moved as the code did not change only location.
-
-
-
+While testing my site to confirm all was working as intended I noticed I had forgotten that I had wrapped the list section in a main element. This meant when I added the main styling to my index.css it had broken the styling for my main app. To fix this I have moved the main styling for 404 back into the head of the 404 page. The tests above still apply as the code passed whilst going through the main index.css test, so I know that it does not need retesting now it has been moved as the code did not change only location.
 
 [Back to top](#recipe-rescue)
 
-
  </details>
-
 
 ### JSX tests
 ---
 
-
 <details>
 <summary>JSX testing</summary>
-
 
 ##### Navbar
 
@@ -913,23 +906,20 @@ While testing my site to confirm all was working as intended I noticed I had for
 ![main-jsx](/src/assets/images/readme-images/main-jsx-test.png)
 
 
-All checks passed first time which was the expected result, although earlier in the development cycle the Main section was just called Recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code as with a separate JSX element doing as close to one thing each you can easily navigate through to update sections as needed without affecting the rest of the code.
+All checks passed first time which was the expected result, although earlier in the development cycle the Main section was just called Recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code. This means each JSX element focuses on a certain aspect of the site and makes navigating through the code an easier interaction.
 
 
 Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the Spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State. Somehow that had survived the change in direction for the code and has subsequently been deleted. The screenshot above will be of the new test with this code deleted. Below you will find a screenshot of the deleted state.
 
-** All jsx tests updated and all passed to reflect the changes made after user testing.
-
-
 ![Redundant useState](/src/assets/images/readme-images/redundent-useState.png)
+ 
+ 
+ #### retest notes 
+** All JSX tests updated and all passed to reflect the changes made after user testing.
 
+FullRecipe and secondRender states were added with the updated code for fullRecipe section of the page. This was to render fullRecipe to the page on clicking the recipe card instead of the original link to the external site. This meant I could still use the same API call that was being used to get the external link. The only difference was how the data was stored and extracted for use. This throws up a new problem of API limits, which is just enough for the scope of the project, but going further with development would require a payment option. 
 
-A placeholder image has also been added in as was getting reports that some API images were not loading. The above RecipeCard test is a retest after the image has been added in.
-
-
-
-
-
+A placeholder image has also been added in as reports were being made of broken images coming from the API.
 
 [Back to top](#recipe-rescue)
 
@@ -953,7 +943,7 @@ A placeholder image has also been added in as was getting reports that some API 
 ![brown text dark green background](/src/assets/images/readme-images/contrast-checker-browntext-darkgreen-background.png)
 
 
-First test passed on all tests but AAA. Originally to solve this I made all the text bold. Once I had seen how this looked on the page I decided to add a lighter shade of brown which is screenshotted later in the contrast checking so that I had the option to change the fonts to #3F2D22 so that it was not too different as not to affect the visual appearance of the page whilst passing all contrast checks.
+First test passed on all tests but AAA. Originally to solve this I made all the text bold. Once I had seen how this looked on the page I decided to add a lighter shade of brown which is screenshotted later in the contrast checking. This gave me the option to change the fonts to #3F2D22 so it did not to affect the visual appearance of the page whilst passing all contrast checks.
 
 
 ##### #4B352A background & #B2CD9C foreground
@@ -962,7 +952,7 @@ First test passed on all tests but AAA. Originally to solve this I made all the 
 ![original-button](/src/assets/images/readme-images/original-button-contrast.png)
 
 
-Being the same colours as above it failed on the exact same test with the buttons styles. Because of this as seen with the colour choices below. Because the buttons failed as well I took the choice to change the brown throughout most of the app to #3F2D22 as it passes all contrast checks as shown later in the contrast checks.
+Being the same colours as above it failed on the exact same test with the buttons styles. As the buttons failed as well I took the choice to change the brown throughout most of the app to #3F2D22 as it passes all contrast checks as shown on a later test.
 
 
 ##### #F0F2BD foreground & #4B352A background
@@ -971,7 +961,7 @@ Being the same colours as above it failed on the exact same test with the button
 ![hover effect](/src/assets/images/readme-images/hover-effect-buttons.png)
 
 
-All tests passed for hover effect on buttons as after the failed tests previously I took the decision to use the background colour for the site for a better contrast rating with the brown. This works for most of the site although for some reason still failed with the dark background on the lighthouse testing so reversed the effects to that of the buttons in the input box and this passed all contrast checks including lighthouse testing.
+All tests passed for hover effect on buttons as after the failed tests previously I took the decision to use the background colour for the site to achieve a better contrast rating with the brown. This works for most of the site, but for some reason still failed with the dark background on the lighthouse testing. To resolve this I reversed the effects to that of the buttons in the input box. This passed all contrast checks including lighthouse testing.
 
 
 ##### #F0F2BD background & #4B352A foreground
@@ -980,7 +970,7 @@ All tests passed for hover effect on buttons as after the failed tests previousl
 ![button normal](/src/assets/images/readme-images/button-color.png)
 
 
-All tests passed like described above the button colour and hover effect are the same colours but in reverse so once I had made the decision to change after the original failed tests this was more a formality as I knew it would pass the contrast test.
+All tests passed like described above. The button colour and hover effect are the same colours but in reverse, so once I had made the decision to change this test was more a formality as I knew it would pass the contrast test.
 
 
 ##### #3F2D22 foreground & #B2CD9C background
@@ -989,7 +979,7 @@ All tests passed like described above the button colour and hover effect are the
 ![alternate font color](/src/assets/images/readme-images/alternate-color-test.png)
 
 
-As described above this was the alternate brown chosen so that I could guarantee all tests would pass without having all fonts bold. It was done by sliding the bar to a lighter shade of brown to ensure not only all contrast checks passed, but remained as close to the original colour as I could.
+As described above this was the alternate brown chosen so that I could guarantee all tests would pass without having all fonts bold. It was done by sliding the bar to a lighter shade of brown to ensure not only all contrast checks passed, but remained as close to the original colour as possible.
 
 
 [Back to top](#recipe-rescue)
@@ -1007,11 +997,19 @@ As described above this was the alternate brown chosen so that I could guarantee
 
 
 ![input focus](/src/assets/images/readme-images/input-box-tab-focus.png)
+![dropdown focus](src/assets/images/readme-images/dropdown-tab-focus.png)
+![dropdown enter focus](/src/assets/images/readme-images/dropdown-enter-focus.png)
 ![button focus](/src/assets/images/readme-images/button-tab-focus.png)
 ![recipe card focus](/src/assets/images/readme-images/recipe-card-tab-focus.png)
+![fullRecipe button focus](src/assets/images/readme-images/fullRecipe-button-focus.png)
 
 
-All of my apps are keyboard accessible as you can easily navigate throughout the page with the tab and shift keys to go up and down the page. You can enter ingredients and use the enter key to input these ingredients as well as using the tab and enter keys in order to select a recipe card and be taken to the source website. All the above screenshots show the focus on each element as they are selected with a tab from input down to recipe cards at the bottom.
+All of my apps are keyboard accessible as you can easily navigate throughout the page with the tab and shift keys to go up and down the page. You can use the arrow keys and the enter button to select ingredients.You can also use the tab and enter keys in order to select a recipe card and be taken to the full recipe. The tab button also works to navigate to the back to reccomendations button. All the above screenshots show the focus on each element as they are selected with a tab from input down to recipe cards at the bottom.
+
+#### Retest notes
+Above you will find both the original input screenshot with the dropdown bar screenshot below it to show the changes made. 
+
+
 
 
 [Back to top](#recipe-rescue)
@@ -1042,7 +1040,7 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 | API issue                            | API is hidden in .env file but on deployment to GITHUB stopped working and discovered through Google that I had to put it in secrets in GITHUB actions to solve the issue.                                                                           |
 | Recipe card layout issue 2           | Originally had both missing and included ingredients on recipe cards but was taking up too much space and looked cluttered so removed included ingredients and added a link to full recipe instead. This also helped resolve API usage issues.  |
 | Broken image                         | Occasionally a broken image happens from the API end, so a placeholder image has been added to solve the issue.                                                                                                                                        |
-| Recipe section margin                | Extra margin added to bottom of recipe section to ensure footer always stays in place at bottom of page                                                                                                                                       |                                                                                                                                                                
+| Recipe section margin                | Styles altered to ensure even gap remains throughout. page                                                                                                                                       |                                                                                                                                                                
  [Back to top](#recipe-rescue)
 
 
@@ -1083,13 +1081,15 @@ All of my apps are keyboard accessible as you can easily navigate throughout the
 - when to many ingredients were added they would blow out of the intended layout.
 - Another issue discovered was that no ingredients would be spell checked and the ability to add things that are not ingredients. 
 - Users also mentioned that having a link to full recipes was a bit confusing as it was not in keeping with the layout of the page and could be confusing when having to get to know a completley new site. 
-- They also noted that the paragraph in the header section although had intructions were again confusing as they were imbeded in a paragraph of text. 
+- They also noted that the paragraph in the header section although had intructions were again confusing as they were imbeded in a paragraph of text.
+- Broken images were noted by some users when coming from the API 
 
 #### Solutions
 - CSS properties were altered to fix the layout issue and allow the ingredients to wrap where necessary. 
 - In order to solve the spell check issue a JSON file of ingredients was added along with a dropdown of ingredients. This solved both the issue of spell checking and made sure things that are not ingredients cannot be added to the list.
 - A separate full recipe section has now been added so they still get access to the full recipe in the same way as they followed to get to the external website. This full recipe now follows the same layout design of the rest of the site to improve user experience. 
-- The paragraph of instructions was completely changed to a simple ordered list of instructions that saves any confusion over what needs to be done to use the site properly.  
+- The paragraph of instructions was completely changed to a simple ordered list of instructions that saves any confusion over what needs to be done to use the site properly. 
+- To solve the broken images a placeholder image and alt text has been added for a fix if a broken image occurs. 
 
 [Back to top](#recipe-rescue)
 </details>
