@@ -308,7 +308,9 @@ As a budget-conscious user, I want to see exactly what I’m missing for a recip
 
 The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist. [Original design](/src//assets/images/readme-images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [Original Wireframe](/src/assets/images/readme-images/computer-closerlookpage-wireframes.png). Although I did start this project, as it progressed I felt that in order to fully achieve everything possible with this app it was better left for a later project. Once I had the server side sorted as well, I could add login pages and the user review section could be more responsive and updatable. From that original idea came Recipe Rescue. That is because it follows a similar structure to Sparkflow in taking a parameter, searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
  
- Following on from user testing the design has been altered to include a dropdown of ingredients rather than an input field.  The opening text has also been shortened to a list of instructions as users were finding it difficult to work out how to use the app and finding the opening text distracting.
+ Following on from user testing the design has been altered to include a dropdown of ingredients rather than an input field.  The opening text has also been shortened to a list of instructions as users were finding it difficult to work out how to use the app and finding the opening text distracting. Another change from the original design is instead of a link to the recipe source you will now be taken to a dedicated full recipe page.
+
+
 
 
 ##### Fonts
@@ -548,6 +550,15 @@ The main difference for desktop screens over tablet screens is that the grid wit
 </details>
 
 
+<details>
+<summary>Updated wireframes following user testing</summary>
+
+Please find wireframes for full recipe section that has been designed and added following user testing.
+![phone view full recipe](/src/assets/images/readme-images/full-recipe-phone-wireframe.png) 
+![tablet view full recipe](src/assets/images/readme-images/full-recipe-tablet-wireframe.png) 
+![desktop view full recipe](src/assets/images/readme-images/full-recipe-desktop-wireframe.png)
+</details>
+
 [Back to top](#recipe-rescue)
 
 
@@ -565,7 +576,7 @@ The main difference for desktop screens over tablet screens is that the grid wit
 
 - Ingredients list with ability to add, remove, or clear ingredients.
 - Recipe search that returns 6 recipes based on minimal missing ingredients.
-- Link to the source site for full recipe details, ingredients lists and how to make the recipe (recipe cards in above screenshot act as links to external source sites).
+- Following from user testing links to recipe site has been updated with a dedicated full recipe page with full ingredients and instructions.
 - Responsive on all screen sizes.
 
 
@@ -682,13 +693,13 @@ The main difference for desktop screens over tablet screens is that the grid wit
 #### main content scores
 
 
-| Test number | Expected results |               |               |     | Actual Result |               |               |     |     |     |
-| ----------- | ---------------- | ------------- | ------------- | --- | ------------- | ------------- | ------------- | --- | --- | --- |
-|             | Performance      | Accessibility | Best practice | SEO | Performance   | Accessibility | Best practice | SEO |     |     |
-| 1           | 90               | 100           | 100           | 100 | 75            | 95            | 100           | 92  |     |     |
-| 2           | 90               | 100           | 100           | 100 | 80            | 85            | 95            | 92  |     |     |
-| 3           | 85               | 100           | 100           | 100 | 85            | 100           | 100           | 100 |     |     |
-| 4           | 85               |100            |100            | 100 | 82            | 100           |100            | 100 |     |     |
+| Test number | Expected results |               |               |     | Actual Result |               |               |     |
+| ----------- | ---------------- | ------------- | ------------- | --- | ------------- | ------------- | ------------- | --- |
+|             | Performance      | Accessibility | Best practice | SEO | Performance   | Accessibility | Best practice | SEO |
+| 1           | 90               | 100           | 100           | 100 | 75            | 95            | 100           | 92  |
+| 2           | 90               | 100           | 100           | 100 | 80            | 85            | 95            | 92  |
+| 3           | 85               | 100           | 100           | 100 | 85            | 100           | 100           | 100 |
+| 4           | 85               |100            |100            | 100 | 82            | 100           |100            | 100 |
 
 
 #### Mobile lighthouse notes
@@ -697,10 +708,10 @@ The main difference for desktop screens over tablet screens is that the grid wit
 ![mobile lighthouse](/src/assets/images/readme-images/phone-lighthouse-test.png)
 
 
-On first testing I found that due to image loading times the nav bar performance was being affected. To solve this I tried compressing all the files into Webp. This helped my loading times although not a great deal but sacrificed accessibility. It also affected my best practice scores because of the pixelation of the images as they got larger. To solve this I chose to prioritize accessibility. I reverted to larger but better quality photos while keeping them webp where possible. This along with adding in missing aria labels improved the accessibility score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in the input within ingredients form were not passing testing, even though the colours had already been through contrast testing.To make sure they passed I still altered the colours until the score passed through Lighthouse as well. That is why the input(now a dropdown) shows up a different colour to the rest of the form. Once I had fixed these issues my accessibility score increased to 100 and performance was set at 85(now 82).
+On first testing I found that due to image loading times the nav bar performance was being affected. To solve this I tried compressing all the files into Webp. This helped my loading times but sacrificed accessibility. It also affected my best practice scores because of the pixelation of the images as they got larger. To solve this I chose to prioritize accessibility. I reverted to larger but better quality photos while keeping them webp where possible. This along with adding in missing aria labels improved the accessibility score up to 95 on accessibility. Another issue I had with my scores was that the contrast between the colours in the input within ingredients form were not passing testing, even though the colours had already been through contrast testing.To make sure they passed I still altered the colours until the score passed through Lighthouse as well. That is why the input(now a dropdown) shows up a different colour to the rest of the form. Once I had fixed these issues my accessibility score increased to 100 and performance was set at 85(now 82).
 
 
-Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP which is due to the background image in the nav component. With this being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I came to this decision so that as explained above the performance was sacrificed so that what I considered more important scores could be kept elsewhere.
+Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met, rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP which is due to the background image in the nav component. With this being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I came to this decision so that as explained above the performance was sacrificed so that what I considered more important scores could be kept elsewhere.
 
 The SEO was lastly easily fixed by adding in a META description in the head of my index.html and that fixed the score.
 
@@ -831,6 +842,7 @@ While final testing noticed that the images on the recipe card were behaving err
 
 CSS testing updated as I changed the h2 for a h1 for accessibility reasons. After this I failed to update the CSS targeting the old h2. While checking the website I noticed the styling was out, so all has been updated along with a new CSS test to suit. 
 
+#### Retest notes
 ** CSS retested as styled had been added for the new fullRecipe section. Again everything passed with no errors. The screenshot above is of the latest test.  
 
 
@@ -906,7 +918,7 @@ While testing my site to confirm all was working as intended I noticed I had for
 ![main-jsx](/src/assets/images/readme-images/main-jsx-test.png)
 
 
-All checks passed first time which was the expected result, although earlier in the development cycle the Main section was just called Recipe which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code. This means each JSX element focuses on a certain aspect of the site and makes navigating through the code an easier interaction.
+All checks passed first time which was the expected result. Earlier in the development cycle the Main section was just called Recipe, which is because it incorporated both the ingredients list and the Recipe card sections. Once I had all the code working through the use of props it was slowly refactored into the separate JSX elements. I chose to do this because I felt it was better practice to fully make the most of the React setup being used. I also felt it made the readability of the code much easier for someone else trying to work with the code. This means each JSX element focuses on a certain aspect of the site and makes navigating through the code an easier interaction.
 
 
 Whilst checking through my code I notice a redundant useState called recipeLink. The original intention was to have a separate state for storing the links to the recipes. This subsequently changed after reading the Spoonacular documentation and discovering I already had all the information I needed within the previous API call and recipes State. Somehow that had survived the change in direction for the code and has subsequently been deleted. The screenshot above will be of the new test with this code deleted. Below you will find a screenshot of the deleted state.
@@ -914,7 +926,7 @@ Whilst checking through my code I notice a redundant useState called recipeLink.
 ![Redundant useState](/src/assets/images/readme-images/redundent-useState.png)
  
  
- #### retest notes 
+ #### Retest notes 
 ** All JSX tests updated and all passed to reflect the changes made after user testing.
 
 FullRecipe and secondRender states were added with the updated code for fullRecipe section of the page. This was to render fullRecipe to the page on clicking the recipe card instead of the original link to the external site. This meant I could still use the same API call that was being used to get the external link. The only difference was how the data was stored and extracted for use. This throws up a new problem of API limits, which is just enough for the scope of the project, but going further with development would require a payment option. 
@@ -996,15 +1008,15 @@ As described above this was the alternate brown chosen so that I could guarantee
  <summary>Keyboard Accessibility</summary>
 
 
-![input focus](/src/assets/images/readme-images/input-box-tab-focus.png)
-![dropdown focus](src/assets/images/readme-images/dropdown-tab-focus.png)
-![dropdown enter focus](/src/assets/images/readme-images/dropdown-enter-focus.png)
-![button focus](/src/assets/images/readme-images/button-tab-focus.png)
-![recipe card focus](/src/assets/images/readme-images/recipe-card-tab-focus.png)
-![fullRecipe button focus](src/assets/images/readme-images/fullRecipe-button-focus.png)
+![input focus](/src/assets/images/readme-images/input-box-tab-focus.png)  
+![dropdown focus](src/assets/images/readme-images/dropdown-tab-focus.png)  
+![dropdown enter focus](/src/assets/images/readme-images/dropdown-enter-focus.png)  
+![button focus](/src/assets/images/readme-images/button-tab-focus.png)  
+![recipe card focus](/src/assets/images/readme-images/recipe-card-tab-focus.png)  
+![fullRecipe button focus](src/assets/images/readme-images/fullRecipe-button-focus.png)  
 
 
-All of my apps are keyboard accessible as you can easily navigate throughout the page with the tab and shift keys to go up and down the page. You can use the arrow keys and the enter button to select ingredients.You can also use the tab and enter keys in order to select a recipe card and be taken to the full recipe. The tab button also works to navigate to the back to reccomendations button. All the above screenshots show the focus on each element as they are selected with a tab from input down to recipe cards at the bottom.
+All of my apps are keyboard accessible as you can easily navigate throughout the page with the tab and shift keys to go up and down the page. You can use the arrow keys and the enter button to select ingredients. You can also use the tab and enter keys in order to select a recipe card and be taken to the full recipe. Using tab also works to navigate to the back to recommendations button. All the above screenshots show the focus on each element as they are selected with a tab from input down to recipe cards at the bottom.
 
 #### Retest notes
 Above you will find both the original input screenshot with the dropdown bar screenshot below it to show the changes made. 
@@ -1080,8 +1092,8 @@ Above you will find both the original input screenshot with the dropdown bar scr
 - Upon user testing discovered that:
 - when to many ingredients were added they would blow out of the intended layout.
 - Another issue discovered was that no ingredients would be spell checked and the ability to add things that are not ingredients. 
-- Users also mentioned that having a link to full recipes was a bit confusing as it was not in keeping with the layout of the page and could be confusing when having to get to know a completley new site. 
-- They also noted that the paragraph in the header section although had intructions were again confusing as they were imbeded in a paragraph of text.
+- Users also mentioned that having a link to full recipes was a bit confusing as it was not in keeping with the layout of the page and could be confusing when having to get to know a compeletley new site. 
+- They also noted that the paragraph in the header section although had instructions were again confusing as they were imbedded in a paragraph of text.
 - Broken images were noted by some users when coming from the API 
 
 #### Solutions
@@ -1240,6 +1252,7 @@ base: "/your-repo-name/", // Replace with your exact repository name
 | [json table](https://jsontotable.org/)              | JSX testing                 |
 | [webaim](https://webaim.org/resources/contrastchecker/)                  | contrast testing            |
 |[Logo.com](https://logo.com/)               | Logo and title favicon      |
+|[whimsical](https://whimsical.com/)         | wireframing                 |
 
 
 ###### All code was written by myself apart from code for deployment which was based on instruction from Vite documentation and GITHUB documentation.
