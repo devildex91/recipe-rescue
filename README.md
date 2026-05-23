@@ -1392,7 +1392,7 @@ While testing my site to confirm all was working as intended I noticed I had for
 
 
 
-![RecipeCard-jsx](/src/assets/images/readme-images/Recipe-card-jsx-retest.png)
+![RecipeCard-jsx](src/assets/images/readme-images/Recipe-card-jsx-retest.png)
 
 
 
