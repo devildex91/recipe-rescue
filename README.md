@@ -1887,7 +1887,8 @@ base: "/your-repo-name/", // Replace with your exact repository name
 | [webaim](https://webaim.org/resources/contrastchecker/)                  | contrast testing            |
 |[Logo.com](https://logo.com/)               | Logo and title favicon      |
 |[whimsical](https://whimsical.com/)         | wireframing                 |
-
+| [colorhunt](https://colorhunt.co/)         | Colour palete               |
+  
 
 
 
