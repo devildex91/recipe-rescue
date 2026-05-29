@@ -1551,6 +1551,7 @@ As described above this was the alternate brown chosen so that I could guarantee
 
  
 ![dropdown focus](src/assets/images/readme-images/dropdown-tab-focus.png)  
+![dropdown focus 2](src/assets/images/readme-images/dropdown-tab-focus2.png)
 ![dropdown enter focus](/src/assets/images/readme-images/dropdown-enter-focus.png)  
 ![button focus](/src/assets/images/readme-images/button-tab-focus.png)  
 ![recipe card focus](/src/assets/images/readme-images/recipe-card-tab-focus.png)  
