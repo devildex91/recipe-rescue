@@ -1099,7 +1099,7 @@ On first testing I found that due to image loading times the nav bar performance
 
 
 
-Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met, rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP which is due to the background image in the nav component. With this being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score in order to make sure everything else is 100. I came to this decision so that as explained above the performance was sacrificed so that what I considered more important scores could be kept elsewhere.
+Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met, rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP which is due to the background image in the nav component. With this being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score. I did this in order to make sure all other scores were 100. As explained above the performance was sacrificed so that I could keep what I considered more important scores at 100.
 
 
 The SEO was lastly easily fixed by adding in a META description in the head of my index.html and that fixed the score.
@@ -1158,7 +1158,7 @@ The desktop testing was easy by comparison as all the hard work had been done on
 
 
 
-Upon first test although expected no errors, accessibility issues arose due to spacing between the button and the link causing issues. In order to solve this I increased both the spacing and margins around both the button and the link tag as well as increasing the font size so I could rectify these issues which had been resolved by the next test.
+Upon first test although expected no errors, accessibility issues arose due to spacing between the button and the link causing issues. In order to solve this I increased both the spacing and margins around both the button and the link tag, as well as increasing the font size so I could rectify these issues which were resolved by the next test.
 
 
 
@@ -1580,7 +1580,7 @@ As described above this was the alternate brown chosen so that I could guarantee
 
 
 
-All of my apps are keyboard accessible as you can easily navigate throughout the page with the tab and shift keys to go up and down the page. You can use the arrow keys and the enter button to select ingredients. You can also use the tab and enter keys in order to select a recipe card and be taken to the full recipe. Using tab also works to navigate to the back to recommendations button. All the above screenshots show the focus on each element as they are selected with a tab from input down to recipe cards at the bottom.
+All of my app are keyboard accessible so you can easily navigate throughout the page with the tab and shift keys to go up and down the page. You can use the arrow keys and the enter button to select ingredients. You can also use the tab and enter keys in order to select a recipe card and be taken to the full recipe. Using tab also works to navigate to the button back to recommendations. All the above screenshots show the focus on each element as they are selected with a tab from input down to recipe cards at the bottom.
 
 
 #### Retest notes
@@ -1617,7 +1617,7 @@ Above you will find both the original input screenshot with the dropdown bar scr
 
 | Bugs/changes/                        | Fix                                                                                                                                                                                                                                           |
 |------------------------------------  |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
-| Flex layout                          | Originally used pure flexbox for styling but updated to use display grid and flexbox for better responsiveness and layout controls                                                                                                            |
+| Flex layout                          | Originally used pure flexbox for styling but updated to use display grid and flexbox for better responsiveness and layout controls.                                                                                                            |
 | Footer bug larger screen sizes       | Footer was set to start at a grid number that did not exist so was adding an extra grid to accommodate the position number so had to delete grid position to fix issue                                                                           |
 | Content shrinkage on large screens   | Had to add extra media queries at 1200px and 1800px to stop content shrinkage and to make sure everything readable at all sizes.                                                                                                              |
 | Recipe card layout issue             | As recipe cards rendered to page the logo in nav was not shrinking because of sizing so had to change from width to max-width to allow images to fit the content better                                                                       |
