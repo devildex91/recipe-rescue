@@ -168,7 +168,7 @@ The goals for users would be:
 - Reduce Household waste
 - Save time on meal planning
 - Avoid last minute shopping trips by making the most of their ingredients.
-- Clear old cupboard filling ingredients
+- Clear cupboard of leftover ingredients
 - Use foods close to expiry dates
 
 
@@ -478,6 +478,8 @@ As a budget-conscious user, I want to see exactly what I’m missing for a recip
 
 The original design for this project was a project called Sparkflow which was an app to take an artist, genre or mood and return a playlist. [Original design](/src//assets/images/readme-images/mobile-design.png). As the screen got larger the final page was going to also include a YOUTUBE iframe with whichever artist had been clicked on [Original Wireframe](/src/assets/images/readme-images/computer-closerlookpage-wireframes.png). Although I did start this project, as it progressed I felt that in order to fully achieve everything possible with this app it was better left for a later project. Once I had the server side sorted as well, I could add login pages and the user review section could be more responsive and updatable. From that original idea came Recipe Rescue. That is because it follows a similar structure to Sparkflow in taking a parameter, searching and returning a result although in a simpler format more suited to the milestone project at hand. For in depth details on the design choices of recipe-rescue please see the individual sections that follow.
  
+#### Redesign notes
+
  Following on from user testing the design has been altered to include a dropdown of ingredients rather than an input field.  The opening text has also been shortened to a list of instructions as users were finding it difficult to work out how to use the app and finding the opening text distracting. Another change from the original design is instead of a link to the recipe source you will now be taken to a dedicated full recipe page.
 
 
@@ -513,7 +515,7 @@ The original design for this project was a project called Sparkflow which was an
 
 
 
-   <p> For the font choices of recipe rescue I designed the logo first which can be seen above. Following this I did not want to stray too far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font I chose not to use this within the app as I felt certain customers may struggle to read this font if used in a high quantity so left it out of the design.
+   <p> For the font choices of Recipe Rescue I designed the logo first which can be seen above. Following this I did not want to stray too far from this design to tie it all in so chose the same geologica font that is in the logo title. Although the slogan is a different font I chose not to use this within the app as I felt certain customers may struggle to read this font if used in a high quantity so left it out of the design for the rest of the app.
  </p>
  <details>
  <summary>Fonts</summary>
@@ -615,7 +617,7 @@ The original design for this project was a project called Sparkflow which was an
 
 
 
-- Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and has been tested up to about 2000px wide. The site has been styled to have a consistent layout throughout for ease of use for all users as well as a colour palette to avoid cognitive overload whilst keeping with the food theme of the app.
+- Recipe Rescue has been styled with a mobile first approach ensuring everything works from 280px and has been tested up to approximately 2000px wide. The site has been styled to have a consistent layout throughout for ease of use for all users as well as a colour palette to avoid cognitive overload whilst keeping with the food theme of the app.
 
 
 
@@ -896,7 +898,7 @@ Please find wireframes for the full recipe section that has been designed and ad
 
 - Ingredients list with ability to add, remove, or clear ingredients.
 - Recipe search that returns 6 recipes based on minimal missing ingredients.
-- Following from user testing links to the recipe site has been updated with a dedicated full recipe page with full ingredients and instructions.
+- Following on from user testing, all links to the recipe site have been updated with a dedicated full recipe page. This includes full ingredients and instructions.
 - Responsive on all screen sizes.
 
 
@@ -938,16 +940,6 @@ Please find wireframes for the full recipe section that has been designed and ad
 
 
 
-
-                                                                                                         |
-
-
-
-
-
-
-
-
  
 [Back to top](#recipe-rescue)
 </details>
@@ -967,9 +959,6 @@ Please find wireframes for the full recipe section that has been designed and ad
 ---
 
 
-
-
-- Full recipe details and steps on how to make it will be added to the page at a later date but due to API limits have been added as a link to the Source URL.
 - Advanced search to be added allowing to search based on dietary requirements.
 - Sign in page to be added to allow saving of favourite recipes or specialist search parameters.
 
@@ -1001,7 +990,7 @@ Please find wireframes for the full recipe section that has been designed and ad
 | User Story            | User criteria                                                                                                                                                                                 | Reason not implemented                                                                                                                                                                                                                                                                                                                                       |
 |---------------------  |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
 | Dietary preference    | Users can exclude specific ingredients <br>Search results must update dynamically based on these filters<br> A filter menu is accessible from the search screen                                  | At this stage of the development we are looking to generate an MVP (minimum viable product). This is because we want to see how well the product works and make sure all the basic features are working as seamlessly as possible before any updates with more features are added.                                                                     |
-| User login            | Set up login section for users<br> A recently viewed section appears on the menu of your home page when logged in<br> Clicking a recent item takes the user directly to that recipe's preview.   | Similar to above we did not see at this stage the benefit of creating user login sections for a purely front end project. Some of the features also would require more API calls so working within the remit of the free API being used feel that these are all developments to be made if we choose to develop the app further.  |
+| User login            | Set up login section for users<br> A recently viewed section appears on the menu of your home page when logged in<br> Clicking a recent item takes the user directly to that recipe's preview.   | Similar to above we did not see at this stage the benefit of creating user login sections for a purely front end project. Some of the features also would require more API calls, so working within the remit of the free API being used, feel that these are all developments to be made if we choose to develop the app further.  |
 </details>
 
 
@@ -1099,14 +1088,14 @@ On first testing I found that due to image loading times the nav bar performance
 
 
 
-Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met, rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP which is due to the background image in the nav component. With this being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This meant the decision was made to compromise the performance score. I did this in order to make sure all other scores were 100. As explained above the performance was sacrificed so that I could keep what I considered more important scores at 100.
+Another problem I faced was that lighthouse testing could only be done on the initial App upon loading. This is because it is a single page React app, so the page conditionally renders different components when certain conditions are met, rather than linking to separate pages so cannot be tested with lighthouse. The performance score is only 85 (now 82) because of LCP. This is due to the background image in the nav component. This being a React app means that I cannot move the Styling into the head of the HTML document because it is rendered as a JSX element. Also being a JSX element it would not work for styling, and it couldn't be added in as an HTML element with separate tags on for faster loading for this very reason. This led to compromising the performance score. I did this in order to make sure all other scores were 100 which I felt were more crucial to the user. 
 
 
-The SEO was lastly easily fixed by adding in a META description in the head of my index.html and that fixed the score.
+The SEO was lastly easily fixed by adding in a META description in the head of my index.html to fix the score.
 
 
 #### Redesign notes
- The fourth and final test scores came out very similar to previous tests but were redone due to User Testing. Once user testing was done and the feedback was taken into account, the whole page was changed slightly. The most notable changes are the drop-down bar rather than the input box. The text in the opening has been simplified to a clear instruction list for better usability.
+ The fourth and final test scores came out very similar to previous tests but were redone due to User Testing. Once user testing was completed and the feedback was taken into account, the whole page was changed slightly. The most notable changes are the drop-down bar rather than the input box. The text in opening has been simplified to a clear instruction list for better usability.
 
 
 
@@ -1125,7 +1114,7 @@ The desktop testing was easy by comparison as all the hard work had been done on
 
 
 #### Redesign notes
- Like the mobile lighthouse tests an updated test was carried out for the new features. With the reduced text content, and the dropdown box replacing the input box, it seemed to dramatically increase the scores into the high 90s for performance with everything else at 100% which was an unexpected but positive result.
+ Like the mobile lighthouse tests an updated test was carried out for the new features. With the reduced text content, and the dropdown box replacing the input box, it seemed to dramatically increase the scores. These are now all in the high 90s for performance, and everything else at 100% which was an unexpected but positive result.
 
 
 
@@ -1289,17 +1278,20 @@ After first test failure all trailing slashes were removed as well as styling th
 
 
 
-Although no errors were found within the CSS originally the CSS was split into index.css and app.css. In order to improve the efficiency and because I had no real components that needed individually styling I chose to move it all into one index.css file. I felt this meant that the loading times would be increased as it did not need to look for two separate CSS files. Another change I made to my CSS was that I added CSS variables for easier updateability of the site for things such as colours and fonts.This shows in the fact I have added two separate CSS variables for fonts for just one font. This is so if the font changes at a later date this is easier to change.
+Although no errors were found within the CSS originally it was split into index.css and app.css. In order to improve the efficiency and because I had no real components that needed individually styling I chose to move it all into one index.css file. I felt this meant that the loading times would be decreased as it did not need to look for two separate CSS files. Another change I made to my CSS was that I added CSS variables for easier updateability to the site for things such as colours and fonts. This shows in the fact I have added two separate CSS variables for fonts for just one font. This is so if the font changes at a later date this is easier to change.
 
 
 
 
-Other issues I faced with my CSS was the gap property with display grid affecting the nav and footer elements. In order to solve this I chose to get rid of the gap property completely and instead add margins to the DIVS and content where necessary to achieve the look I wanted. In doing this it solved the problem with my nav and footer, and they spanned 100% width again.
+Other issues I faced with my CSS was the gap property within display grid affecting the nav and footer elements. In order to solve this I chose to get rid of the gap property completely and instead add margins to the DIVS and content where necessary to achieve the look I wanted. In doing this it solved the problem with my nav and footer, and they spanned 100% width again.
 
 
 
 
-While final testing noticed that the images on the recipe card were behaving erratically disrupting the organised layout of the page. I solved this problem by removing some of the flexbox properties namely the justify-content from recipeCard DIV and adding a margin top of 10px to the image to keep it relative to the top of the recipe card no matter the size. Although this means the images turn out smaller than previously, as they are low quality images from the external API this improves the visual quality of the images.(please see screenshots below for before and after shots)
+While final testing I noticed that the images on the recipe card were behaving erratically, disrupting the organised layout of the page. I solved this problem by removing some of the flexbox properties, namely the justify-content from the recipeCard DIV and adding a margin top of 10px to the image. I did this in order to keep it relative to the top of the recipe card no matter the size. Although this means the images turn out smaller than previously, as they are low quality images from the external API this improves the visual quality of the images.(please see screenshots below for before and after shots)
+
+![erratic-images](/src/assets/images/readme-images/erratic-image.png)  
+![after-image-fix](/src/assets/images/readme-images/new-image-layout.png)
 
 
 CSS testing updated as I changed the h2 for a h1 for accessibility reasons. After this I failed to update the CSS targeting the old h2. While checking the website I noticed the styling was out, so all has been updated along with a new CSS test to suit.
@@ -1309,29 +1301,17 @@ CSS testing updated as I changed the h2 for a h1 for accessibility reasons. Afte
 ** CSS retested as styled had been added for the new fullRecipe section. Again everything passed with no errors. The screenshot above is of the latest test.  
 
 
-
-
-
-
-
-
-![erratic-images](/src/assets/images/readme-images/erratic-image.png)  
-![after-image-fix](/src/assets/images/readme-images/new-image-layout.png)
-
-
-
-
 ![404 CSS](/src/assets/images/readme-images/404-css-check.png)
 
 
 
 
-The CSS in the head of my 404-page passed all checks. All the rest of the CSS was integrated into index.css file, although the decision was made to keep the body styles in the head of the HTML file to stop it reacting with any body styles already included for the main app. I also felt that this was a better option than adding another DIV purely to style within index.css.
+The CSS in the head of my 404-page passed all checks. The rest of the CSS was integrated into index.css file, although the decision was made to keep the body styles in the head of the HTML file. This was to stop it reacting with any body styles already included for the main app. I also felt that this was a better option than adding another DIV purely to style within index.css.
 
 
 
 
-While testing my site to confirm all was working as intended I noticed I had forgotten that I had wrapped the list section in a main element. This meant when I added the main styling to my index.css it had broken the styling for my main app. To fix this I have moved the main styling for 404 back into the head of the 404 page. The tests above still apply as the code passed whilst going through the main index.css test, so I know that it does not need retesting now it has been moved as the code did not change only location.
+While testing my site to confirm all was working as intended I noticed I had forgotten that I had wrapped the list section in a main element. This meant when I added the main styling to my index.css it had broken the styling for my main app. To fix this I have moved the main styling for 404 back into the head of the 404 page. The tests above still apply as the code passed whilst going through the main index.css test. I know that it does not need retesting now it has been moved as the code did not change only location.
 
 
 [Back to top](#recipe-rescue)
