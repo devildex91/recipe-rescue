@@ -1549,13 +1549,13 @@ As described above this was the alternate brown chosen so that I could guarantee
 
 
 
-
-![input focus](/src/assets/images/readme-images/input-box-tab-focus.png)  
+ 
 ![dropdown focus](src/assets/images/readme-images/dropdown-tab-focus.png)  
 ![dropdown enter focus](/src/assets/images/readme-images/dropdown-enter-focus.png)  
 ![button focus](/src/assets/images/readme-images/button-tab-focus.png)  
 ![recipe card focus](/src/assets/images/readme-images/recipe-card-tab-focus.png)  
 ![fullRecipe button focus](src/assets/images/readme-images/fullRecipe-button-focus.png)  
+![back ingredients focus](src/assets/images/readme-images/back-ingredients-focus.png)
 
 
 
@@ -1908,9 +1908,6 @@ base: "/your-repo-name/", // Replace with your exact repository name
 
 
 ---
-
-
-
 
 - "react": "^19.2.5",
 - "react-dom": "^19.2.5",
